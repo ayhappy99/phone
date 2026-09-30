@@ -4,7 +4,7 @@ html { scroll-behavior: smooth; font-size: 18px; }
 button, input, select, textarea { font-family: inherit; }
 button, a, summary { touch-action: manipulation; }
 [id] { scroll-margin-top: 12rem; }
-body { margin: 0; font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+body { word-break: keep-all; overflow-wrap: break-word; margin: 0; font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
   button, input, select, header, [aria-labelledby="search-title"] { display: none !important; }

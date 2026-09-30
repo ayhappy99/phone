@@ -4,17 +4,27 @@ const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const ts = require('typescript');
 const root = path.resolve(__dirname, '..');
-const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources };';
+const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo };';
 const compiled = ts.transpileModule(source, { compilerOptions: { jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
 vm.runInNewContext(compiled, { module: result, exports: result.exports, require }, { timeout: 5000 });
-const { phoneData, fullSpecCatalog, sources } = result.exports;
-assert.equal(phoneData.length, 4);
-assert.equal(new Set(phoneData.map(p => p.id)).size, 4);
+const { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo } = result.exports;
+assert.equal(phoneData.length, 14);
+assert.equal(new Set(phoneData.map(p => p.id)).size, 14);
+assert.equal(phoneData.filter(p => p.brand === 'Samsung').length, 7);
+assert.equal(phoneData.filter(p => p.brand === 'Apple').length, 7);
+assert.equal(detailSourceIds.length, 14);
+for (const row of detailRows) {
+  assert.equal(row.values.length, 14);
+  assert.ok(row.values.every(value => typeof value === 'string' && value.trim()));
+}
 for (const phone of phoneData) {
   const data = fullSpecCatalog[phone.id];
   assert.ok(data && sources[data.source]);
-  assert.equal(data.sections.length, phone.brand === 'Apple' ? 37 : 17);
+  if (phoneData.indexOf(phone) < 4) assert.equal(data.sections.length, phone.brand === 'Apple' ? 37 : 17);
+  else assert.ok(data.sections.length >= 12);
+  assert.ok(modelInfo[phone.id]);
+  assert.ok(sources[phone.price_source]);
   assert.equal(new Set(data.sections.map(s => s.title)).size, data.sections.length);
   assert.ok(data.conditions.length >= 5);
   for (const section of data.sections) {
@@ -29,5 +39,11 @@ for (const phone of phoneData) {
 }
 const ultraMemory = fullSpecCatalog['galaxy-s26-ultra'].sections.find(s => s.title === '메모리/스토리지').items;
 assert.ok(ultraMemory.some(s => s.includes('1TB: RAM 16GB')));
-assert.equal(phoneData.filter(p => p.brand === 'Apple').flatMap(p => p.prices).filter(p => p.krw === null).length, 5);
-console.log('PASS: 4 model identities, section counts, nonempty facts, footnote/source references, capacity-specific RAM, 5 explicitly unverified launch prices.');
+assert.equal(phoneData.filter(p => p.brand === 'Apple').flatMap(p => p.prices).filter(p => p.krw === null).length, 17);
+assert.equal(modelInfo['iphone-duo'].upcoming, true);
+assert.ok(fullSpecCatalog['galaxy-s26-fe'].scope.includes('추가 확인'));
+assert.ok(fullSpecCatalog['iphone-air'].sections.find(s => s.title === 'SIM 카드').items.join(' ').includes('실물 SIM'));
+assert.ok(phoneData.find(p => p.id === 'iphone-18-pro-max').specs.weight.vs_previous.includes('18g 증가'));
+assert.ok(phoneData.find(p => p.id === 'iphone-18-pro').specs.weight.vs_previous.includes('7g 증가'));
+for (const phone of phoneData) assert.ok(phone.specs.weight.official.includes(modelInfo[phone.id].weight), 'Quick comparison weight differs from official brief: ' + phone.id);
+console.log('PASS: 14 unique models, 7 per brand, full detail columns, source references, capacity-specific RAM, upcoming model label, explicit verification limits, 17 unverified historical prices.');

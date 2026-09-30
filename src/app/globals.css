@@ -13,3 +13,24 @@ body { word-break: keep-all; overflow-wrap: break-word; margin: 0; font-family: 
   article { break-inside: avoid; }
   main { background: white !important; }
 }
+
+.mobile-bottom-nav { padding-bottom: max(0.5rem, env(safe-area-inset-bottom)); }
+@media (max-width: 1023px) {
+  main { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
+  [id] { scroll-margin-top: 8rem; }
+  .model-bar { max-height: 45svh; overflow-y: auto; }
+}
+@media (max-width: 639px) {
+  .large-text .price-values { grid-template-columns: minmax(0, 1fr); }
+  .large-text .large-price-label { display: inline; }
+  .detail-table table, .detail-table tbody { display: block; }
+  .detail-table thead { display: none; }
+  .detail-table tr { display: grid; grid-template-columns: minmax(0, 1fr); margin-bottom: 0.75rem; }
+  .detail-table th { grid-column: 1 / -1; width: auto; background: #f1f5f9; padding: 0.75rem; }
+  .detail-table td { display: block; min-width: 0; border-bottom: 1px solid #e2e8f0; }
+  .detail-model-label { display: block; }
+}
+@media print {
+  .mobile-bottom-nav { display: none !important; }
+  main { padding-bottom: 0; }
+}

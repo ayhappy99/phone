@@ -6331,6 +6331,9 @@ function BriefCard({ phone, specKey }: { phone: Phone; specKey: SpecKey }) {
         <h3 className="mb-2 text-base font-bold">전화 안내</h3>
         <p className="font-semibold">“{spec.sales_pitch}”</p>
       </div>
+      <details className="rounded-xl border border-slate-200 p-3">
+        <summary className="min-h-11 cursor-pointer py-2 text-base font-bold">공식 스펙·전작 대비·유의사항</summary>
+        <div className="mt-2 space-y-3">
       <div className="rounded-xl bg-slate-100 p-4 text-slate-700">
         <h3 className="mb-2 text-base font-bold">공식 스펙</h3>
         <p>{spec.official}</p>
@@ -6341,6 +6344,8 @@ function BriefCard({ phone, specKey }: { phone: Phone; specKey: SpecKey }) {
         <p>{spec.vs_previous}</p>
       </div>
       <p className="border-l-4 border-slate-300 pl-3 text-base text-slate-700"><strong>안내 시 유의: </strong>{spec.caution}</p>
+        </div>
+      </details>
       <details className="mt-auto border-t border-slate-200 pt-3">
         <summary className="min-h-11 cursor-pointer py-2 text-base font-bold text-slate-700">공식 근거 확인</summary>
         <SourceLinks ids={spec.sources} />
@@ -6378,6 +6383,8 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
 
 export default function Page() {
   const [query, setQuery] = useState("");
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [fontControlsOpen, setFontControlsOpen] = useState(false);
   const [brand, setBrand] = useState("all");
   const [family, setFamily] = useState("all");
   const [showAllModels, setShowAllModels] = useState(false);
@@ -6456,12 +6463,13 @@ export default function Page() {
   );
 
   return (
-    <main lang="ko" className="min-h-screen bg-slate-50 text-base text-slate-900 selection:bg-blue-200">
+    <main lang="ko" className={`min-h-screen bg-slate-50 text-base text-slate-900 selection:bg-blue-200 ${fontSize >= 22 ? "large-text" : ""}`}>
       <a href="#comparison" className="sr-only focus:not-sr-only focus:block focus:bg-white focus:p-4">비교 내용으로 바로가기</a>
       <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <div><h1 className="text-2xl font-bold">휴대폰 전화상담</h1><p className="mt-1 text-base text-slate-600">공식 사양 · 용량별 출시가 · 전화 안내</p></div>
-          <div className="flex flex-wrap items-center gap-2 rounded-2xl bg-slate-100 p-3" role="group" aria-label="글자 크기 조절">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-3 py-2 sm:px-6">
+          <div><h1 className="text-xl font-bold sm:text-2xl">휴대폰 전화상담</h1><p className="mt-1 hidden text-base text-slate-600 lg:block">공식 사양 · 용량별 출시가 · 전화 안내</p></div>
+          <button type="button" aria-expanded={fontControlsOpen} aria-controls="font-controls" onClick={() => setFontControlsOpen(!fontControlsOpen)} className={`${control} !px-3 !py-2 lg:hidden`}>글자 설정</button>
+          <div id="font-controls" className={`${fontControlsOpen ? "flex" : "hidden"} w-full flex-wrap items-center gap-2 rounded-xl bg-slate-100 p-2 lg:flex lg:w-auto`} role="group" aria-label="글자 크기 조절">
             <span className="font-bold">글자</span>
             <button type="button" aria-label="글자 작게" onClick={() => setFontSize(current => Math.max(18, current - 2))} disabled={fontSize === 18} className={control}>가 −</button>
             <output aria-live="polite" aria-label="현재 글자 크기" className="min-w-12 text-center font-bold">{fontSize}px</output>
@@ -6470,22 +6478,23 @@ export default function Page() {
           </div>
         </div>
       </header>
-      <nav aria-label="상담 화면 이동" className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 px-4 py-3 shadow-sm backdrop-blur print:hidden">
-        <div className="mx-auto grid max-w-7xl gap-3 sm:flex sm:flex-wrap sm:items-center sm:justify-between">
-          <div className="flex w-full min-w-0 gap-2 sm:w-auto sm:flex-1">{selectedPhones.map((phone, slot) => <button key={slot} type="button" onClick={() => { setTarget(slot as 0 | 1); document.getElementById("model-picker")?.scrollIntoView({ behavior: "smooth" }); }} aria-label={`${slot === 0 ? "A" : "B"} 선택 모델 변경`} className={`flex min-h-12 min-w-0 flex-1 items-center gap-2 rounded-xl border px-3 py-2 text-left text-base font-bold ${slot === 0 ? "border-blue-200 bg-blue-50 text-blue-900" : "border-indigo-200 bg-indigo-50 text-indigo-900"}`}><span className="shrink-0">{slot === 0 ? "A" : "B"}</span><span className="min-w-0 truncate">{phone.model_name}</span></button>)}</div>
-          <div className="flex gap-2"><a href="#quick-comparison" className="inline-flex min-h-12 items-center rounded-xl bg-slate-900 px-4 py-2 text-base font-bold text-white">가격·핵심 사양</a><a href="#comparison" className="inline-flex min-h-12 items-center rounded-xl border border-slate-300 px-4 py-2 text-base font-bold">전화 안내</a><a href="#source-title" className="hidden min-h-12 items-center rounded-xl border border-slate-300 px-4 py-2 text-base font-bold sm:inline-flex">상세 사양</a></div>
+      <nav aria-label="비교 기종 선택" className="model-bar sticky top-0 z-30 border-b border-slate-200 bg-white px-3 py-2 shadow-sm print:hidden">
+        <div className="mx-auto grid max-w-7xl gap-2 lg:grid-cols-[1fr_1fr_auto]">
+          {selectedPhones.map((phone, slot) => <div key={slot} className={`flex min-w-0 items-center gap-2 rounded-xl border p-1 ${slot === 0 ? "border-blue-200 bg-blue-50" : "border-indigo-200 bg-indigo-50"}`}>
+            <button type="button" onClick={() => setTarget(slot as 0 | 1)} aria-pressed={target === slot} aria-label={`${slot === 0 ? "A" : "B"} 기종 변경`} className={`min-h-11 min-w-11 shrink-0 rounded-lg font-bold ${target === slot ? "bg-blue-700 text-white" : "text-blue-900"}`}>{slot === 0 ? "A" : "B"}</button>
+            <label htmlFor={`selected-${slot}`} className="sr-only">{slot === 0 ? "A" : "B"} 모델</label>
+            <select id={`selected-${slot}`} value={phone.id} onChange={event => choose(event.target.value, slot as 0 | 1)} className="min-h-11 w-full min-w-0 flex-1 rounded-lg bg-transparent px-1 text-base font-bold">{phoneData.map(item => <option value={item.id} key={item.id}>{item.model_name}</option>)}</select>
+          </div>)}
+          <div className="hidden items-center gap-2 lg:flex"><a href="#quick-comparison" className={control}>요약</a><a href="#prices" className={control}>가격</a><a href="#brief-title" className={control}>멘트</a><a href="#detail-title" className={control}>사양</a></div>
         </div>
       </nav>
-      <div className="mx-auto max-w-7xl space-y-6 px-4 py-4 sm:px-6 sm:py-5">
-        <div className="grid items-start gap-4 lg:grid-cols-[20rem_minmax(0,1fr)]">
-          <section id="model-picker" aria-labelledby="search-title" className="scroll-mt-40 min-w-0 rounded-2xl border border-slate-200 bg-white p-4">
-            <div className="flex items-center justify-between gap-2"><h2 id="search-title" className="text-xl font-bold">기종 선택</h2><button type="button" onClick={() => { setSelected([selected[1], selected[0]]); setShareUrl(""); setStatus("A와 B 기종의 위치를 바꿨습니다."); }} className={control}>A·B 교체</button></div>
-            <div className="mt-3 grid gap-2">{selectedPhones.map((phone, slot) => <div key={slot} className={`flex min-w-0 items-center gap-2 rounded-xl border-2 p-2 ${target === slot ? "border-blue-700 bg-blue-50" : "border-slate-200"}`}>
-              <button type="button" onClick={() => setTarget(slot as 0 | 1)} aria-pressed={target === slot} aria-label={`${slot === 0 ? "A" : "B"} 기종 변경`} className="min-h-12 min-w-11 shrink-0 rounded-lg font-bold text-blue-800">{slot === 0 ? "A" : "B"}</button>
-              <label htmlFor={`selected-${slot}`} className="sr-only">{slot === 0 ? "A" : "B"} 모델</label>
-              <select id={`selected-${slot}`} value={phone.id} onChange={event => choose(event.target.value, slot as 0 | 1)} className="min-h-12 w-full min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-2 text-base">{phoneData.map(item => <option value={item.id} key={item.id}>{item.model_name}</option>)}</select>
-            </div>)}</div>
-            <p role="status" aria-live="polite" className="mt-2 text-base text-blue-800">{status || `${target === 0 ? "A" : "B"} 기종을 선택하세요.`}</p>
+      <div className="mx-auto max-w-7xl space-y-4 px-3 py-3 sm:px-6 sm:py-5">
+        <div className="grid items-start gap-3 lg:grid-cols-[20rem_minmax(0,1fr)]">
+          <section id="model-picker" aria-labelledby="search-title" className="scroll-mt-40 min-w-0 rounded-2xl border border-slate-200 bg-white p-3 sm:p-4">
+            <div className="flex items-center justify-between gap-2"><h2 id="search-title" className="text-lg font-bold"><button type="button" aria-expanded={pickerOpen} aria-label={`기종 검색·목록 ${pickerOpen ? "닫기" : "열기"}`} aria-controls="picker-tools" onClick={() => setPickerOpen(!pickerOpen)} className="min-h-11 text-left lg:pointer-events-none">기종 검색 <span aria-hidden="true" className="lg:hidden">{pickerOpen ? "−" : "+"}</span></button></h2><button type="button" onClick={() => { setSelected([selected[1], selected[0]]); setShareUrl(""); setStatus("A와 B 기종의 위치를 바꿨습니다."); }} aria-label="A·B 교체" className={control}>교체</button></div>
+            <p role="status" aria-live="polite" className="sr-only text-base text-blue-800 lg:not-sr-only lg:mt-2">{status}</p>
+            <div id="picker-tools" className={`${pickerOpen ? "block" : "hidden"} lg:block`}>
+            <p className="mt-2 text-base text-slate-600">검색 결과를 넣을 위치</p><div className="mt-2 flex gap-2">{[0, 1].map(slot => <button key={slot} type="button" aria-pressed={target === slot} onClick={() => setTarget(slot as 0 | 1)} className={`${control} flex-1 ${target === slot ? "!bg-blue-700 !text-white" : ""}`}>{slot === 0 ? "A 기종" : "B 기종"}</button>)}</div>
             <div className="mt-3 flex gap-2"><div className="min-w-0 flex-1"><label htmlFor="phone-search" className="mb-1 block font-bold">기종 이름 검색</label><input id="phone-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="예: A37, 아이폰18프로" autoComplete="off" className="min-h-12 w-full rounded-xl border-2 border-slate-300 bg-white px-3 text-base focus:border-blue-700" /></div>
             <div><label htmlFor="brand-filter" className="mb-1 block font-bold">제조사</label><select id="brand-filter" value={brand} onChange={event => setBrand(event.target.value)} className="min-h-12 rounded-xl border border-slate-300 bg-white px-2 text-base"><option value="all">전체</option><option value="Samsung">삼성</option><option value="Apple">애플</option></select></div></div>
             <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">시리즈 필터</summary><div className="flex flex-wrap gap-2" role="group" aria-label="시리즈 필터">{["all", "S 시리즈", "폴더블", "A 시리즈", "Pro", "Air", "e"].map(value => <button key={value} type="button" aria-pressed={family === value} onClick={() => setFamily(value)} className={`${control} ${family === value ? "!border-slate-900 !bg-slate-900 !text-white" : ""}`}>{value === "all" ? "모든 시리즈" : value === "e" ? "아이폰 e" : value}</button>)}</div></details>
@@ -6495,21 +6504,27 @@ export default function Page() {
             </button></li>)}</ul>}
             {!normalizedQuery && brand === "all" && family === "all" && <button type="button" onClick={() => setShowAllModels(!showAllModels)} className={`${control} mt-2 w-full`}>{showAllModels ? "기종 목록 접기" : `등록 기종 ${phoneData.length}종 보기`}</button>}
             {matches.length === 0 && <div className="mt-3 rounded-xl bg-slate-100 p-3"><p>검색 결과가 없습니다.</p><button type="button" onClick={() => { setQuery(""); setBrand("all"); setFamily("all"); }} className={`${control} mt-2`}>검색 초기화</button></div>}
+            </div>
           </section>
-          <section id="quick-comparison" aria-labelledby="quick-title" className="scroll-mt-40 min-w-0 rounded-2xl border border-slate-200 bg-white p-4 sm:p-5">
-            <h2 id="quick-title" className="text-xl font-bold">가격·핵심 사양</h2>
-            <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">{selectedPhones.map((phone, slot) => <div key={phone.id} className={`min-w-0 rounded-xl border p-3 sm:p-4 ${slot === 0 ? "border-blue-200 bg-blue-50/50" : "border-indigo-200 bg-indigo-50/50"}`}>
-              <p className="font-bold text-blue-800">{slot === 0 ? "A" : "B"}</p><h3 className="mt-1 break-words text-xl font-bold">{phone.model_name}</h3>{modelInfo[phone.id].upcoming && <p className="mt-2 rounded-lg bg-amber-100 p-2 font-bold text-amber-900">{modelInfo[phone.id].date}</p>}
-              <dl className="mt-3 divide-y divide-slate-200">{[["화면", modelInfo[phone.id].screen], ["무게", modelInfo[phone.id].weight], ["카메라", modelInfo[phone.id].camera]].map(([label, value]) => <div key={label} className="py-2"><dt className="text-base text-slate-600">{label}</dt><dd className="mt-1 break-words font-bold">{value}</dd></div>)}</dl>
-                <h2 className="mt-4 text-lg font-bold">{modelInfo[phone.id].upcoming ? "국내 출시 예정 발표 가격" : "국내 출시 당시 가격"}</h2>
-                <dl className="mt-3 divide-y divide-slate-200">{phone.prices.map((price) => <div key={price.storage} className="flex flex-wrap items-center justify-between gap-2 py-3"><dt className="font-bold">{price.storage}</dt><dd className={`${price.krw === null ? "text-base text-slate-600" : "text-xl font-bold"}`}>{money(price.krw)}</dd></div>)}</dl>
-                <p className="mb-3 mt-2 text-base text-slate-600">할인·지원금 적용 전. 확인되지 않은 용량의 출시가는 추정하지 않았습니다.</p>
-                <SourceLinks ids={[phone.price_source]} />
-            </div>)}</div>
-            <p className="mt-3 text-base leading-relaxed text-slate-600">화면은 대각선 기준이며 폴더블은 펼친 화면입니다. 광학 줌과 광학 수준·퀄리티 줌은 구분합니다.</p>
-            <a href="#comparison" className="mt-3 inline-flex min-h-12 items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 font-bold text-blue-900">항목별 비교·전화 안내</a>
+          <section id="quick-comparison" aria-labelledby="quick-title" className="scroll-mt-40 min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <h2 id="quick-title" className="px-3 py-2 text-lg font-bold sm:px-5">한눈에 비교</h2>
+            <div className="comparison-values grid grid-cols-2 border-y border-slate-200">{selectedPhones.map((phone, slot) => <div key={phone.id} className={`min-w-0 p-3 ${slot === 0 ? "bg-blue-50" : "bg-indigo-50"}`}><p className="font-bold text-blue-800">{slot === 0 ? "A" : "B"}</p><h3 className="mt-1 hidden break-words font-bold sm:block">{phone.model_name}</h3>{modelInfo[phone.id].upcoming && <p className="mt-1 text-base font-bold text-amber-800">출시 예정</p>}</div>)}</div>
+            <dl>
+              {[["기본 용량 출시가", ...selectedPhones.map(phone => `${phone.prices[0].storage} · ${money(phone.prices[0].krw)}`)], ["화면", ...selectedPhones.map(phone => modelInfo[phone.id].screen)], ["무게", ...selectedPhones.map(phone => modelInfo[phone.id].weight)], ["카메라", ...selectedPhones.map(phone => modelInfo[phone.id].camera)]].map(([label, ...values]) => <div key={label} className="border-b border-slate-200 last:border-0"><dt className="bg-slate-50 px-3 py-2 font-bold text-slate-600">{label}</dt><dd className={`${label === "기본 용량 출시가" ? "price-values" : "comparison-values"} grid grid-cols-2`}>{values.map((value, slot) => <div key={slot} className={`min-w-0 break-words px-3 py-3 font-bold ${slot === 0 ? "bg-blue-50/40" : "bg-indigo-50/40"}`}><span className="large-price-label hidden text-blue-800">{slot === 0 ? "A · " : "B · "}</span>{value}</div>)}</dd></div>)}
+            </dl>
+            <p className="border-t border-slate-200 px-3 py-3 text-base text-slate-600">할인·지원금 적용 전. 출시 예정 기종은 발표 가격입니다. 화면은 대각선 기준이며 폴더블은 펼친 화면입니다.</p>
           </section>
         </div>
+
+        <section id="prices" aria-labelledby="price-title" className="scroll-mt-40 rounded-2xl border border-slate-200 bg-white p-3 sm:p-5">
+          <h2 id="price-title" className="text-xl font-bold">용량별 출시가</h2>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">{selectedPhones.map((phone, slot) => <section key={phone.id} aria-label={`${phone.model_name} 용량별 출시가`} className={`min-w-0 rounded-xl border p-3 ${slot === 0 ? "border-blue-200 bg-blue-50/40" : "border-indigo-200 bg-indigo-50/40"}`}>
+            <h3 className="font-bold">{slot === 0 ? "A" : "B"} · {phone.model_name}</h3><p className="mt-1 text-base text-slate-600">{modelInfo[phone.id].upcoming ? "국내 출시 예정 발표 가격" : "국내 출시 당시 가격"}</p>{modelInfo[phone.id].upcoming && <p className="mt-2 font-bold text-amber-800">{modelInfo[phone.id].date}</p>}
+            <dl className="mt-2 divide-y divide-slate-200">{phone.prices.map(price => <div key={price.storage} className="flex flex-wrap items-center justify-between gap-2 py-3"><dt className="font-bold">{price.storage}</dt><dd className="font-bold">{money(price.krw)}</dd></div>)}</dl>
+            <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">가격 출처</summary><SourceLinks ids={[phone.price_source]} /></details>
+          </section>)}</div>
+          <p className="mt-3 text-base text-slate-600">할인·지원금 적용 전. 확인되지 않은 용량의 출시가는 추정하지 않았습니다.</p>
+        </section>
 
         <section aria-labelledby="brief-title">
           <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="brief-title" className="text-2xl font-bold">항목별 비교·전화 안내</h2><div className="flex flex-wrap gap-2"><button type="button" onClick={shareComparison} className={control}>비교 주소 복사</button><button type="button" onClick={() => window.print()} className={`${control} print:hidden`}>인쇄</button></div></div>
@@ -6519,14 +6534,14 @@ export default function Page() {
           </div>
           
           {shareUrl && <div className="mt-3"><label htmlFor="share-url" className="block font-bold">현재 비교 주소</label><input id="share-url" readOnly value={shareUrl} onFocus={event => event.target.select()} className="mt-2 min-h-12 w-full rounded-xl border border-slate-300 p-3 text-base" /></div>}
-          <p className="mt-3 text-base leading-relaxed text-slate-600"><strong>전작 대비</strong>는 해당 기종의 이전 모델과 비교한 내용입니다. 모바일에서는 비교 영역을 좌우로 스크롤할 수 있습니다.</p>
+          <p className="mt-3 text-base leading-relaxed text-slate-600"><strong>전작 대비</strong>는 해당 기종의 이전 모델과 비교한 내용입니다. 공식 스펙과 적용 조건은 각 기종에서 펼쳐 확인할 수 있습니다.</p>
         </section>
 
-        <div id="comparison" tabIndex={0} role="region" aria-label="두 모델 좌우 비교. 좁은 화면에서 가로 스크롤 가능" className="scroll-mt-40 overflow-x-auto rounded-2xl border border-slate-200 bg-slate-100 p-3 focus-visible:outline-2 focus-visible:outline-blue-600 sm:p-5">
-          <div className="min-w-[640px] space-y-6">
+        <div id="comparison" tabIndex={0} role="region" aria-label="두 모델 항목별 비교" className="scroll-mt-40 rounded-2xl border border-slate-200 bg-slate-100 p-3 focus-visible:outline-2 focus-visible:outline-blue-600 sm:p-5">
+          <div className="space-y-6">
             {visibleCategories.map(({ key, label }, index) => <section key={key} aria-labelledby={`category-${key}`}>
               <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 px-1"><h2 id={`category-${key}`} className="text-2xl font-bold">{String(index + 1).padStart(2, "0")} · {label}</h2></div>
-              <div className="grid grid-cols-2 items-stretch gap-4"><BriefCard phone={left} specKey={key} /><BriefCard phone={right} specKey={key} /></div>
+              <div className="grid items-stretch gap-3 sm:grid-cols-2 sm:gap-4"><BriefCard phone={left} specKey={key} /><BriefCard phone={right} specKey={key} /></div>
             </section>)}
           </div>
         </div>
@@ -6539,11 +6554,11 @@ export default function Page() {
             <button type="button" aria-pressed={differentOnly} onClick={() => setDifferentOnly(!differentOnly)} className={control}>{differentOnly ? "모든 세부 항목" : "다른 값만 보기"}</button>
           </div>
           <p className="mb-3 text-slate-600" role="status">표시 항목 {matchingDetails.length}개 · 확인 불가 항목은 차이 필터에서도 유지합니다.</p>
-          <div tabIndex={0} role="region" aria-label="세부 사양 비교 표" className="overflow-x-auto">
-            <table className={`w-full min-w-[640px] border-collapse text-left leading-relaxed text-base`}>
+          <div tabIndex={0} role="region" aria-label="세부 사양 비교 표" className="detail-table">
+            <table className={`w-full border-collapse text-left leading-relaxed text-base`}>
               <caption className="sr-only">선택한 두 모델의 공식 세부 사양 비교</caption>
               <thead><tr className="bg-slate-100"><th scope="col" className="p-4">항목</th>{selectedPhones.map(phone => <th scope="col" key={phone.id} className="p-4 text-xl">{phone.model_name}</th>)}</tr></thead>
-              <tbody>{matchingDetails.map(row => <tr key={row.key} className="border-b border-slate-200 align-top"><th scope="row" className="w-1/4 p-4 font-bold">{row.label}{row.note && <p className="mt-2 text-base font-normal text-slate-600">{row.note}</p>}</th>{detailIndexes.map((index, slot) => <td key={slot} className="p-4">{row.values[index]}</td>)}</tr>)}</tbody>
+              <tbody>{matchingDetails.map(row => <tr key={row.key} className="border-b border-slate-200 align-top"><th scope="row" className="w-1/4 p-4 font-bold">{row.label}{row.note && <p className="mt-2 text-base font-normal text-slate-600">{row.note}</p>}</th>{detailIndexes.map((index, slot) => <td key={slot} className="p-3 [overflow-wrap:anywhere] sm:p-4"><span className="detail-model-label mb-2 hidden font-bold text-blue-800">{slot === 0 ? "A" : "B"} · {selectedPhones[slot].model_name}</span>{row.values[index]}</td>)}</tr>)}</tbody>
             </table>
           </div>
           {matchingDetails.length === 0 && <p className="rounded-xl bg-slate-100 p-4">조건에 맞는 세부 항목이 없습니다.</p>}
@@ -6553,10 +6568,11 @@ export default function Page() {
         <section aria-labelledby="source-title">
           <h2 id="source-title" className="scroll-mt-40 text-2xl font-bold">제조사 공식 상세 사양</h2>
           <p className="mb-4 mt-2 text-base leading-relaxed text-slate-600">한국 공식 사양 문서의 항목을 모델별로 확인하세요. 기술 항목·목록은 유지하고 홍보 문장과 각주는 사실·조건 중심으로 정리했습니다. 삼성 용량별 차이는 메모리/스토리지에 표시합니다. 비교하는 값에 적용되는 각주도 함께 확인하세요.</p>
-          <div className="grid items-start gap-4 lg:grid-cols-2">{selectedPhones.map(phone => <OfficialSpecs key={phone.id} phone={phone} />)}</div>
+          <div className="grid items-start gap-3 lg:grid-cols-2">{selectedPhones.map(phone => <OfficialSpecs key={phone.id} phone={phone} />)}</div>
           <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 추가 10종 및 상세 사양 확인 {detailCheckedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
         </section>
       </div>
+      <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약"], ["#prices", "가격"], ["#brief-title", "멘트"], ["#detail-title", "사양"]].map(([href, label]) => <a key={href} href={href} className="flex min-h-12 items-center justify-center rounded-xl font-bold text-blue-900 focus-visible:outline-2 focus-visible:outline-blue-600">{label}</a>)}</nav>
     </main>
   );
 }

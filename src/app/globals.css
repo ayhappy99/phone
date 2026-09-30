@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: 18px; }
+button, input, select, textarea { font-family: inherit; }
+button, a, summary { touch-action: manipulation; }
+[id] { scroll-margin-top: 12rem; }
 body { margin: 0; font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {

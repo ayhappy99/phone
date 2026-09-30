@@ -237,15 +237,15 @@ const phoneData: Phone[] = [
       }
     ],
     "price_source": "feLaunch",
-    "official_url": "https://news.samsung.com/kr/삼성전자-갤럭시-프리미엄-기능을-담은-갤럭시-s26-fe-공",
+    "official_url": "https://www.samsung.com/sec/smartphones/galaxy-s26/buy/?modelCode=SM-S741NZKWKOO",
     "specs": {
       "processor": {
-        "official": "Exynos 2500 / 3nm. RAM 8GB.",
-        "vs_previous": "공식 국내 발표에서 CPU·GPU 전작 대비 향상률은 확인하지 못했습니다.",
+        "official": "Exynos 2500 / 3nm. 10코어 CPU, 3.3·2.74·2.36·1.8GHz. RAM 8GB.",
+        "vs_previous": "삼성 국내 제품 페이지 기준 S25 FE 대비 CPU 최대 11%, GPU 최대 24%, NPU 최대 51% 향상. 각 지표는 제조사 측정 조건의 결과입니다.",
         "sales_pitch": "영상과 사진 편집을 자주 하시면 쓰시는 앱으로 직접 확인해 보세요. 엑시노스 2500이 들어간 모델이에요.",
         "caution": "실제 성능은 설정·앱·사용 환경에 따라 다릅니다. 제조사 시험값과 적용 조건을 확인하세요.",
         "sources": [
-          "galaxy-s26-fe"
+          "galaxy-s26-fe", "feSpecs", "feOverview", "feProduct"
         ]
       },
       "display": {
@@ -254,16 +254,16 @@ const phoneData: Phone[] = [
         "sales_pitch": "화면이 넓은 쪽을 찾으시면 이 6.7형 화면도 보세요. 글자 크기를 맞춰서 보여드릴게요.",
         "caution": "실제 성능은 설정·앱·사용 환경에 따라 다릅니다. 제조사 시험값과 적용 조건을 확인하세요.",
         "sources": [
-          "galaxy-s26-fe"
+          "galaxy-s26-fe", "feSpecs", "feOverview", "feProduct"
         ]
       },
       "weight": {
-        "official": "193g / 161.6 × 76.9 × 7.4mm. 외관 소재 상세는 미확인.",
+        "official": "193g / 161.6 × 76.9 × 7.4mm. 알루미늄 합금 프레임, 전후면 Gorilla Glass Victus+.",
         "vs_previous": "전작 대비 무게·두께 차이는 공식 비교 근거 추가 확인이 필요합니다.",
         "sales_pitch": "193g이고 두께는 7.4mm예요. 케이스를 씌운 상태로 잡아보시는 게 좋아요.",
         "caution": "실제 성능은 설정·앱·사용 환경에 따라 다릅니다. 제조사 시험값과 적용 조건을 확인하세요.",
         "sources": [
-          "galaxy-s26-fe"
+          "galaxy-s26-fe", "feSpecs", "feOverview", "feProduct"
         ]
       },
       "camera": {
@@ -272,16 +272,16 @@ const phoneData: Phone[] = [
         "sales_pitch": "먼 피사체는 3배 광학 줌으로 찍을 수 있어요. 행사 영상을 편집할 때는 마이 팬캠도 직접 보여드릴게요.",
         "caution": "광학·디지털 줌을 구분하세요. 촬영·AI 편집 결과는 조건에 따라 달라집니다.",
         "sources": [
-          "galaxy-s26-fe"
+          "galaxy-s26-fe", "feSpecs", "feOverview", "feProduct"
         ]
       },
       "special_feature": {
-        "official": "IP68(담수 1.5m·30분 시험), Android 17·One UI 9. OS 업그레이드 최대 7세대·보안 업데이트 7년.",
+        "official": "IP68(담수 1.5m·30분 시험), 지문 센서·NFC·Samsung DeX 지원. Android 17·One UI 9, OS 업그레이드 최대 7세대. 국내 공식 상세 표의 보안 업데이트 기한은 2033년 9월 30일.",
         "vs_previous": "이번 공식 조사에서 생체인식 속도 개선 수치는 확인되지 않았습니다.",
         "sales_pitch": "오래 쓰실 계획이면 업데이트 지원도 보세요. 방수는 생활 속 주의사항과 함께 설명해 드릴게요.",
         "caution": "AI는 계정·언어·지역 조건에 따릅니다. 방수 성능은 영구적이지 않습니다.",
         "sources": [
-          "galaxy-s26-fe"
+          "galaxy-s26-fe", "feSpecs", "feOverview", "feProduct"
         ]
       }
     }
@@ -783,18 +783,18 @@ const phoneData: Phone[] = [
       },
       {
         "storage": "512GB",
-        "krw": null
+        "krw": 3590000
       },
       {
         "storage": "1TB",
-        "krw": null
+        "krw": 4190000
       },
       {
         "storage": "2TB",
-        "krw": null
+        "krw": 5090000
       }
     ],
-    "price_source": "duoLaunch",
+    "price_source": "duoPrices",
     "official_url": "https://www.apple.com/kr/iphone-duo/specs/",
     "specs": {
       "processor": {
@@ -1018,6 +1018,10 @@ const sources: Record<string, { label: string; url: string }> = {
 };
 
 Object.assign(sources, {
+  feSpecs: { label: "S26 FE 국내 공식 상세 사양", url: "https://www.samsung.com/sec/cxhr/goods/getGoodsSpecList?goodsId=G002993512&goodsTpCd=10" },
+  feOverview: { label: "S26 FE 국내 기능·소재·시험 조건", url: "https://www.samsung.com/sec/smartphones/galaxy-s26-fe/" },
+  feProduct: { label: "S26 FE 국내 제품·전작 성능 비교", url: "https://www.samsung.com/sec/smartphones/galaxy-s26/buy/?modelCode=SM-S741NZKWKOO" },
+  duoPrices: { label: "Duo 한국 출시 예정 용량별 발표 가격", url: "https://www.apple.com/kr/shop/buy-iphone/iphone-duo" },
   "galaxy-z-fold8-ultra": {
     "label": "갤럭시 Z 폴드8 울트라 공식 사양",
     "url": "https://www.samsung.com/sec/smartphones/galaxy-z-fold8-ultra/specs/"
@@ -5851,98 +5855,202 @@ Object.assign(fullSpecCatalog, {
     ]
   },
   "galaxy-s26-fe": {
-    "source": "galaxy-s26-fe",
+    "source": "feSpecs",
     "checkedAt": "2026-09-30",
-    "scope": "삼성 뉴스룸 국내 출시 사양 표와 한국 제품 페이지에서 확인한 항목. 한국 구매 페이지의 동적 상세 사양 표는 수집되지 않아 네트워크 밴드·센서·USB 등 전체 상세 항목은 추가 확인이 필요합니다.",
+    "scope": "한국 삼성닷컴 SM-S741NZKWKOO(8GB RAM·256GB) 공식 상세 사양표의 16개 분류·66개 항목을 모두 수록했습니다. 기존 국내 발표·제품 소개의 확인된 보충 항목도 보존합니다. 다른 지역 모델의 사양은 대입하지 않았습니다.",
     "sections": [
-      {
-        "title": "프로세서",
-        "items": [
-          "Exynos 2500 / 3nm"
-        ]
-      },
-      {
-        "title": "디스플레이",
-        "items": [
-          "171.1mm(6.7형) / FHD+ / Dynamic AMOLED 2X",
-          "최대 120Hz / 최대 밝기 1,900nits"
-        ]
-      },
-      {
-        "title": "외관 사양",
-        "items": [
-          "161.6 × 76.9 × 7.4mm / 193g"
-        ]
-      },
-      {
-        "title": "카메라",
-        "items": [
-          "광각: 50MP / F1.8 / OIS / 화각 84°",
-          "초광각: 12MP / F2.2 / 화각 123°",
-          "망원: 8MP / F2.4 / OIS / 화각 32° / 3배 광학 줌",
-          "디지털 줌 최대 30배",
-          "전면: 12MP / F2.2",
-          "마이 팬캠 / 슈퍼 스테디 수평 고정 / 나이토그래피 / 포토 어시스트"
-        ]
-      },
-      {
-        "title": "메모리/스토리지",
-        "items": [
-          "국내 모델: RAM 8GB / 256GB"
-        ]
-      },
-      {
-        "title": "배터리",
-        "items": [
-          "대표 용량 4,900mAh / 정격 4,755mAh",
-          "제조사 조건에서 30분에 최대 69% 충전"
-        ]
-      },
-      {
-        "title": "연결",
-        "items": [
-          "5G / LTE / Wi-Fi 6E / Wi-Fi Direct / Bluetooth 5.4"
-        ]
-      },
-      {
-        "title": "운영체제",
-        "items": [
-          "Android 17 / One UI 9"
-        ]
-      },
-      {
-        "title": "방수방진",
-        "items": [
-          "IP68 / 담수 최대 1.5m·30분 시험"
-        ]
-      },
-      {
-        "title": "소프트웨어 지원",
-        "items": [
-          "OS 업그레이드 최대 7세대 / 보안 업데이트 7년"
-        ]
-      },
-      {
-        "title": "색상",
-        "items": [
-          "블루베리 / 그라파이트 / 피스타치오"
-        ]
-      },
-      {
-        "title": "국내 출시",
-        "items": [
-          "2026-09-04 / 256GB 1,045,000원"
-        ]
-      }
+        {
+            "title": "프로세서",
+            "items": [
+                "CPU 속도: 3.3GHz,2.74GHz,2.36GHz,1.8 GHz",
+                "CPU 종류: Deca-Core",
+                "CPU: 삼성 엑시노스 2500",
+                "Exynos 2500 / 3nm"
+            ]
+        },
+        {
+            "title": "디스플레이",
+            "items": [
+                "크기 (Main Display): 171.1mm",
+                "해상도 (Main Display): 1080 x 2340 (FHD+)",
+                "종류 (Main Display): Dynamic AMOLED 2X",
+                "색심도 (Main Display): 16 M",
+                "최대 주사율 (Main Display): 120 Hz",
+                "171.1mm(6.7형) / FHD+ / Dynamic AMOLED 2X",
+                "최대 120Hz / 최대 밝기 1,900nits"
+            ]
+        },
+        {
+            "title": "카메라",
+            "items": [
+                "후면 카메라 - 화소 (Multiple): 50.0 MP + 12.0 MP + 8.0 MP",
+                "후면 카메라 - 조리개 값 (Multiple): F1.8 , F2.2 , F2.4",
+                "후면 카메라 - 오토 포커스: 예",
+                "후면 카메라 - OIS: 예",
+                "후면 카메라 - 줌: 3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+                "전면 카메라 - 화소: 12.0 MP",
+                "전면 카메라 - 조리개 값: F2.2",
+                "전면 카메라 - 오토 포커스: 아니오",
+                "후면 카메라 - 플래쉬: 예",
+                "동영상 녹화 해상도: UHD 8K (7680 x 4320) @30fps",
+                "슬로우 모션: 240fps @FHD,120fps @FHD,120fps @UHD",
+                "광각: 50MP / F1.8 / OIS / 화각 84°",
+                "초광각: 12MP / F2.2 / 화각 123°",
+                "망원: 8MP / F2.4 / OIS / 화각 32° / 3배 광학 줌",
+                "디지털 줌 최대 30배",
+                "전면: 12MP / F2.2",
+                "마이 팬캠 / 슈퍼 스테디 수평 고정 / 나이토그래피 / 포토 어시스트"
+            ]
+        },
+        {
+            "title": "메모리/스토리지",
+            "items": [
+                "메모리 (GB): 8 GB",
+                "스토리지(저장 용량) (GB): 256 GB",
+                "사용 가능한 스토리지(저장 용량) (GB): 230.8GB",
+                "국내 모델: RAM 8GB / 256GB"
+            ]
+        },
+        {
+            "title": "네트워크",
+            "items": [
+                "SIM 개수: Dual-SIM",
+                "SIM 슬롯 타입: SIM 1 + eSIM / Dual eSIM"
+            ]
+        },
+        {
+            "title": "네트워크 (S/W 사용)",
+            "items": [
+                "2G GSM: GSM850,GSM900,DCS1800,PCS1900",
+                "3G UMTS: B1(2100),B2(1900),B4(AWS),B5(850),B8(900)",
+                "4G FDD LTE: B1(2100),B2(1900),B3(1800),B4(AWS),B5(850),B7(2600),B8(900),B12(700),B13(700),B17(700),B18(800),B19(800),B20(800),B25(1900),B26(850),B28(700),B66(AWS-3)",
+                "4G TDD LTE: B38(2600),B40(2300),B41(2500)",
+                "5G FDD Sub6: N1(2100),N2(1900),N3(1800),N5(850),N7(2600),N8(900),N12(700),N20(800),N25(1900),N26(850),N28(700),N66(AWS-3)",
+                "5G TDD Sub6: N38(2600),N40(2300),N41(2500),N77(3700),N78(3500)"
+            ]
+        },
+        {
+            "title": "연결",
+            "items": [
+                "USB 인터페이스: USB Type-C",
+                "USB 버전: USB 2.0",
+                "위치 기술: GPS,Glonass,Beidou,Galileo,QZSS",
+                "이어잭: USB Type-C",
+                "MHL: 아니오",
+                "Wi-Fi: 802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+                "Wi-Fi Direct: 예",
+                "블루투스 버전: Bluetooth v5.4",
+                "NFC: 예",
+                "PC 싱크: Smart Switch (PC version)",
+                "5G / LTE / Wi-Fi 6E / Wi-Fi Direct / Bluetooth 5.4"
+            ]
+        },
+        {
+            "title": "운영체제",
+            "items": [
+                "Android",
+                "Android 17 / One UI 9"
+            ]
+        },
+        {
+            "title": "기본 사양",
+            "items": [
+                "색상: 그라파이트",
+                "형태: 터치 바"
+            ]
+        },
+        {
+            "title": "센서",
+            "items": [
+                "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+            ]
+        },
+        {
+            "title": "외관 사양",
+            "items": [
+                "크기(세로x가로x두께, mm): 161.6 x 76.9 x 7.4",
+                "무게 (g): 193",
+                "161.6 × 76.9 × 7.4mm / 193g"
+            ]
+        },
+        {
+            "title": "배터리",
+            "items": [
+                "비디오 재생 시간 (Hours): 최대 29",
+                "배터리 용량 (mAh, Typical): 4900",
+                "교체 가능: 아니오",
+                "대표 용량 4,900mAh / 정격 4,755mAh",
+                "제조사 조건에서 30분에 최대 69% 충전"
+            ]
+        },
+        {
+            "title": "오디오/비디오",
+            "items": [
+                "스테레오 지원: 예",
+                "동영상 지원 포맷: MP4,M4V,3GP,3G2,AVI,FLV,MKV,WEBM",
+                "동영상 지원 해상도: UHD 8K (7680 x 4320) @60fps",
+                "오디오 지원 포맷: MP3,M4A,3GA,AAC,OGG,OGA,WAV,AMR,AWB,FLAC,MID,MIDI,XMF,MXMF,IMY,RTTTL,RTX,OTA,DFF,DSF,APE"
+            ]
+        },
+        {
+            "title": "서비스",
+            "items": [
+                "Gear 서포트: 갤럭시 링,갤럭시 버즈 코어,갤럭시 버즈4 프로,갤럭시 버즈3 프로,갤럭시 버즈2 프로,갤럭시 버즈 프로,갤럭시 버즈 라이브,갤럭시 버즈+,갤럭시 버즈4,갤럭시 버즈3,갤럭시 버즈2,갤럭시 버즈,갤럭시 버즈3 FE,갤럭시 버즈 FE,갤럭시 핏3,갤럭시 핏2,갤럭시 워치 FE,갤럭시 워치 울트라2,갤럭시 워치 울트라,갤럭시 워치9,갤럭시 워치8,갤럭시 워치7,갤럭시 워치6,갤럭시 워치5,갤럭시 워치4,갤럭시 워치3,갤럭시 워치,갤럭시 워치 액티브2,갤럭시 워치 액티브",
+                "삼성 덱스 서포트: 지원",
+                "SmartThings 지원: 지원",
+                "블루투스 보청기 지원: 보청기용 안드로이드 오디오 스트리밍(ASHA)",
+                "모바일 TV: 아니오"
+            ]
+        },
+        {
+            "title": "소프트웨어 지원",
+            "items": [
+                "보안 업데이트 지원 기한: 2033년 9월 30일",
+                "OS 업그레이드 최대 7세대 / 보안 업데이트 7년"
+            ]
+        },
+        {
+            "title": "상품 기본정보",
+            "items": [
+                "제품명: 5G NR 이동통신용 무선설비의 기기(3.5 GHz)(육상이동국의 송수신장치)",
+                "제조자/수입자: 삼성전자㈜",
+                "제조국가: 베트남",
+                "KC 인증 필 유무: R-C-SEC-SMS741",
+                "동일모델의 출시년월: 26년 9월",
+                "A/S 책임자와 전화번호: 삼성전자서비스센터/1588-3366",
+                "품질보증기준: 결함·하자 등에 따른 소비자 피해에 대해서는 소비자분쟁해결기준(소비자기본법 제16조)에 따라 보상 가능"
+            ]
+        },
+        {
+            "title": "방수방진",
+            "items": [
+                "IP68 / 담수 최대 1.5m·30분 시험"
+            ]
+        },
+        {
+            "title": "색상",
+            "items": [
+                "블루베리 / 그라파이트 / 피스타치오"
+            ]
+        },
+        {
+            "title": "국내 출시",
+            "items": [
+                "2026-09-04 / 256GB 1,045,000원"
+            ]
+        }
     ],
     "conditions": [
-      "화면 크기는 대각선 기준이며 실제 표시 영역은 더 작습니다.",
-      "표시 용량과 사용 가능한 저장 공간은 다릅니다. 설치 소프트웨어와 설정에 따라 달라집니다.",
-      "배터리 시험값은 제조사 시험 조건 기준입니다. 실제 사용 시간과 충전 시간은 환경에 따라 달라집니다.",
-      "방수 성능은 영구적이지 않습니다. 시험 조건·액체 종류·마모 상태를 확인하세요.",
-      "AI·결제·eSIM·네트워크 기능에는 지역·통신사·언어·계정·서비스별 조건이 적용됩니다."
+        "화면 크기는 대각선 기준이며 실제 표시 영역은 더 작습니다.",
+        "표시 용량과 사용 가능한 저장 공간은 다릅니다. 설치 소프트웨어와 설정에 따라 달라집니다.",
+        "배터리 시험값은 제조사 시험 조건 기준입니다. 실제 사용 시간과 충전 시간은 환경에 따라 달라집니다.",
+        "방수 성능은 영구적이지 않습니다. 시험 조건·액체 종류·마모 상태를 확인하세요.",
+        "AI·결제·eSIM·네트워크 기능에는 지역·통신사·언어·계정·서비스별 조건이 적용됩니다.",
+        "공식 상세 표의 UWB 항목은 미기재입니다. 미기재를 미지원으로 해석하지 않습니다.",
+        "비디오 재생 최대 29시간은 제조사 시험값이며, 실제 사용 시간은 네트워크·설정·화면 밝기·배터리 상태 등에 따라 달라집니다. 녹화 8K @30fps와 재생 8K @60fps는 다른 항목입니다.",
+        "프레임은 알루미늄 합금이고 전후면은 Gorilla Glass Victus+입니다. 프레임 소재 설명에서 볼륨 버튼·사이드 키·SIM 트레이·카메라 렌즈 배럴은 제외됩니다."
     ]
-  }
+}
 });
 
 type DetailRow = { key: string; label: string; values: string[]; note?: string };
@@ -5963,15 +6071,15 @@ const detailRows: DetailRow[] = [
 const extraDetailValues: Record<string, string[]> = {
   "galaxy-s26-fe": [
     "4,900 / 4,755mAh",
-    "이번 공식 조사에서 미확인",
-    "이번 공식 조사에서 미확인",
-    "이번 공식 조사에서 미확인",
-    "Wi-Fi 6E",
+    "최대 29시간",
+    "해당 공식 사양 문서에 스트리밍 시간 미기재",
+    "USB-C · USB 2.0",
+    "Wi-Fi 6E · 2.4/5/6GHz · HE160 · MIMO · 1024-QAM",
     "5.4",
-    "이번 공식 조사에서 미확인",
-    "이번 공식 조사에서 미확인",
-    "7년 지원 · 종료일 미확인",
-    "이번 공식 조사에서 미확인"
+    "해당 공식 상세 표에 UWB 미기재",
+    "SIM 1 + eSIM / 듀얼 eSIM",
+    "2033-09-30",
+    "Samsung DeX · Smart Switch PC"
   ],
   "galaxy-z-fold8-ultra": [
     "5,000mAh 대표값 · 정격 미확인",
@@ -6085,7 +6193,7 @@ const extraDetailValues: Record<string, string[]> = {
 for (const [rowIndex, row] of detailRows.entries()) {
   row.values.push(...phoneData.slice(4).map(phone => extraDetailValues[phone.id][rowIndex]));
 }
-const detailSourceIds = phoneData.map(phone => phone.specs.processor.sources[0]);
+const detailSourceIds = phoneData.map(phone => phone.id === "galaxy-s26-fe" ? "feSpecs" : phone.specs.processor.sources[0]);
 const detailCheckedAt = "2026-09-30";
 
 const checkedAt = "2026-09-28";
@@ -6249,7 +6357,6 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
   const groups = data.sections.filter(section => normalize(section.title + " " + section.items.join(" ")).includes(keyword));
   return <section className={`min-w-0 rounded-2xl border border-slate-200 bg-white p-4 leading-relaxed sm:p-6 text-base`} aria-label={`${phone.model_name} 공식 상세 사양`}>
     <h3 className="text-xl font-bold">{phone.model_name}</h3>
-    {phone.id === "galaxy-s26-fe" && <p className="mt-3 rounded-xl bg-amber-100 p-3 text-base font-bold text-amber-950">일부 상세 사양 추가 확인 중 · 확인된 공식 항목만 표시합니다.</p>}
     <p className="mt-2 text-base text-slate-600">{data.scope}</p>
     <p className="mt-2 text-base text-slate-600">확인 {data.checkedAt} · {data.sections.length}개 분류 · {data.sections.reduce((sum, section) => sum + section.items.length, 0)}개 표시 항목</p>
     <label htmlFor={`full-search-${phone.id}`} className="mb-2 mt-4 block font-bold">이 모델의 사양 검색</label>
@@ -6265,7 +6372,7 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
       <summary className="min-h-12 cursor-pointer py-2 font-bold">적용 조건·각주 ({data.conditions.length}개)</summary>
       <ul className="mt-3 space-y-3 break-words text-base">{data.conditions.map((condition, index) => <li key={index}>{condition}</li>)}</ul>
     </details>
-    <div className="mt-4"><SourceLinks ids={[data.source]} /></div>
+    <div className="mt-4"><SourceLinks ids={phone.id === "galaxy-s26-fe" ? [data.source, "feProduct", "feOverview", "galaxy-s26-fe"] : [data.source]} /></div>
   </section>;
 }
 

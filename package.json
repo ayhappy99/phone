@@ -18,6 +18,7 @@
   "private": true,
   "scripts": {
     "build": "next build --webpack",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-data.cjs"
   }
 }

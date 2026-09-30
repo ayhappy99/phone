@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -242,6 +242,24 @@ const sources: Record<string, { label: string; url: string }> = {
   appleLaunch: { label: "Apple 한국 출시 발표", url: "https://www.apple.com/kr/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max-the-most-powerful-and-advanced-pro-models-ever/" },
 };
 
+type DetailRow = { key: string; label: string; values: [string, string, string, string]; note?: string };
+// Order: S26 Ultra, S26, iPhone 17 Pro, iPhone 17 Pro Max.
+// Each value was checked against the model-specific official specification on 2026-09-30.
+const detailRows: DetailRow[] = [
+  { key: "battery", label: "배터리 용량 · 대표값 / 정격값", values: ["5,000 / 4,855mAh", "4,300 / 4,175mAh", "해당 공식 사양 문서에 mAh 미기재", "해당 공식 사양 문서에 mAh 미기재"], note: "대표값은 IEC 61960 기준 표본 편차를 고려한 평균입니다. mAh만으로 사용 시간을 비교하지 않습니다." },
+  { key: "video", label: "동영상 재생 · 제조사 시험", values: ["최대 31시간", "최대 30시간", "최대 31시간", "최대 37시간"], note: "제조사별 시험 조건이 다릅니다. 실제 배터리 사용 시간은 설정·네트워크·사용 환경에 따라 달라집니다." },
+  { key: "stream", label: "동영상 스트리밍 · 제조사 시험", values: ["이번 수집 범위에서 확인하지 못함", "이번 수집 범위에서 확인하지 못함", "최대 28시간", "최대 33시간"] },
+  { key: "usb", label: "USB 단자 · 전송 규격", values: ["USB-C · USB 3.2 Gen 1", "USB-C · USB 3.2 Gen 1", "USB-C · USB 3 최대 10Gb/s · DisplayPort", "USB-C · USB 3 최대 10Gb/s · DisplayPort"], note: "아이폰의 최대 전송 속도에는 10Gb/s를 지원하는 USB 3 케이블이 필요합니다." },
+  { key: "wifi", label: "Wi-Fi", values: ["Wi-Fi 7 · 2.4/5/6GHz · EHT320 · MIMO · 4096-QAM", "Wi-Fi 7 · 2.4/5/6GHz · EHT320 · MIMO · 4096-QAM", "Wi-Fi 7 · 2×2 MIMO · Apple N1", "Wi-Fi 7 · 2×2 MIMO · Apple N1"], note: "지원 지역·네트워크 환경 및 호환 공유기 조건을 확인하세요." },
+  { key: "bluetooth", label: "Bluetooth", values: ["6.0", "5.4", "6", "6"] },
+  { key: "uwb", label: "초광대역 · UWB", values: ["지원", "미지원", "Apple 2세대 초광대역 칩", "Apple 2세대 초광대역 칩"], note: "Apple 초광대역 기능은 국가별 이용 가능 여부가 다릅니다." },
+  { key: "sim", label: "SIM 구성 · 국내 모델", values: ["SIM 1 + eSIM / 듀얼 eSIM", "SIM 1 + eSIM / 듀얼 eSIM", "nano-SIM + eSIM / 듀얼 eSIM", "nano-SIM + eSIM / 듀얼 eSIM"], note: "eSIM은 지원 통신사와 요금제가 필요합니다." },
+  { key: "security", label: "보안 업데이트 지원 기한", values: ["2033-02-28", "2033-02-28", "해당 공식 사양 문서에 종료일 미기재", "해당 공식 사양 문서에 종료일 미기재"], note: "미기재는 지원 종료를 의미하지 않습니다." },
+  { key: "desktop", label: "데스크톱 연결 기능", values: ["Samsung DeX · Smart Switch PC", "Samsung DeX · Smart Switch PC", "USB-C DisplayPort", "USB-C DisplayPort"], note: "서로 다른 기능이며 동일한 데스크톱 경험을 보장하지 않습니다." },
+];
+const detailSourceIds = ["s26u", "s26", "i17pro", "i17max"];
+const detailCheckedAt = "2026-09-30";
+
 const checkedAt = "2026-09-28";
 const categories: { key: SpecKey; label: string; question: string }[] = [
   { key: "processor", label: "프로세서 · 발열", question: "어떤 앱을 오래 사용하시나요?" },
@@ -301,6 +319,25 @@ export default function Page() {
   const [large, setLarge] = useState(false);
   const [status, setStatus] = useState("");
   const [copyText, setCopyText] = useState("");
+  const [detailQuery, setDetailQuery] = useState("");
+  const [differentOnly, setDifferentOnly] = useState(false);
+  const [shareUrl, setShareUrl] = useState("");
+  useEffect(() => {
+    const restore = () => {
+      const params = new URLSearchParams(window.location.search);
+      const a = params.get("a"), b = params.get("b");
+      if (a && b && a !== b && phoneData.some(p => p.id === a) && phoneData.some(p => p.id === b)) {
+        setSelected([a, b]);
+      } else if (a || b) {
+        setStatus("공유 주소의 모델 조합이 유효하지 않아 기본 모델을 표시합니다.");
+        setSelected([phoneData[0].id, phoneData[2].id]);
+      }
+      setCopyText(""); setShareUrl("");
+    };
+    restore();
+    window.addEventListener("popstate", restore);
+    return () => window.removeEventListener("popstate", restore);
+  }, []);
   const normalizedQuery = normalize(query.trim());
   const matches = useMemo(() => searchIndex.filter(({ phone, text }) => (brand === "all" || phone.brand === brand) && text.includes(normalizedQuery)).map(({ phone }) => phone), [brand, normalizedQuery]);
   const left = phoneData.find((phone) => phone.id === selected[0])!;
@@ -313,6 +350,7 @@ export default function Page() {
     setSelected((current) => current[other] === id ? [current[1], current[0]] : slot === 0 ? [id, current[1]] : [current[0], id]);
     setStatus(`${slot === 0 ? "A" : "B"}에 ${phoneData.find((phone) => phone.id === id)!.model_name} 선택. 반대편에 있던 모델이면 좌우를 교체했습니다.`);
     setCopyText("");
+    setShareUrl("");
   }
 
   async function copyBrief() {
@@ -327,6 +365,25 @@ export default function Page() {
       setStatus("자동 복사가 제한되어 복사할 내용을 아래에 표시했습니다.");
     }
   }
+
+  async function shareComparison() {
+    const url = new URL(window.location.href);
+    url.search = new URLSearchParams({ a: left.id, b: right.id }).toString();
+    url.hash = "comparison";
+    window.history.replaceState(null, "", url);
+    setShareUrl(url.toString());
+    try {
+      await navigator.clipboard.writeText(url.toString());
+      setStatus("현재 두 모델의 비교 주소를 복사했습니다.");
+    } catch {
+      setStatus("아래 비교 주소를 직접 복사하세요.");
+    }
+  }
+  const detailIndexes = selectedPhones.map(phone => phoneData.findIndex(item => item.id === phone.id));
+  const matchingDetails = detailRows.filter(row =>
+    normalize(row.label + row.values[detailIndexes[0]] + row.values[detailIndexes[1]]).includes(normalize(detailQuery)) &&
+    (!differentOnly || row.values[detailIndexes[0]] !== row.values[detailIndexes[1]] || row.values[detailIndexes[0]].includes("확인") || row.values[detailIndexes[0]].includes("미기재"))
+  );
 
   return (
     <main lang="ko" className="min-h-screen bg-slate-50 text-base text-slate-900 selection:bg-blue-200">
@@ -343,7 +400,7 @@ export default function Page() {
           <p className="mt-2 leading-relaxed text-slate-600">국내 모델 4종 · 공식 자료 확인 {checkedAt} · 검색은 현재 등록된 모델 안에서 동작합니다.</p>
           <div className="mt-5 flex flex-wrap gap-2" role="group" aria-label="기기를 넣을 비교 위치">
             {([0, 1] as const).map((slot) => <button key={slot} type="button" aria-pressed={target === slot} onClick={() => setTarget(slot)} className={`${control} ${target === slot ? "!border-blue-700 !bg-blue-700 !text-white" : ""}`}>{slot === 0 ? "A 모델 선택" : "B 모델 선택"}</button>)}
-            <button type="button" onClick={() => { setSelected([selected[1], selected[0]]); setCopyText(""); setStatus("A와 B 모델을 바꿨습니다."); }} className={control}>A ↔ B 바꾸기</button>
+            <button type="button" onClick={() => { setSelected([selected[1], selected[0]]); setCopyText(""); setShareUrl(""); setStatus("A와 B 모델을 바꿨습니다."); }} className={control}>A ↔ B 바꾸기</button>
           </div>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row">
             <div className="flex-1"><label htmlFor="phone-search" className="mb-2 block font-bold">기종 이름 검색</label><input id="phone-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="예: S26, 아이폰17프로, A3523" autoComplete="off" className="min-h-14 w-full rounded-xl border-2 border-slate-300 bg-white px-4 py-3 text-xl outline-none focus:border-blue-700" /></div>
@@ -357,12 +414,13 @@ export default function Page() {
         </section>
 
         <section aria-labelledby="brief-title">
-          <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="brief-title" className="text-2xl font-bold">2. 고객의 관심사부터 비교하세요</h2><button type="button" onClick={copyBrief} className={control}>상담 멘트 복사</button></div>
+          <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="brief-title" className="text-2xl font-bold">2. 고객의 관심사부터 비교하세요</h2><div className="flex flex-wrap gap-2"><button type="button" onClick={copyBrief} className={control}>상담 멘트 복사</button><button type="button" onClick={shareComparison} className={control}>비교 주소 복사</button><button type="button" onClick={() => window.print()} className={`${control} print:hidden`}>인쇄</button></div></div>
           <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="비교 항목 필터">
             <button type="button" aria-pressed={topic === "all"} onClick={() => { setTopic("all"); setCopyText(""); }} className={`${control} ${topic === "all" ? "!bg-slate-900 !text-white" : ""}`}>전체 항목</button>
             {categories.map(({ key, label }) => <button key={key} type="button" aria-pressed={topic === key} onClick={() => { setTopic(key); setCopyText(""); }} className={`${control} ${topic === key ? "!bg-slate-900 !text-white" : ""}`}>{label}</button>)}
           </div>
           <p role="status" aria-live="polite" className="mt-3 min-h-6 text-blue-800">{status}</p>
+          {shareUrl && <div className="mt-3"><label htmlFor="share-url" className="block font-bold">현재 비교 주소</label><input id="share-url" readOnly value={shareUrl} onFocus={event => event.target.select()} className="mt-2 min-h-12 w-full rounded-xl border border-slate-300 p-3 text-base" /></div>}
           {copyText && <div className="mt-3"><label htmlFor="manual-copy" className="block font-bold">상담 내용 직접 복사</label><textarea id="manual-copy" readOnly value={copyText} onFocus={(event) => event.target.select()} className="mt-2 h-48 w-full rounded-xl border border-slate-300 bg-white p-4 text-base" /></div>}
           <p className="mt-3 text-base leading-relaxed text-slate-600">파란 영역은 각 모델의 <strong>자기 전작 대비 변화</strong>입니다. 왼쪽 모델과 오른쪽 모델의 차이를 뜻하지 않습니다. 좁은 화면에서는 비교 영역을 좌우로 밀어보세요.</p>
         </section>
@@ -386,9 +444,28 @@ export default function Page() {
           </div>
         </div>
 
+        <section aria-labelledby="detail-title" className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <h2 id="detail-title" className="text-2xl font-bold">3. 배터리 · 연결 · 지원 사양</h2>
+          <p className="mt-2 text-slate-600">공식 사양 재확인 {detailCheckedAt}. 표의 값이 같아도 시험 조건이나 실제 성능까지 같다는 뜻은 아닙니다.</p>
+          <div className="my-4 flex flex-wrap items-end gap-4">
+            <div className="min-w-0 flex-1"><label htmlFor="detail-search" className="mb-2 block font-bold">세부 항목 검색</label><input id="detail-search" value={detailQuery} onChange={event => setDetailQuery(event.target.value)} placeholder="예: Bluetooth, USB, 배터리" className="min-h-12 w-full rounded-xl border border-slate-300 p-3 text-base" /></div>
+            <button type="button" aria-pressed={differentOnly} onClick={() => setDifferentOnly(!differentOnly)} className={control}>{differentOnly ? "모든 세부 항목" : "다른 값만 보기"}</button>
+          </div>
+          <p className="mb-3 text-slate-600" role="status">표시 항목 {matchingDetails.length}개 · 확인 불가 항목은 차이 필터에서도 유지합니다.</p>
+          <div tabIndex={0} role="region" aria-label="세부 사양 비교 표" className="overflow-x-auto">
+            <table className={`w-full min-w-[640px] border-collapse text-left leading-relaxed ${large ? "text-xl" : "text-base"}`}>
+              <caption className="sr-only">선택한 두 모델의 공식 세부 사양 비교</caption>
+              <thead><tr className="bg-slate-100"><th scope="col" className="p-4">항목</th>{selectedPhones.map(phone => <th scope="col" key={phone.id} className="p-4 text-xl">{phone.model_name}</th>)}</tr></thead>
+              <tbody>{matchingDetails.map(row => <tr key={row.key} className="border-b border-slate-200 align-top"><th scope="row" className="w-1/4 p-4 font-bold">{row.label}{row.note && <p className="mt-2 text-base font-normal text-slate-600">{row.note}</p>}</th>{detailIndexes.map((index, slot) => <td key={slot} className="p-4">{row.values[index]}</td>)}</tr>)}</tbody>
+            </table>
+          </div>
+          {matchingDetails.length === 0 && <p className="rounded-xl bg-slate-100 p-4">조건에 맞는 세부 항목이 없습니다.</p>}
+          <div className="mt-4"><SourceLinks ids={detailIndexes.map(index => detailSourceIds[index])} /></div>
+        </section>
+
         <section className="rounded-2xl border border-slate-200 bg-white p-5 leading-relaxed sm:p-7" aria-labelledby="source-title">
           <h2 id="source-title" className="text-xl font-bold">전체 공식 사양과 조건 확인</h2>
-          <p className="mb-4 mt-2 text-slate-600">이 화면은 5개 상담 항목의 요약입니다. 통신 대역·지원 포맷·전체 각주까지 복제한 전체 스펙 데이터는 아니며, 전체 내용은 아래 제조사 원문에서 확인할 수 있습니다.</p>
+          <p className="mb-4 mt-2 text-slate-600">이 화면은 5개 상담 항목과 추가 세부 사양을 제공합니다. 공식 전체 사양의 모든 항목·각주를 수록하는 작업은 진행 중입니다. 현재 등록하지 않은 통신 대역·전체 지원 포맷 등의 정보는 아래 공식 원문에서 확인하세요.</p>
           <div className="grid gap-3 sm:grid-cols-2">{selectedPhones.map((phone) => <a key={phone.id} href={phone.official_url} target="_blank" rel="noopener noreferrer" className={`${control} flex items-center justify-between gap-2 text-blue-800`}>{phone.model_name} 전체 공식 사양 <span aria-hidden="true">↗</span></a>)}</div>
           <p className="mt-4 text-base text-slate-600">자료 확인일 {checkedAt}. 실시간 자동 갱신 서비스가 아닙니다. 미확인 표시는 미지원이라는 뜻이 아닙니다. 구매 전 가격·지원 조건은 공식 원문에서 재확인하세요.</p>
         </section>

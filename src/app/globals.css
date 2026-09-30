@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  button, input, select, header, [aria-labelledby="search-title"] { display: none !important; }
+  #comparison, [aria-label="세부 사양 비교 표"] { overflow: visible !important; }
+  #comparison > div, table { min-width: 0 !important; }
+  article { break-inside: avoid; }
+  main { background: white !important; }
+}

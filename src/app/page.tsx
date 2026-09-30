@@ -19,6 +19,7 @@ type Phone = {
   summary: string;
   prices: { storage: string; krw: number | null }[];
   price_source: string;
+  price_basis?: "preorder-announcement";
   specs: Record<SpecKey, Brief>;
   official_url: string;
 };
@@ -609,18 +610,19 @@ const phoneData: Phone[] = [
       },
       {
         "storage": "512GB",
-        "krw": null
+        "krw": 2290000
       },
       {
         "storage": "1TB",
-        "krw": null
+        "krw": 2890000
       },
       {
         "storage": "2TB",
-        "krw": null
+        "krw": 3790000
       }
     ],
-    "price_source": "i18Launch",
+    "price_source": "i18Preorder",
+    "price_basis": "preorder-announcement",
     "official_url": "https://www.apple.com/kr/iphone-18-pro/specs/",
     "specs": {
       "processor": {
@@ -696,18 +698,19 @@ const phoneData: Phone[] = [
       },
       {
         "storage": "512GB",
-        "krw": null
+        "krw": 2490000
       },
       {
         "storage": "1TB",
-        "krw": null
+        "krw": 3090000
       },
       {
         "storage": "2TB",
-        "krw": null
+        "krw": 3990000
       }
     ],
-    "price_source": "i18Launch",
+    "price_source": "i18Preorder",
+    "price_basis": "preorder-announcement",
     "official_url": "https://www.apple.com/kr/iphone-18-pro/specs/",
     "specs": {
       "processor": {
@@ -1018,6 +1021,7 @@ const sources: Record<string, { label: string; url: string }> = {
 };
 
 Object.assign(sources, {
+  i18Preorder: { label: "iPhone 18 Pro 한국 사전 주문 발표 가격", url: "https://www.apple.com/kr/shop/buy-iphone/iphone-18-pro/15.9cm-디스플레이-512gb-블랙" },
   feSpecs: { label: "S26 FE 국내 공식 상세 사양", url: "https://www.samsung.com/sec/cxhr/goods/getGoodsSpecList?goodsId=G002993512&goodsTpCd=10" },
   feOverview: { label: "S26 FE 국내 기능·소재·시험 조건", url: "https://www.samsung.com/sec/smartphones/galaxy-s26-fe/" },
   feProduct: { label: "S26 FE 국내 제품·전작 성능 비교", url: "https://www.samsung.com/sec/smartphones/galaxy-s26/buy/?modelCode=SM-S741NZKWKOO" },
@@ -6510,7 +6514,7 @@ export default function Page() {
             <h2 id="quick-title" className="px-3 py-2 text-lg font-bold sm:px-5">한눈에 비교</h2>
             <div className="comparison-values grid grid-cols-2 border-y border-slate-200">{selectedPhones.map((phone, slot) => <div key={phone.id} className={`min-w-0 p-3 ${slot === 0 ? "bg-blue-50" : "bg-indigo-50"}`}><p className="font-bold text-blue-800">{slot === 0 ? "A" : "B"}</p><h3 className="mt-1 hidden break-words font-bold sm:block">{phone.model_name}</h3>{modelInfo[phone.id].upcoming && <p className="mt-1 text-base font-bold text-amber-800">출시 예정</p>}</div>)}</div>
             <dl>
-              {[["기본 용량 출시가", ...selectedPhones.map(phone => `${phone.prices[0].storage} · ${money(phone.prices[0].krw)}`)], ["화면", ...selectedPhones.map(phone => modelInfo[phone.id].screen)], ["무게", ...selectedPhones.map(phone => modelInfo[phone.id].weight)], ["카메라", ...selectedPhones.map(phone => modelInfo[phone.id].camera)]].map(([label, ...values]) => <div key={label} className="border-b border-slate-200 last:border-0"><dt className="bg-slate-50 px-3 py-2 font-bold text-slate-600">{label}</dt><dd className={`${label === "기본 용량 출시가" ? "price-values" : "comparison-values"} grid grid-cols-2`}>{values.map((value, slot) => <div key={slot} className={`min-w-0 break-words px-3 py-3 font-bold ${slot === 0 ? "bg-blue-50/40" : "bg-indigo-50/40"}`}><span className="large-price-label hidden text-blue-800">{slot === 0 ? "A · " : "B · "}</span>{value}</div>)}</dd></div>)}
+              {[["기본 용량 출시가", ...selectedPhones.map(phone => `${phone.prices[0].storage} · ${money(phone.prices[0].krw)}${phone.price_basis === "preorder-announcement" ? " (발표가)" : ""}`)], ["화면", ...selectedPhones.map(phone => modelInfo[phone.id].screen)], ["무게", ...selectedPhones.map(phone => modelInfo[phone.id].weight)], ["카메라", ...selectedPhones.map(phone => modelInfo[phone.id].camera)]].map(([label, ...values]) => <div key={label} className="border-b border-slate-200 last:border-0"><dt className="bg-slate-50 px-3 py-2 font-bold text-slate-600">{label}</dt><dd className={`${label === "기본 용량 출시가" ? "price-values" : "comparison-values"} grid grid-cols-2`}>{values.map((value, slot) => <div key={slot} className={`min-w-0 break-words px-3 py-3 font-bold ${slot === 0 ? "bg-blue-50/40" : "bg-indigo-50/40"}`}><span className="large-price-label hidden text-blue-800">{slot === 0 ? "A · " : "B · "}</span>{value}</div>)}</dd></div>)}
             </dl>
             <p className="border-t border-slate-200 px-3 py-3 text-base text-slate-600">할인·지원금 적용 전. 출시 예정 기종은 발표 가격입니다. 화면은 대각선 기준이며 폴더블은 펼친 화면입니다.</p>
           </section>
@@ -6519,11 +6523,11 @@ export default function Page() {
         <section id="prices" aria-labelledby="price-title" className="scroll-mt-40 rounded-2xl border border-slate-200 bg-white p-3 sm:p-5">
           <h2 id="price-title" className="text-xl font-bold">용량별 출시가</h2>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">{selectedPhones.map((phone, slot) => <section key={phone.id} aria-label={`${phone.model_name} 용량별 출시가`} className={`min-w-0 rounded-xl border p-3 ${slot === 0 ? "border-blue-200 bg-blue-50/40" : "border-indigo-200 bg-indigo-50/40"}`}>
-            <h3 className="font-bold">{slot === 0 ? "A" : "B"} · {phone.model_name}</h3><p className="mt-1 text-base text-slate-600">{modelInfo[phone.id].upcoming ? "국내 출시 예정 발표 가격" : "국내 출시 당시 가격"}</p>{modelInfo[phone.id].upcoming && <p className="mt-2 font-bold text-amber-800">{modelInfo[phone.id].date}</p>}
+            <h3 className="font-bold">{slot === 0 ? "A" : "B"} · {phone.model_name}</h3><p className="mt-1 text-base text-slate-600">{phone.price_basis === "preorder-announcement" ? "국내 사전 주문 발표 가격" : modelInfo[phone.id].upcoming ? "국내 출시 예정 발표 가격" : "국내 출시 당시 가격"}</p>{modelInfo[phone.id].upcoming && <p className="mt-2 font-bold text-amber-800">{modelInfo[phone.id].date}</p>}
             <dl className="mt-2 divide-y divide-slate-200">{phone.prices.map(price => <div key={price.storage} className="flex flex-wrap items-center justify-between gap-2 py-3"><dt className="font-bold">{price.storage}</dt><dd className="font-bold">{money(price.krw)}</dd></div>)}</dl>
             <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">가격 출처</summary><SourceLinks ids={[phone.price_source]} /></details>
           </section>)}</div>
-          <p className="mt-3 text-base text-slate-600">할인·지원금 적용 전. 확인되지 않은 용량의 출시가는 추정하지 않았습니다.</p>
+          <p className="mt-3 text-base text-slate-600">할인·지원금 적용 전. 확인되지 않은 용량의 출시가는 추정하지 않았습니다. iPhone 18 Pro·Pro Max는 공식 사전 주문 안내의 발표 가격이며, 출시일 당일 실판매가로 단정하지 않습니다.</p>
         </section>
 
         <section aria-labelledby="brief-title">

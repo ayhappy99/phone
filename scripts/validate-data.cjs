@@ -39,7 +39,7 @@ for (const phone of phoneData) {
 }
 const ultraMemory = fullSpecCatalog['galaxy-s26-ultra'].sections.find(s => s.title === '메모리/스토리지').items;
 assert.ok(ultraMemory.some(s => s.includes('1TB: RAM 16GB')));
-assert.equal(phoneData.filter(p => p.brand === 'Apple').flatMap(p => p.prices).filter(p => p.krw === null).length, 14);
+assert.equal(phoneData.filter(p => p.brand === 'Apple').flatMap(p => p.prices).filter(p => p.krw === null).length, 8);
 assert.equal(modelInfo['iphone-duo'].upcoming, true);
 const fe = fullSpecCatalog['galaxy-s26-fe'];
 assert.equal(fe.source, 'feSpecs');
@@ -55,4 +55,12 @@ assert.ok(fullSpecCatalog['iphone-air'].sections.find(s => s.title === 'SIM 카�
 assert.ok(phoneData.find(p => p.id === 'iphone-18-pro-max').specs.weight.vs_previous.includes('18g 증가'));
 assert.ok(phoneData.find(p => p.id === 'iphone-18-pro').specs.weight.vs_previous.includes('7g 증가'));
 for (const phone of phoneData) assert.ok(phone.specs.weight.official.includes(modelInfo[phone.id].weight), 'Quick comparison weight differs from official brief: ' + phone.id);
-console.log('PASS: 14 unique models, 7 per brand, full detail columns, source references, capacity-specific RAM, upcoming model label, explicit verification limits, 14 unverified historical prices, 3 resolved Duo announcement prices, complete S26 FE domestic spec table.');
+console.log('PASS: 14 unique models, 7 per brand, full detail columns, source references, capacity-specific RAM, upcoming model label, explicit verification limits, 8 unverified historical prices, 6 verified iPhone 18 preorder announcement prices, 3 resolved Duo announcement prices, complete S26 FE domestic spec table.');
+
+for (const [id, amounts] of [['iphone-18-pro', [1990000,2290000,2890000,3790000]], ['iphone-18-pro-max', [2190000,2490000,3090000,3990000]]]) {
+ const phone = phoneData.find(p => p.id === id);
+ assert.equal(JSON.stringify(phone.prices.map(p => p.krw)), JSON.stringify(amounts));
+ assert.equal(phone.price_basis, 'preorder-announcement');
+ assert.equal(phone.price_source, 'i18Preorder');
+ assert.equal(Boolean(modelInfo[id].upcoming), false);
+}

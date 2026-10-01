@@ -6471,7 +6471,7 @@ export default function Page() {
   const [selected, setSelected] = useState<[string, string]>([phoneData[0].id, phoneData[2].id]);
   const [target, setTarget] = useState<0 | 1>(0);
   const [topic, setTopic] = useState<SpecKey | "all">("all");
-  const [pitchVersion, setPitchVersion] = useState<"short" | "detail">("short");
+  const [pitchVersion, setPitchVersion] = useState<"short" | "detail">("detail");
   const [fontSize, setFontSize] = useState(18);
   const [fontReady, setFontReady] = useState(false);
   const [status, setStatus] = useState("");
@@ -6560,7 +6560,7 @@ export default function Page() {
       <a href="#comparison" className="sr-only focus:not-sr-only focus:block focus:bg-white focus:p-4">비교 내용으로 바로가기</a>
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-3 py-2 sm:px-6">
-          <div><h1 className="text-xl font-bold sm:text-2xl">휴대폰 전화상담</h1><p className="mt-1 hidden text-base text-slate-600 lg:block">공식 사양 · 용량별 출시가 · 전화 안내</p></div>
+          <div><h1 className="text-xl font-bold sm:text-2xl">써니의 폰백과사전</h1><p className="mt-1 hidden text-base text-slate-600 lg:block">공식 사양 · 용량별 출시가 · 전화 안내</p></div>
           <button type="button" aria-expanded={fontControlsOpen} aria-controls="font-controls" onClick={() => setFontControlsOpen(!fontControlsOpen)} className={`${control} !px-3 !py-2 lg:hidden`}>글자 설정</button>
           <div id="font-controls" className={`${fontControlsOpen ? "flex" : "hidden"} w-full flex-wrap items-center gap-2 rounded-xl bg-slate-100 p-2 lg:flex lg:w-auto`} role="group" aria-label="글자 크기 조절">
             <span className="font-bold">글자</span>

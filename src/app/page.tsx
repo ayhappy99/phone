@@ -6601,7 +6601,7 @@ export default function Page() {
             </div>
           </section>
           <section id="quick-comparison" aria-labelledby="quick-title" className="scroll-mt-40 min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <h2 id="quick-title" className="px-3 py-2 text-lg font-bold sm:px-5">한눈에 비교</h2>
+            <div className="section-heading tone-blue"><h2 id="quick-title" className="text-2xl font-bold">요약</h2><p>한눈에 비교</p></div>
             <div className="comparison-values grid grid-cols-2 border-y border-slate-200">{selectedPhones.map((phone, slot) => <div key={phone.id} className={`min-w-0 p-3 ${slot === 0 ? "bg-blue-50" : "bg-indigo-50"}`}><p className="font-bold text-blue-800">{slot === 0 ? "A" : "B"}</p><h3 className="mt-1 hidden break-words font-bold sm:block">{phone.model_name}</h3>{modelInfo[phone.id].upcoming && <p className="mt-1 text-base font-bold text-amber-800">출시 예정</p>}</div>)}</div>
             <dl>
               {[["기본 용량 출시가", ...selectedPhones.map(phone => `${phone.prices[0].storage} · ${money(phone.prices[0].krw)}${phone.price_basis === "preorder-announcement" ? " (발표가)" : ""}`)], ["화면", ...selectedPhones.map(phone => modelInfo[phone.id].screen)], ["무게", ...selectedPhones.map(phone => modelInfo[phone.id].weight)], ["카메라", ...selectedPhones.map(phone => modelInfo[phone.id].camera)]].map(([label, ...values]) => <div key={label} className="border-b border-slate-200 last:border-0"><dt className="bg-slate-50 px-3 py-2 font-bold text-slate-600">{label}</dt><dd className={`${label === "기본 용량 출시가" ? "price-values" : "comparison-values"} grid grid-cols-2`}>{values.map((value, slot) => <div key={slot} className={`min-w-0 break-words px-3 py-3 font-bold ${slot === 0 ? "bg-blue-50/40" : "bg-indigo-50/40"}`}><span className="large-price-label hidden text-blue-800">{slot === 0 ? "A · " : "B · "}</span>{value}</div>)}</dd></div>)}
@@ -6611,7 +6611,7 @@ export default function Page() {
         </div>
 
         <section id="prices" aria-labelledby="price-title" className="scroll-mt-40 rounded-2xl border border-slate-200 bg-white p-3 sm:p-5">
-          <h2 id="price-title" className="text-xl font-bold">용량별 출시가</h2>
+          <div className="section-heading tone-amber"><h2 id="price-title" className="text-2xl font-bold">가격</h2><p>용량별 출시가</p></div>
           <div className="mt-3 grid grid-cols-2 gap-2">{selectedPhones.map((phone, slot) => <div key={phone.id} className={`min-w-0 rounded-xl p-3 ${slot === 0 ? "bg-blue-50" : "bg-indigo-50"}`}>
             <h3 className="break-words font-bold">{slot === 0 ? "A" : "B"} · {phone.model_name}</h3><p className="mt-1 text-base text-slate-600">{phone.price_basis === "preorder-announcement" ? "국내 사전 주문 발표 가격" : modelInfo[phone.id].upcoming ? "국내 출시 예정 발표 가격" : "국내 출시 당시 가격"}</p>{modelInfo[phone.id].upcoming && <p className="mt-2 font-bold text-amber-800">{modelInfo[phone.id].date}</p>}
           </div>)}</div>
@@ -6623,8 +6623,8 @@ export default function Page() {
           <p className="mt-3 text-base text-slate-600">할인·지원금 적용 전. 확인되지 않은 용량의 출시가는 추정하지 않았습니다. iPhone 18 Pro·Pro Max는 공식 사전 주문 안내의 발표 가격이며, 출시일 당일 실판매가로 단정하지 않습니다.</p>
         </section>
 
-        <section aria-labelledby="brief-title">
-          <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="brief-title" className="text-2xl font-bold">항목별 비교·전화 안내</h2><div className="flex flex-wrap gap-2"><button type="button" onClick={shareComparison} className={control}>비교 주소 복사</button><button type="button" onClick={() => window.print()} className={`${control} print:hidden`}>인쇄</button></div></div>
+        <section id="brief-title" aria-labelledby="brief-heading">
+          <div className="section-heading tone-purple flex flex-wrap items-center justify-between gap-3"><div><h2 id="brief-heading" className="text-2xl font-bold">멘트</h2><p>항목별 비교·전화 안내</p></div><div className="flex flex-wrap gap-2"><button type="button" onClick={shareComparison} className={control}>비교 주소 복사</button><button type="button" onClick={() => window.print()} className={`${control} print:hidden`}>인쇄</button></div></div>
           <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="비교 항목 필터">
             <button type="button" aria-pressed={topic === "all"} onClick={() => { setTopic("all"); }} className={`${control} category-tab category-all`}>전체 항목</button>
             {categories.map(({ key, label }) => <button key={key} type="button" aria-pressed={topic === key} onClick={() => { setTopic(key); }} className={`${control} category-tab category-${key}`}>{label}</button>)}
@@ -6644,8 +6644,8 @@ export default function Page() {
           </div>
         </div>
 
-        <section aria-labelledby="detail-title" className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <h2 id="detail-title" className="text-2xl font-bold">배터리 · 연결 · 지원 사양</h2>
+        <section id="detail-title" aria-labelledby="detail-heading" className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <div className="section-heading tone-teal"><h2 id="detail-heading" className="text-2xl font-bold">사양</h2><p>배터리 · 연결 · 지원 사양</p></div>
           <p className="mt-2 text-slate-600">공식 사양 재확인 {detailCheckedAt}. 표의 값이 같아도 시험 조건이나 실제 성능까지 같다는 뜻은 아닙니다.</p>
           <div className="my-4 flex flex-wrap items-end gap-4">
             <div className="min-w-0 flex-1"><label htmlFor="detail-search" className="mb-2 block font-bold">세부 항목 검색</label><input id="detail-search" value={detailQuery} onChange={event => setDetailQuery(event.target.value)} placeholder="예: Bluetooth, USB, 배터리" className="min-h-12 w-full rounded-xl border border-slate-300 p-3 text-base" /></div>

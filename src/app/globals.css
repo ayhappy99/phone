@@ -15,6 +15,15 @@ body { word-break: keep-all; overflow-wrap: break-word; margin: 0; font-family: 
 }
 
 .mobile-bottom-nav { padding-bottom: max(0.5rem, env(safe-area-inset-bottom)); }
+.category-all { --tab-ink: #334155; --tab-soft: #f1f5f9; }
+.category-processor { --tab-ink: #1e40af; --tab-soft: #eff6ff; }
+.category-display { --tab-ink: #115e59; --tab-soft: #f0fdfa; }
+.category-weight { --tab-ink: #92400e; --tab-soft: #fffbeb; }
+.category-camera { --tab-ink: #6b21a8; --tab-soft: #faf5ff; }
+.category-special_feature { --tab-ink: #9f1239; --tab-soft: #fff1f2; }
+.category-tab { color: var(--tab-ink); background-color: var(--tab-soft); border: 2px solid var(--tab-ink); }
+.category-tab:hover { background-color: var(--tab-soft); box-shadow: 0 0 0 1px var(--tab-ink); }
+.category-tab[aria-pressed="true"] { color: #fff; background-color: var(--tab-ink); box-shadow: inset 0 0 0 2px #fff; }
 @media (max-width: 1023px) {
   main { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
   [id] { scroll-margin-top: 8rem; }

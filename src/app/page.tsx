@@ -6626,8 +6626,8 @@ export default function Page() {
         <section aria-labelledby="brief-title">
           <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="brief-title" className="text-2xl font-bold">항목별 비교·전화 안내</h2><div className="flex flex-wrap gap-2"><button type="button" onClick={shareComparison} className={control}>비교 주소 복사</button><button type="button" onClick={() => window.print()} className={`${control} print:hidden`}>인쇄</button></div></div>
           <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="비교 항목 필터">
-            <button type="button" aria-pressed={topic === "all"} onClick={() => { setTopic("all"); }} className={`${control} ${topic === "all" ? "!bg-slate-900 !text-white" : ""}`}>전체 항목</button>
-            {categories.map(({ key, label }) => <button key={key} type="button" aria-pressed={topic === key} onClick={() => { setTopic(key); }} className={`${control} ${topic === key ? "!bg-slate-900 !text-white" : ""}`}>{label}</button>)}
+            <button type="button" aria-pressed={topic === "all"} onClick={() => { setTopic("all"); }} className={`${control} category-tab category-all`}>전체 항목</button>
+            {categories.map(({ key, label }) => <button key={key} type="button" aria-pressed={topic === key} onClick={() => { setTopic(key); }} className={`${control} category-tab category-${key}`}>{label}</button>)}
           </div>
           <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="안내 길이 선택">{(["short", "detail"] as const).map(version => <button type="button" key={version} aria-pressed={pitchVersion === version} onClick={() => setPitchVersion(version)} className={`${control} ${pitchVersion === version ? "!bg-blue-700 !text-white" : ""}`}>{version === "short" ? "짧게 안내" : "풀어서 안내"}</button>)}</div>
           

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -6461,6 +6461,7 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
 }
 
 export default function Page() {
+  const locationSearch = useRef<string | null>(null);
   const [query, setQuery] = useState("");
   const [pickerOpen, setPickerOpen] = useState(false);
   const [fontControlsOpen, setFontControlsOpen] = useState(false);
@@ -6478,7 +6479,7 @@ export default function Page() {
   const [differentOnly, setDifferentOnly] = useState(false);
   const [shareUrl, setShareUrl] = useState("");
   useEffect(() => {
-    let lastSearch = window.location.search;
+    locationSearch.current = window.location.search;
     const restore = () => {
       const params = new URLSearchParams(window.location.search);
       const a = params.get("a"), b = params.get("b");
@@ -6492,8 +6493,8 @@ export default function Page() {
     };
     restore();
     const restoreOnQueryChange = () => {
-      if (window.location.search === lastSearch) return;
-      lastSearch = window.location.search;
+      if (window.location.search === locationSearch.current) return;
+      locationSearch.current = window.location.search;
       restore();
     };
     window.addEventListener("popstate", restoreOnQueryChange);
@@ -6534,6 +6535,7 @@ export default function Page() {
     url.search = new URLSearchParams({ a: left.id, b: right.id }).toString();
     url.hash = "comparison";
     window.history.replaceState(null, "", url);
+    locationSearch.current = window.location.search;
     setShareUrl(url.toString());
     try {
       await navigator.clipboard.writeText(url.toString());

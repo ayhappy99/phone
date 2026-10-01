@@ -42,6 +42,7 @@ assert.ok(ui.getByText(/맞는 기종을 찾지 못했어요/));
 fireEvent.click(ui.getByRole('button', { name: '검색 조건 지우기' }));
 assert.equal(ui.getByLabelText('기종 이름 검색').value, '');
 assert.equal(ui.getByLabelText('제조사').value, 'all');
+fireEvent.click(ui.getByRole('button', { name: '비교 주소 복사' }));
 select(0, 'galaxy-s26-ultra'); select(1, 'iphone-18-pro');
 fireEvent(window, new window.PopStateEvent('popstate'));
 assert.equal(document.querySelector('#selected-0').value, 'galaxy-s26-ultra');

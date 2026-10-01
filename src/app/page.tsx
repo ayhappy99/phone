@@ -6578,7 +6578,7 @@ export default function Page() {
             <label htmlFor={`selected-${slot}`} className="sr-only">{slot === 0 ? "A" : "B"} 모델</label>
             <select id={`selected-${slot}`} value={phone.id} onChange={event => choose(event.target.value, slot as 0 | 1)} className="min-h-11 w-full min-w-0 flex-1 rounded-lg bg-transparent px-1 text-base font-bold">{phoneData.map(item => <option value={item.id} key={item.id}>{item.model_name}</option>)}</select>
           </div>)}
-          <div className="hidden items-center gap-2 lg:flex"><a href="#quick-comparison" className={control}>요약</a><a href="#prices" className={control}>가격</a><a href="#brief-title" className={control}>멘트</a><a href="#detail-title" className={control}>사양</a></div>
+          <div className="hidden items-center gap-2 lg:flex"><a href="#quick-comparison" className={`${control} color-control tone-blue`}>요약</a><a href="#prices" className={`${control} color-control tone-amber`}>가격</a><a href="#brief-title" className={`${control} color-control tone-purple`}>멘트</a><a href="#detail-title" className={`${control} color-control tone-teal`}>사양</a></div>
         </div>
       </nav>
       <div className="mx-auto max-w-7xl space-y-4 px-3 py-3 sm:px-6 sm:py-5">
@@ -6629,7 +6629,7 @@ export default function Page() {
             <button type="button" aria-pressed={topic === "all"} onClick={() => { setTopic("all"); }} className={`${control} category-tab category-all`}>전체 항목</button>
             {categories.map(({ key, label }) => <button key={key} type="button" aria-pressed={topic === key} onClick={() => { setTopic(key); }} className={`${control} category-tab category-${key}`}>{label}</button>)}
           </div>
-          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="안내 길이 선택">{(["short", "detail"] as const).map(version => <button type="button" key={version} aria-pressed={pitchVersion === version} onClick={() => setPitchVersion(version)} className={`${control} ${pitchVersion === version ? "!bg-blue-700 !text-white" : ""}`}>{version === "short" ? "짧게 안내" : "풀어서 안내"}</button>)}</div>
+          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="안내 길이 선택">{(["short", "detail"] as const).map(version => <button type="button" key={version} aria-pressed={pitchVersion === version} onClick={() => setPitchVersion(version)} className={`${control} color-control ${version === "short" ? "tone-blue" : "tone-teal"}`}>{version === "short" ? "짧게 안내" : "풀어서 안내"}</button>)}</div>
           
           {shareUrl && <div className="mt-3"><label htmlFor="share-url" className="block font-bold">현재 비교 주소</label><input id="share-url" readOnly value={shareUrl} onFocus={event => event.target.select()} className="mt-2 min-h-12 w-full rounded-xl border border-slate-300 p-3 text-base" /></div>}
           <p className="mt-3 text-base leading-relaxed text-slate-600"><strong>전작 대비</strong>는 해당 기종의 이전 모델과 비교한 내용입니다. 공식 스펙과 적용 조건은 각 기종에서 펼쳐 확인할 수 있습니다.</p>
@@ -6671,7 +6671,7 @@ export default function Page() {
           <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 추가 10종 및 상세 사양 확인 {detailCheckedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
         </section>
       </div>
-      <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약"], ["#prices", "가격"], ["#brief-title", "멘트"], ["#detail-title", "사양"]].map(([href, label]) => <a key={href} href={href} className="flex min-h-12 items-center justify-center rounded-xl font-bold text-blue-900 focus-visible:outline-2 focus-visible:outline-blue-600">{label}</a>)}</nav>
+      <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약", "tone-blue"], ["#prices", "가격", "tone-amber"], ["#brief-title", "멘트", "tone-purple"], ["#detail-title", "사양", "tone-teal"]].map(([href, label, tone]) => <a key={href} href={href} className={`color-control ${tone} flex min-h-12 items-center justify-center rounded-xl font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600`}>{label}</a>)}</nav>
     </main>
   );
 }

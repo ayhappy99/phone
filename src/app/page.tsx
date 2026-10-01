@@ -6478,6 +6478,7 @@ export default function Page() {
   const [differentOnly, setDifferentOnly] = useState(false);
   const [shareUrl, setShareUrl] = useState("");
   useEffect(() => {
+    let lastSearch = window.location.search;
     const restore = () => {
       const params = new URLSearchParams(window.location.search);
       const a = params.get("a"), b = params.get("b");
@@ -6490,8 +6491,13 @@ export default function Page() {
       setShareUrl("");
     };
     restore();
-    window.addEventListener("popstate", restore);
-    return () => window.removeEventListener("popstate", restore);
+    const restoreOnQueryChange = () => {
+      if (window.location.search === lastSearch) return;
+      lastSearch = window.location.search;
+      restore();
+    };
+    window.addEventListener("popstate", restoreOnQueryChange);
+    return () => window.removeEventListener("popstate", restoreOnQueryChange);
   }, []);
   useEffect(() => {
     try {

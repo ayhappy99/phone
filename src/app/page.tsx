@@ -6460,6 +6460,68 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
   </section>;
 }
 
+function KakaoBrowserPrompt() {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [manualHelp, setManualHelp] = useState(false);
+  const sessionKey = "phone:kakao-browser-prompt-dismissed";
+
+  useEffect(() => {
+    if (!/KAKAOTALK/i.test(navigator.userAgent)) return;
+    try {
+      if (window.sessionStorage.getItem(sessionKey) === "1") return;
+    } catch {
+      // The prompt still works when browser storage is unavailable.
+    }
+    setVisible(true);
+  }, []);
+
+  useEffect(() => {
+    if (!visible) return;
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    dialog.showModal();
+    return () => {
+      dialog.close();
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [visible]);
+
+  function dismiss() {
+    try {
+      window.sessionStorage.setItem(sessionKey, "1");
+    } catch {
+      // Dismissal remains effective until the page is reloaded.
+    }
+    setVisible(false);
+  }
+
+  function openExternalBrowser() {
+    setManualHelp(true);
+    if (!/Android/i.test(navigator.userAgent)) return;
+    const url = new URL(window.location.href);
+    if (url.protocol !== "https:" && url.protocol !== "http:") return;
+    // Keep the shared comparison query and section when requesting a browser.
+    const intent = `intent://${url.host}${url.pathname}${url.search}${url.hash}#Intent;scheme=${url.protocol.slice(0, -1)};action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;end;`;
+    try {
+      window.location.assign(intent);
+    } catch {
+      // The visible instructions also cover blocked external-app requests.
+    }
+  }
+
+  if (!visible) return null;
+  return <dialog ref={dialogRef} aria-labelledby="kakao-browser-title" aria-describedby="kakao-browser-description" onCancel={event => { event.preventDefault(); dismiss(); }} className="fixed inset-0 m-auto max-h-[85dvh] w-[calc(100%-2rem)] max-w-md overflow-y-auto rounded-2xl border-0 bg-white p-5 text-slate-900 shadow-2xl backdrop:bg-slate-900/60 print:hidden">
+    <h2 id="kakao-browser-title" className="text-2xl font-bold">외부 브라우저로 여시겠어요?</h2>
+    <p id="kakao-browser-description" className="mt-3 text-lg leading-relaxed">삼성 인터넷이나 Chrome에서 사이트를 이용할 수 있어요.</p>
+    <button type="button" autoFocus onClick={openExternalBrowser} className="mt-5 min-h-14 w-full rounded-xl bg-blue-700 px-4 py-3 text-lg font-bold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">외부 브라우저로 열기</button>
+    {manualHelp && <p role="status" className="mt-3 rounded-xl bg-blue-50 p-3 text-base leading-relaxed">브라우저가 열리지 않으면 카카오톡 브라우저 메뉴에서 ‘다른 브라우저로 열기’ 또는 비슷한 항목을 선택해 주세요. 해당 항목이 없으면 주소를 복사해 삼성 인터넷이나 Chrome의 주소창에 붙여 넣어 주세요.</p>}
+    <button type="button" onClick={dismiss} className="mt-3 min-h-12 w-full rounded-xl border border-slate-300 px-4 py-3 text-lg font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">여기서 계속 보기</button>
+  </dialog>;
+}
+
 export default function Page() {
   const locationSearch = useRef<string | null>(null);
   const [query, setQuery] = useState("");
@@ -6557,6 +6619,7 @@ export default function Page() {
 
   return (
     <main lang="ko" className={`min-h-screen bg-slate-50 text-base text-slate-900 selection:bg-blue-200 ${fontSize >= 22 ? "large-text" : ""}`}>
+      <KakaoBrowserPrompt />
       <a href="#comparison" className="sr-only focus:not-sr-only focus:block focus:bg-white focus:p-4">비교 내용으로 바로가기</a>
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-3 py-2 sm:px-6">

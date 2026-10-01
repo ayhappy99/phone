@@ -19,6 +19,7 @@
   "scripts": {
     "build": "next build --webpack",
     "typecheck": "tsc --noEmit",
-    "validate:data": "node scripts/validate-data.cjs"
+    "validate:data": "node scripts/validate-data.cjs",
+    "validate:ui": "node scripts/validate-ui.cjs"
   }
 }

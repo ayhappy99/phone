@@ -20,6 +20,7 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run validate:data
+      - run: npm run validate:ui
       - run: npm run build
       - uses: actions/upload-pages-artifact@v4
         with:

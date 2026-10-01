@@ -21,6 +21,12 @@ body { word-break: keep-all; overflow-wrap: break-word; margin: 0; font-family: 
   .model-bar { max-height: 45svh; overflow-y: auto; }
 }
 @media (max-width: 639px) {
+  .brief-short { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+  .brief-short > article { padding: 0.5rem; }
+  .brief-short > article > div { padding: 0.5rem; }
+  .brief-short > article > details { padding: 0.5rem; }
+  .brief-short .brief-model { font-size: 1rem; }
+  .large-text .brief-short { grid-template-columns: minmax(0, 1fr); }
   .large-text .price-values { grid-template-columns: minmax(0, 1fr); }
   .large-text .large-price-label { display: inline; }
   .detail-table table, .detail-table tbody { display: block; }

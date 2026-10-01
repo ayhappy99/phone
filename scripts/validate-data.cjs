@@ -4,11 +4,22 @@ const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const ts = require('typescript');
 const root = path.resolve(__dirname, '..');
-const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo };';
+const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail };';
 const compiled = ts.transpileModule(source, { compilerOptions: { jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
 vm.runInNewContext(compiled, { module: result, exports: result.exports, require }, { timeout: 5000 });
-const { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo } = result.exports;
+const { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail } = result.exports;
+assert.equal(comparableDetail('bluetooth', '6.0'), comparableDetail('bluetooth', '6'));
+assert.notEqual(comparableDetail('bluetooth', '5.4'), comparableDetail('bluetooth', '6'));
+assert.notEqual(comparableDetail('usb', 'USB 2.0'), comparableDetail('usb', 'USB 2'));
+let pitchCount = 0;
+for (const phone of phoneData) for (const spec of Object.values(phone.specs)) {
+  assert.ok(spec.sales_pitch.trim() && spec.sales_pitch_detail.trim());
+  assert.notEqual(spec.sales_pitch, spec.sales_pitch_detail);
+  assert.ok(!spec.sales_pitch.includes('큰 화면을 원하시면 S26'));
+  pitchCount++;
+}
+assert.equal(pitchCount, 70);
 assert.equal(phoneData.length, 14);
 assert.equal(new Set(phoneData.map(p => p.id)).size, 14);
 assert.equal(phoneData.filter(p => p.brand === 'Samsung').length, 7);

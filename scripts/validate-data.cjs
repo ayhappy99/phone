@@ -5,9 +5,9 @@ const assert = require('node:assert/strict');
 const ts = require('typescript');
 const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail };';
-const compiled = ts.transpileModule(source, { compilerOptions: { jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
+const compiled = ts.transpileModule(source, { compilerOptions: { esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
-vm.runInNewContext(compiled, { module: result, exports: result.exports, require }, { timeout: 5000 });
+vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => name === "./galaxy-domestic.json" ? require("../src/app/galaxy-domestic.json") : require(name) }, { timeout: 5000 });
 const { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail } = result.exports;
 assert.equal(comparableDetail('bluetooth', '6.0'), comparableDetail('bluetooth', '6'));
 assert.notEqual(comparableDetail('bluetooth', '5.4'), comparableDetail('bluetooth', '6'));
@@ -19,14 +19,14 @@ for (const phone of phoneData) for (const spec of Object.values(phone.specs)) {
   assert.ok(!spec.sales_pitch.includes('큰 화면을 원하시면 S26'));
   pitchCount++;
 }
-assert.equal(pitchCount, 70);
-assert.equal(phoneData.length, 14);
-assert.equal(new Set(phoneData.map(p => p.id)).size, 14);
-assert.equal(phoneData.filter(p => p.brand === 'Samsung').length, 7);
+assert.equal(pitchCount, 430);
+assert.equal(phoneData.length, 86);
+assert.equal(new Set(phoneData.map(p => p.id)).size, 86);
+assert.equal(phoneData.filter(p => p.brand === 'Samsung').length, 79);
 assert.equal(phoneData.filter(p => p.brand === 'Apple').length, 7);
-assert.equal(detailSourceIds.length, 14);
+assert.equal(detailSourceIds.length, 86);
 for (const row of detailRows) {
-  assert.equal(row.values.length, 14);
+  assert.equal(row.values.length, 86);
   assert.ok(row.values.every(value => typeof value === 'string' && value.trim()));
 }
 for (const phone of phoneData) {
@@ -66,7 +66,7 @@ assert.ok(fullSpecCatalog['iphone-air'].sections.find(s => s.title === 'SIM 카�
 assert.ok(phoneData.find(p => p.id === 'iphone-18-pro-max').specs.weight.vs_previous.includes('18g 증가'));
 assert.ok(phoneData.find(p => p.id === 'iphone-18-pro').specs.weight.vs_previous.includes('7g 증가'));
 for (const phone of phoneData) assert.ok(phone.specs.weight.official.includes(modelInfo[phone.id].weight), 'Quick comparison weight differs from official brief: ' + phone.id);
-console.log('PASS: 14 unique models, 7 per brand, full detail columns, source references, capacity-specific RAM, upcoming model label, explicit verification limits, 8 unverified historical prices, 6 verified iPhone 18 preorder announcement prices, 3 resolved Duo announcement prices, complete S26 FE domestic spec table.');
+console.log('PASS: 86 unique models, 79 Samsung and 7 Apple, full detail columns, source references, capacity-specific RAM, upcoming model label, explicit verification limits, 8 unverified historical prices, 6 verified iPhone 18 preorder announcement prices, 3 resolved Duo announcement prices, complete S26 FE domestic spec table.');
 
 for (const [id, amounts] of [['iphone-18-pro', [1990000,2290000,2890000,3790000]], ['iphone-18-pro-max', [2190000,2490000,3090000,3990000]]]) {
  const phone = phoneData.find(p => p.id === id);
@@ -75,3 +75,21 @@ for (const [id, amounts] of [['iphone-18-pro', [1990000,2290000,2890000,3790000]
  assert.equal(phone.price_source, 'i18Preorder');
  assert.equal(Boolean(modelInfo[id].upcoming), false);
 }
+
+const domestic = require('../src/app/galaxy-domestic.json');
+assert.equal(domestic.models.length, 72);
+assert.equal(new Set(domestic.models.map(model => model.code)).size, 72);
+for (const model of domestic.models) {
+ assert.match(model.url, /^https:\/\/www\.samsung\.com\/sec\/support\/model\/SM-/);
+ assert.match(model.code, /^SM-[A-Z]\d{3}[NSKL]$/);
+ assert.ok(model.url.includes(model.code));
+ assert.ok(phoneData.find(phone => phone.id === model.id).aliases.includes(model.code));
+ for (const key of ['cpuSpeed', 'display', 'resolution', 'panel', 'rear', 'weight', 'battery', 'storage', 'usb', 'wifi', 'bluetooth']) assert.ok(model.spec[key], model.name + ' missing ' + key);
+ assert.match(model.spec.weight, /^\d+$/);
+ assert.match(model.spec.battery, /^\d+(?:\.\d+)?$/);
+ if (model.previousId) assert.ok(domestic.models.some(prior => prior.id === model.previousId));
+ for (const price of model.prices) if (price.krw !== null) assert.notEqual(model.priceUrl, model.url);
+}
+for (const name of ['갤럭시 S21', '갤럭시 S21+', '갤럭시 S21 울트라', '갤럭시 퀀텀7', '갤럭시 점프5', '갤럭시 와이드9', '갤럭시 버디5', '갤럭시 M12', '갤럭시 XCover 5']) assert.ok(phoneData.some(phone => phone.model_name === name), 'Missing domestic model ' + name);
+for (const id of ['galaxy-s21-fe', 'galaxy-a26-5g', 'galaxy-a57', 'galaxy-m23', 'galaxy-xcover7']) assert.ok(!phoneData.some(phone => phone.id === id), 'Overseas or duplicate sales name ' + id);
+console.log('PASS: 72 additions have unique domestic model codes, Samsung Korea support sources, complete core specs, valid previous-model links and price evidence.');

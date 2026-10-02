@@ -1,0 +1,3561 @@
+{
+  "checkedAt": "2026-10-02",
+  "scope": "대한민국 공식 판매 모델만 포함. S21 국내 출시일(2021-01-29)부터 확인일 사이의 스마트폰. 국내 통신사 전용 판매명 사용. 색상·패키지 에디션은 별도 하드웨어 모델로 중복 등록하지 않음.",
+  "models": [
+    {
+      "id": "galaxy-s26-plus",
+      "name": "갤럭시 S26+",
+      "code": "SM-S947N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S26+",
+        "S26+",
+        "S26 플러스",
+        "SM-S947N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S947NZSAKOO/",
+      "spec": {
+        "cpuSpeed": "3.8GHz,3.26GHz,2.76GHz",
+        "cpuType": "Deca-Core",
+        "display": "169.1mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v6.0",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.4 x 75.8 x 7.3",
+        "weight": "190",
+        "battery": "4900",
+        "video": "최대 31",
+        "dex": "지원",
+        "security": "2033년 2월 28일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1452000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1705000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-3%EC%84%B8%EB%8C%80-ai%ED%8F%B0-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s26-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EA%B3%B5%EA%B0%9C",
+      "date": "2026.03.11 출시",
+      "previousId": "galaxy-s25-plus"
+    },
+    {
+      "id": "galaxy-s25-ultra",
+      "name": "갤럭시 S25 울트라",
+      "code": "SM-S938N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S25 Ultra",
+        "S25 울트라",
+        "S25 울트라",
+        "SM-S938N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S938NZKAKOD/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "174.2mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 50.0 MP + 50.0 MP + 10.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 및 5배 광학 줌, 광학 줌 수준의 2배 및 10배 줌(적응형 픽셀 센서 활용), 최대 100배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "162.8 x 77.6 x 8.2",
+        "weight": "218",
+        "battery": "5000",
+        "video": "최대 31",
+        "dex": "지원",
+        "security": "2032년 1월 31일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1698400
+        },
+        {
+          "storage": "512GB",
+          "krw": 1841400
+        },
+        {
+          "storage": "1TB",
+          "krw": 2127400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91",
+      "date": "2025.02.07 출시",
+      "previousId": "galaxy-s24-ultra"
+    },
+    {
+      "id": "galaxy-s25-plus",
+      "name": "갤럭시 S25+",
+      "code": "SM-S936N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S25+",
+        "S25+",
+        "S25 플러스",
+        "SM-S936N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S936NZSEKOO/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.4 x 75.8 x 7.3",
+        "weight": "190",
+        "battery": "4900",
+        "video": "최대 30",
+        "dex": "지원",
+        "security": "2032년 1월 31일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1353000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1496000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91",
+      "date": "2025.02.07 출시",
+      "previousId": "galaxy-s24-plus"
+    },
+    {
+      "id": "galaxy-s25",
+      "name": "갤럭시 S25",
+      "code": "SM-S931N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S25",
+        "S25",
+        "S25",
+        "SM-S931N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S931NZSFKOO/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "156.4mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "nfc": "예",
+        "dimensions": "146.9 x 70.5 x 7.2",
+        "weight": "162",
+        "battery": "4000",
+        "video": "최대 29",
+        "dex": "지원",
+        "security": "2032년 1월 31일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1155000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1298000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91",
+      "date": "2025.02.07 출시",
+      "previousId": "galaxy-s24"
+    },
+    {
+      "id": "galaxy-s25-edge",
+      "name": "갤럭시 S25 엣지",
+      "code": "SM-S937N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S25 Edge",
+        "S25 엣지",
+        "S25 엣지",
+        "SM-S937N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S937NZKWKOO/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 10배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.2 x 75.6 x 5.8",
+        "weight": "163",
+        "battery": "3900",
+        "video": "최대 24",
+        "dex": "지원",
+        "security": "2032년 5월 31일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1496000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1639000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%97%A3%EC%A7%80-%EA%B3%B5%EA%B0%9C",
+      "date": "2025.05.23 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-s25-fe",
+      "name": "갤럭시 S25 FE",
+      "code": "SM-S731N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S25 FE",
+        "S25 FE",
+        "S25 FE",
+        "SM-S731N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S731NLBWKOO/",
+      "spec": {
+        "cpuSpeed": "3.2 GHz,2.9 GHz,2.6 GHz,1.95 GHz",
+        "cpuType": "Deca-Core",
+        "display": "171.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 8.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "nfc": "예",
+        "dimensions": "161.3 x 76.6 x 7.4",
+        "weight": "190",
+        "battery": "4900",
+        "video": "최대 28",
+        "dex": "지원",
+        "security": "2032년 9월 30일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 946000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-ai%EB%A1%9C-%EB%8D%94%EC%9A%B1-%EA%B0%95%EB%A0%A5%ED%95%B4%EC%A7%84-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-fe%C2%B7%ED%83%AD-s11",
+      "date": "2025.09.19 출시",
+      "previousId": "galaxy-s24-fe"
+    },
+    {
+      "id": "galaxy-s24-ultra",
+      "name": "갤럭시 S24 울트라",
+      "code": "SM-S928N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S24 Ultra",
+        "S24 울트라",
+        "S24 울트라",
+        "SM-S928N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S928NZYNKOO/",
+      "spec": {
+        "cpuSpeed": "3.39 GHz,3.1 GHz,2.9 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "172.5mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 및 5배 광학 줌, 광학 줌 수준의 2배 및 10배 줌(적응형 픽셀 센서 활용), 최대 100배 디지털 줌",
+        "ram": "12 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "162.3 x 79.0 x 8.6",
+        "weight": "232",
+        "battery": "5000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "storage": "1TB",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1698400
+        },
+        {
+          "storage": "512GB",
+          "krw": 1841400
+        },
+        {
+          "storage": "1TB",
+          "krw": 2127400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2024.01.31 출시",
+      "previousId": "galaxy-s23-ultra"
+    },
+    {
+      "id": "galaxy-s24-plus",
+      "name": "갤럭시 S24+",
+      "code": "SM-S926N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S24+",
+        "S24+",
+        "S24 플러스",
+        "SM-S926N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S926NZAAKOO/",
+      "spec": {
+        "cpuSpeed": "3.2 GHz,2.9 GHz,2.6 GHz,1.95 GHz",
+        "cpuType": "Deca-Core",
+        "display": "169.1mm",
+        "resolution": "3120 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.5 x 75.9 x 7.7",
+        "weight": "196",
+        "battery": "4900",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1353000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1496000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2024.01.31 출시",
+      "previousId": "galaxy-s23-plus"
+    },
+    {
+      "id": "galaxy-s24",
+      "name": "갤럭시 S24",
+      "code": "SM-S921N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S24",
+        "S24",
+        "S24",
+        "SM-S921N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S921NLGFKOO/",
+      "spec": {
+        "cpuSpeed": "3.2 GHz,2.9 GHz,2.6 GHz,1.95 GHz",
+        "cpuType": "Deca-Core",
+        "display": "156.4mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "8 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "147.0 x 70.6 x 7.6",
+        "weight": "167",
+        "battery": "4000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1155000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1298000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2024.01.31 출시",
+      "previousId": "galaxy-s23"
+    },
+    {
+      "id": "galaxy-s24-fe",
+      "name": "갤럭시 S24 FE",
+      "code": "SM-S721N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S24 FE",
+        "S24 FE",
+        "S24 FE",
+        "SM-S721N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S721NZKWKOD/",
+      "spec": {
+        "cpuSpeed": "3.1 GHz,2.9 GHz,2.6 GHz,1.95 GHz",
+        "cpuType": "Deca-Core",
+        "display": "170.1 mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 8.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "162.0 x 77.3 x 8.0",
+        "weight": "213",
+        "battery": "4700",
+        "dex": "지원",
+        "security": "2031년 10월 31일",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 946000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-fe-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2024.11.01 출시",
+      "previousId": "galaxy-s23-fe"
+    },
+    {
+      "id": "galaxy-s23-ultra",
+      "name": "갤럭시 S23 울트라",
+      "code": "SM-S918N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S23 Ultra",
+        "S23 울트라",
+        "S23 울트라",
+        "SM-S918N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S918NZEEKOO/",
+      "spec": {
+        "cpuSpeed": "3.36 GHz,2.8 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "173.1mm",
+        "resolution": "3088 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 10.0 MP + 12.0 MP + 10.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 10배 광학줌, 최대 100배 디지털줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "163.4 x 78.1 x 8.9",
+        "weight": "233",
+        "battery": "5000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1599400
+        },
+        {
+          "storage": "512GB",
+          "krw": 1720400
+        },
+        {
+          "storage": "1TB",
+          "krw": 1962400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2023.02.17 출시",
+      "previousId": "galaxy-s22-ultra"
+    },
+    {
+      "id": "galaxy-s23-plus",
+      "name": "갤럭시 S23+",
+      "code": "SM-S916N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S23+",
+        "S23+",
+        "S23 플러스",
+        "SM-S916N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S916NZAEKOO/",
+      "spec": {
+        "cpuSpeed": "3.36 GHz,2.8 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "166.5mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "157.8 x 76.2 x 7.6",
+        "weight": "195",
+        "battery": "4700",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1353000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1474000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2023.02.17 출시",
+      "previousId": "galaxy-s22-plus"
+    },
+    {
+      "id": "galaxy-s23",
+      "name": "갤럭시 S23",
+      "code": "SM-S911N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S23",
+        "S23",
+        "S23",
+        "SM-S911N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S911NLGEKOO/",
+      "spec": {
+        "cpuSpeed": "3.36 GHz,2.8 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "153.9mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "146.3 x 70.9 x 7.6",
+        "weight": "168",
+        "battery": "3900",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1155000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1276000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2023.02.17 출시",
+      "previousId": "galaxy-s22"
+    },
+    {
+      "id": "galaxy-s23-fe",
+      "name": "갤럭시 S23 FE",
+      "code": "SM-S711N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S23 FE",
+        "S23 FE",
+        "S23 FE",
+        "SM-S711N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S711NZBWKOO/",
+      "spec": {
+        "cpuSpeed": "2.8 GHz,2.5 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "163.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 8.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "158.0 x 76.5 x 8.2",
+        "weight": "209",
+        "battery": "4500",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 847000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-fe-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2023.12.08 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-s22-ultra",
+      "name": "갤럭시 S22 울트라",
+      "code": "SM-S908N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S22 Ultra",
+        "S22 울트라",
+        "S22 울트라",
+        "SM-S908N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S908NZAMKOO/",
+      "spec": {
+        "cpuSpeed": "2.99 GHz,2.4 GHz,1.7 GHz",
+        "cpuType": "Octa-Core",
+        "display": "173.1mm",
+        "resolution": "3088 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "108.0 MP + 10.0 MP + 12.0 MP + 10.0 MP",
+        "front": "40.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 10배 광학줌, 최대 100배 디지털줌",
+        "ram": "12 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "163.3 x 77.9 x 8.9",
+        "weight": "228",
+        "battery": "5000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "storage": "1TB",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1452000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1551000
+        },
+        {
+          "storage": "1TB",
+          "krw": 1749000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-s21-ultra"
+    },
+    {
+      "id": "galaxy-s22-plus",
+      "name": "갤럭시 S22+",
+      "code": "SM-S906N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S22+",
+        "S22+",
+        "S22 플러스",
+        "SM-S906N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S906NLBWKOO/",
+      "spec": {
+        "cpuSpeed": "2.99 GHz,2.4 GHz,1.7 GHz",
+        "cpuType": "Octa-Core",
+        "display": "166.5mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "157.4 x 75.8 x 7.6",
+        "weight": "195",
+        "battery": "4500",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1199000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-s21-plus"
+    },
+    {
+      "id": "galaxy-s22",
+      "name": "갤럭시 S22",
+      "code": "SM-S901N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S22",
+        "S22",
+        "S22",
+        "SM-S901N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-S901NLVEKOO/",
+      "spec": {
+        "cpuSpeed": "2.99 GHz,2.4 GHz,1.7 GHz",
+        "cpuType": "Octa-Core",
+        "display": "153.9mm",
+        "resolution": "2340 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "50.0 MP + 10.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "nfc": "예",
+        "dimensions": "146.0 x 70.6 x 7.6",
+        "weight": "167",
+        "battery": "3700",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 999900
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-s21"
+    },
+    {
+      "id": "galaxy-s21-ultra",
+      "name": "갤럭시 S21 울트라",
+      "code": "SM-G998N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S21 Ultra",
+        "S21 울트라",
+        "S21 울트라",
+        "SM-G998N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-G998NZSEKOO/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.8 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "173.0mm",
+        "resolution": "3200 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "108.0 MP + 10.0 MP + 12.0 MP + 10.0 MP",
+        "front": "40.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 10배 광학줌, 최대 100배 디지털줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "165.1 x 75.6 x 8.9",
+        "weight": "227",
+        "battery": "5000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1452000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1599400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C",
+      "date": "2021.01.29 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-s21-plus",
+      "name": "갤럭시 S21+",
+      "code": "SM-G996N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S21+",
+        "S21+",
+        "S21 플러스",
+        "SM-G996N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-G996NZKEKOO/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.8 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.5 mm",
+        "resolution": "2400 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "12.0 MP + 64.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 하이브리드 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.0",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "161.5 x 75.6 x 7.8",
+        "weight": "200",
+        "battery": "4800",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1199000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C",
+      "date": "2021.01.29 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-s21",
+      "name": "갤럭시 S21",
+      "code": "SM-G991N",
+      "family": "S 시리즈",
+      "aliases": [
+        "Galaxy S21",
+        "S21",
+        "S21",
+        "SM-G991N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-G991NZAEKOO/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.8 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "158.4mm",
+        "resolution": "2400 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "12.0 MP + 64.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 하이브리드 광학줌, 최대 30배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "151.7 x 71.2 x 7.9",
+        "weight": "169",
+        "battery": "4000",
+        "dex": "지원",
+        "recording": "UHD 8K (7680 x 4320) @24fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 999900
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C",
+      "date": "2021.01.29 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-z-트라이fold",
+      "name": "갤럭시 Z 트라이폴드",
+      "code": "SM-F968N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z 트라이Fold",
+        "Z 트라이폴드",
+        "Z 트라이폴드",
+        "SM-F968N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F968NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "253.0mm",
+        "resolution": "2160 x 1584 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 12.0 MP + 10.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "16 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "159.2 x 214.1 x 3.9-4.2",
+        "weight": "309",
+        "battery": "5600",
+        "dex": "지원",
+        "security": "2032년 12월 31일",
+        "subDisplay": "164.8 mm",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "512GB",
+          "krw": 3590400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-z-fold-special-edition",
+      "name": "갤럭시 Z 폴드 스페셜 에디션",
+      "code": "SM-F958N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold Special Edition",
+        "Z 폴드 스페셜 에디션",
+        "Z 폴드 스페셜 에디션",
+        "SM-F958N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F958NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "3.39 GHz,3.1 GHz,2.9 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "203.1mm",
+        "resolution": "2184 x 1968 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 12.0 MP + 10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "16 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "157.9 x 142.6 x 4.9",
+        "weight": "236",
+        "battery": "4400",
+        "dex": "지원",
+        "subDisplay": "164.8mm",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "512GB",
+          "krw": 2789600
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C-%EC%8A%A4%ED%8E%98%EC%85%9C-%EC%97%90%EB%94%94%EC%85%98-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C-2",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-z-fold7",
+      "name": "갤럭시 Z 폴드7",
+      "code": "SM-F966N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold7",
+        "Z 폴드7",
+        "Z 폴드7",
+        "SM-F966N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F966NZSIKOO/",
+      "spec": {
+        "cpuSpeed": "4.47GHz,3.5GHz",
+        "cpuType": "Octa-Core",
+        "display": "203.1mm",
+        "resolution": "2184 x 1968 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "200.0 MP + 12.0 MP + 10.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.4 x 143.2 x 4.2",
+        "weight": "215",
+        "battery": "4400",
+        "dex": "지원",
+        "security": "2032년 7월 31일",
+        "subDisplay": "164.8 mm",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 2379300
+        },
+        {
+          "storage": "512GB",
+          "krw": 2537700
+        },
+        {
+          "storage": "1TB",
+          "krw": 2933700
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C7-%EA%B3%B5%EA%B0%9C",
+      "date": "2025.07.25 출시",
+      "previousId": "galaxy-z-fold6"
+    },
+    {
+      "id": "galaxy-z-flip7",
+      "name": "갤럭시 Z 플립7",
+      "code": "SM-F766N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip7",
+        "Z 플립7",
+        "Z 플립7",
+        "SM-F766N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F766NLGAKOO/",
+      "spec": {
+        "cpuSpeed": "3.3GHZ,2.74GHZ,2.36GHZ,1.8 GHz",
+        "cpuType": "Deca-Core",
+        "display": "174.1mm",
+        "resolution": "2520 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 10배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax/be 2.4GHz+5GHz+6GHz, EHT320, MIMO, 4096-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "166.7 x 75.2 x 6.5",
+        "weight": "188",
+        "battery": "4300.0",
+        "dex": "지원",
+        "security": "2032년 7월 31일",
+        "subDisplay": "104.8 mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1485000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1643400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD7-%EA%B3%B5%EA%B0%9C",
+      "date": "2025.07.25 출시",
+      "previousId": "galaxy-z-flip6"
+    },
+    {
+      "id": "galaxy-z-flip7-fe",
+      "name": "갤럭시 Z 플립7 FE",
+      "code": "SM-F761N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip7 FE",
+        "Z 플립7 FE",
+        "Z 플립7 FE",
+        "SM-F761N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F761NZWVKOO/",
+      "spec": {
+        "cpuSpeed": "3.2 GHz,2.9 GHz,2.6 GHz,1.95 GHz",
+        "cpuType": "Deca-Core",
+        "display": "170.3mm",
+        "resolution": "2640 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 10배 디지털 줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "nfc": "예",
+        "dimensions": "165.1 x 71.9 x 6.9",
+        "weight": "187",
+        "battery": "4000",
+        "dex": "미지원",
+        "security": "2032년 7월 31일",
+        "subDisplay": "86.1 mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1199000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD7-%EA%B3%B5%EA%B0%9C",
+      "date": "2025.07.25 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-z-fold6",
+      "name": "갤럭시 Z 폴드6",
+      "code": "SM-F956N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold6",
+        "Z 폴드6",
+        "Z 폴드6",
+        "SM-F956N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F956NAKFKOO/",
+      "spec": {
+        "cpuSpeed": "3.39 GHz,3.1 GHz,2.9 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "193.2mm",
+        "resolution": "2160 x 1856 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학 줌, 광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 30배 디지털 줌",
+        "ram": "12 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "153.5 x 132.6 x 5.6",
+        "weight": "239",
+        "battery": "4400",
+        "dex": "지원",
+        "subDisplay": "158.9mm",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "storage": "1TB",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 2229700
+        },
+        {
+          "storage": "512GB",
+          "krw": 2388100
+        },
+        {
+          "storage": "1TB",
+          "krw": 2704900
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C6%C2%B7z-%ED%94%8C%EB%A6%BD6-%EC%82%AC%EC%A0%84%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2024.07.24 출시",
+      "previousId": "galaxy-z-fold5"
+    },
+    {
+      "id": "galaxy-z-flip6",
+      "name": "갤럭시 Z 플립6",
+      "code": "SM-F741N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip6",
+        "Z 플립6",
+        "Z 플립6",
+        "SM-F741N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F741NZOEKOO/",
+      "spec": {
+        "cpuSpeed": "3.39 GHz,3.1 GHz,2.9 GHz,2.2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.3mm",
+        "resolution": "2640 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "광학 줌 수준의 2배 줌(적응형 픽셀 센서 활용), 최대 10배 디지털 줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "165.1 x 71.9 x 6.9",
+        "weight": "187",
+        "battery": "4000",
+        "dex": "미지원",
+        "subDisplay": "86.1mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1485000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1643400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C6%C2%B7z-%ED%94%8C%EB%A6%BD6-%EC%82%AC%EC%A0%84%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2024.07.24 출시",
+      "previousId": "galaxy-z-flip5"
+    },
+    {
+      "id": "galaxy-z-fold5",
+      "name": "갤럭시 Z 폴드5",
+      "code": "SM-F946N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold5",
+        "Z 폴드5",
+        "Z 폴드5",
+        "SM-F946N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F946NZBEKOO/",
+      "spec": {
+        "cpuSpeed": "3.36 GHz,2.8 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "192.1mm",
+        "resolution": "2176 x 1812 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "154.9 x 129.9 x 6.1",
+        "weight": "253",
+        "battery": "4400",
+        "dex": "지원",
+        "subDisplay": "157.3mm",
+        "recording": "UHD 8K (7680 x 4320) @30fps",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 2097700
+        },
+        {
+          "storage": "512GB",
+          "krw": 2218700
+        },
+        {
+          "storage": "1TB",
+          "krw": 2460700
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD5%C2%B7%ED%8F%B4%EB%93%9C5-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2023.08.11 출시",
+      "previousId": "galaxy-z-fold4"
+    },
+    {
+      "id": "galaxy-z-flip5",
+      "name": "갤럭시 Z 플립5",
+      "code": "SM-F731N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip5",
+        "Z 플립5",
+        "Z 플립5",
+        "SM-F731N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F731NDBDKOO/",
+      "spec": {
+        "cpuSpeed": "3.36 GHz,2.8 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.3mm",
+        "resolution": "2640 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "12.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "8 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "165.1 x 71.9 x 6.9",
+        "weight": "187",
+        "battery": "3700",
+        "dex": "미지원",
+        "subDisplay": "86.1mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1399200
+        },
+        {
+          "storage": "512GB",
+          "krw": 1520200
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD5%C2%B7%ED%8F%B4%EB%93%9C5-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C",
+      "date": "2023.08.11 출시",
+      "previousId": "galaxy-z-flip4"
+    },
+    {
+      "id": "galaxy-z-fold4",
+      "name": "갤럭시 Z 폴드4",
+      "code": "SM-F936N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold4",
+        "Z 폴드4",
+        "Z 폴드4",
+        "SM-F936N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F936NZEEKOO/",
+      "spec": {
+        "cpuSpeed": "3.18 GHz,2.7 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "192.1mm",
+        "resolution": "2176 x 1812 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 10.0 MP",
+        "ois": "예",
+        "zoom": "3배 광학줌, 최대 30배 디지털줌",
+        "ram": "12 GB",
+        "storage": "512 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "155.1 x 130.1 x 6.3",
+        "weight": "263",
+        "battery": "4400",
+        "dex": "지원",
+        "subDisplay": "157.3mm",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1998700
+        },
+        {
+          "storage": "512GB",
+          "krw": 2119700
+        },
+        {
+          "storage": "1TB",
+          "krw": 2361700
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD4%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C4-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-z-fold3"
+    },
+    {
+      "id": "galaxy-z-flip4",
+      "name": "갤럭시 Z 플립4",
+      "code": "SM-F721N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip4",
+        "Z 플립4",
+        "Z 플립4",
+        "SM-F721N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F721NZDEKOO/",
+      "spec": {
+        "cpuSpeed": "3.18 GHz,2.7 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.3mm",
+        "resolution": "2640 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "refresh": "120 Hz",
+        "rear": "12.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE160, MIMO, 1024-QAM802.11 a/b/g/n/ac/ax 2.4G+5GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "nfc": "예",
+        "dimensions": "165.2 x 71.9 x 6.9",
+        "weight": "187",
+        "battery": "3700",
+        "dex": "미지원",
+        "subDisplay": "48.2 mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1353000
+        },
+        {
+          "storage": "512GB",
+          "krw": 1474000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD4%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C4-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-z-flip3"
+    },
+    {
+      "id": "galaxy-z-fold3",
+      "name": "갤럭시 Z 폴드3",
+      "code": "SM-F926N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Fold3",
+        "Z 폴드3",
+        "Z 폴드3",
+        "SM-F926N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F926NZSAKOO/",
+      "spec": {
+        "cpuSpeed": "2.84 GHz,2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "191.9mm",
+        "resolution": "2208 x 1768 (QXGA+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "12.0 MP + 12.0 MP + 12.0 MP",
+        "ois": "예",
+        "zoom": "2배 광학줌, 최대 10배 디지털줌",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 3.2 Gen 1",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz+6 GHz, HE160, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "uwb": "예",
+        "nfc": "예",
+        "dimensions": "158.2 x 128.1 x 6.4",
+        "weight": "271",
+        "battery": "4400",
+        "dex": "지원",
+        "subDisplay": "158.2mm (6.2\")",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "pen": "예",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1998700
+        },
+        {
+          "storage": "512GB",
+          "krw": 2097700
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C3%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD3-%EC%A0%84%EA%B2%A9",
+      "date": "2021.08.27 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-z-flip3",
+      "name": "갤럭시 Z 플립3",
+      "code": "SM-F711N",
+      "family": "폴더블",
+      "aliases": [
+        "Galaxy Z Flip3",
+        "Z 플립3",
+        "Z 플립3",
+        "SM-F711N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-F711NZGEKOO/",
+      "spec": {
+        "cpuSpeed": "2.84 GHz,2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.3mm",
+        "resolution": "2640 x 1080 (FHD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "12.0 MP + 12.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "sim": "SIM 1",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.1",
+        "nfc": "예",
+        "dimensions": "166.0 x 72.2 x 6.9",
+        "weight": "183",
+        "battery": "3300",
+        "dex": "미지원",
+        "subDisplay": "48.2 mm",
+        "recording": "UHD 4 K (3840 x 2160) @60fps",
+        "sensors": "가속도 센서,기압 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1254000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C3%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD3-%EC%A0%84%EA%B2%A9",
+      "date": "2021.08.27 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a17",
+      "name": "갤럭시 A17 LTE",
+      "code": "SM-A175N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A17",
+        "A17",
+        "A17",
+        "SM-A175N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A175NZAAKOO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.5",
+        "weight": "190",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2031년 9월 30일",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 319000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai-%ED%83%91%EC%9E%AC%ED%95%9C-%EC%8B%A4%EC%86%8D%ED%98%95-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a17-lte-%EA%B5%AD%EB%82%B4",
+      "date": "2025.11.07 출시",
+      "previousId": "galaxy-a16"
+    },
+    {
+      "id": "galaxy-a16",
+      "name": "갤럭시 A16 LTE",
+      "code": "SM-A165N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A16",
+        "A16",
+        "A16",
+        "SM-A165N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A165NZKEKOO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1.5 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.9",
+        "weight": "200",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 319000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a16-lte-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2024.11.29 출시",
+      "previousId": "galaxy-a15"
+    },
+    {
+      "id": "galaxy-a36-5g",
+      "name": "갤럭시 A36 5G",
+      "code": "SM-A366N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A36 5G",
+        "A36 5G",
+        "A36 5G",
+        "SM-A366N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A366NZKAKOD/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.1 mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 8.0 MP + 5.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.4",
+        "dimensions": "162.9 x 78.2 x 7.4",
+        "weight": "195",
+        "battery": "5000",
+        "video": "최대 29",
+        "dex": "미지원",
+        "security": "2031년 3월 31일",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 499400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a36-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2025.06.12 출시",
+      "previousId": "galaxy-a35-5g"
+    },
+    {
+      "id": "galaxy-a35-5g",
+      "name": "갤럭시 A35 5G",
+      "code": "SM-A356N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A35 5G",
+        "A35 5G",
+        "A35 5G",
+        "SM-A356N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A356NZKWKOO/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "168.3mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 8.0 MP + 5.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + Embedded SIM + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "161.7 x 78.0 x 8.2",
+        "weight": "209",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 499400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/456735-2",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-a34-5g"
+    },
+    {
+      "id": "galaxy-a25-5g",
+      "name": "갤럭시 A25 5G",
+      "code": "SM-A256N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A25 5G",
+        "A25 5G",
+        "A25 5G",
+        "SM-A256N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A256NLBAKOD/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "164.2mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 8.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "161.0 x 76.5 x 8.3",
+        "weight": "197",
+        "battery": "5000",
+        "video": "최대 21",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 449900
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a25-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-a24"
+    },
+    {
+      "id": "galaxy-a15",
+      "name": "갤럭시 A15 LTE",
+      "code": "SM-A155N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A15",
+        "A15",
+        "A15",
+        "SM-A155N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A155NZKEKOO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "163.9mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "160.1 x 76.8 x 8.4",
+        "weight": "200",
+        "battery": "5000",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A155NZKEKOO/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-a13"
+    },
+    {
+      "id": "galaxy-a34-5g",
+      "name": "갤럭시 A34 5G",
+      "code": "SM-A346N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A34 5G",
+        "A34 5G",
+        "A34 5G",
+        "SM-A346N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A346NZKBKOO/",
+      "spec": {
+        "cpuSpeed": "2.6 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "166.5mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "48.0 MP + 8.0 MP + 5.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80 MIMO",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "161.3 x 78.1 x 8.2",
+        "weight": "199",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 499400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a34-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-a33-5g"
+    },
+    {
+      "id": "galaxy-a24",
+      "name": "갤럭시 A24",
+      "code": "SM-A245N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A24",
+        "A24",
+        "A24",
+        "SM-A245N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A245NZKNKOO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "164.2mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "162.1 x 77.6 x 8.3",
+        "weight": "195",
+        "battery": "5000",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 396000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a24-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2023.05.19 출시",
+      "previousId": "galaxy-a23"
+    },
+    {
+      "id": "galaxy-a53-5g",
+      "name": "갤럭시 A53 5G",
+      "code": "SM-A536N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A53 5G",
+        "A53 5G",
+        "A53 5G",
+        "SM-A536N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A536NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "164.0mm",
+        "resolution": "1080 x 2400 (FHD+)",
+        "panel": "Super AMOLED",
+        "rear": "64.0 MP + 12.0 MP + 5.0 MP + 5.0 MP",
+        "front": "32.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.1",
+        "nfc": "예",
+        "dimensions": "159.6 x 74.8 x 8.1",
+        "weight": "189",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,RGB 광 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 599500
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a53-5g%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-a33-5g-%EA%B3%B5%EA%B0%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a33-5g",
+      "name": "갤럭시 A33 5G",
+      "code": "SM-A336N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A33 5G",
+        "A33 5G",
+        "A33 5G",
+        "SM-A336N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A336NZKTKOO/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "162.1mm",
+        "resolution": "1080 x 2400 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "48.0 MP + 8.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.1",
+        "nfc": "예",
+        "dimensions": "159.7 x 74.0 x 8.1",
+        "weight": "186",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 499400
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a33-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "2022.07.29 출시",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a23",
+      "name": "갤럭시 A23",
+      "code": "SM-A235N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A23",
+        "A23",
+        "A23",
+        "SM-A235N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A235NZWOKOO/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,1.9 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "PLS TFT LCD",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "예",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "165.4 x 76.9 x 8.4",
+        "weight": "195",
+        "battery": "5000",
+        "video": "최대 26",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 374000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a23-25%EC%9D%BC-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a13",
+      "name": "갤럭시 A13",
+      "code": "SM-A135N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A13",
+        "A13",
+        "A13",
+        "SM-A135N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A135NZKEKOO/",
+      "spec": {
+        "cpuSpeed": "2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "PLS LCD",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4+5 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "165.1 x 76.4 x 8.8",
+        "weight": "195",
+        "battery": "5000",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,지자기 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "64GB",
+          "krw": 297000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%8B%A4%EC%9A%A9%EC%84%B1-%EA%B0%96%EC%B6%98-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a13-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a52s-5g",
+      "name": "갤럭시 A52s 5G",
+      "code": "SM-A528N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A52s 5G",
+        "A52s 5G",
+        "A52s 5G",
+        "SM-A528N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A528NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "164.0mm",
+        "resolution": "1080 x 2400 (FHD+)",
+        "panel": "Super AMOLED",
+        "rear": "64.0 MP + 12.0 MP + 5.0 MP + 5.0 MP",
+        "front": "32.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, SISO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "159.9 x 75.1 x 8.4",
+        "weight": "189",
+        "battery": "4500",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,RGB 광 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 599500
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a52s-5g-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a42-5g",
+      "name": "갤럭시 A42 5G",
+      "code": "SM-A426N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A42 5G",
+        "A42 5G",
+        "A42 5G",
+        "SM-A426N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A426NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.7mm",
+        "resolution": "720 x 1600 (HD+)",
+        "panel": "Super AMOLED",
+        "rear": "48.0 MP + 8.0 MP + 5.0 MP + 5.0 MP",
+        "front": "20.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4+5 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "164.4 x 75.9 x 8.6",
+        "weight": "193",
+        "battery": "5000",
+        "video": "최대 35",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 449900
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a42-5g-12%EC%9D%BC-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a32",
+      "name": "갤럭시 A32",
+      "code": "SM-A325N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A32",
+        "A32",
+        "A32",
+        "SM-A325N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A325NLVAKOO/",
+      "spec": {
+        "cpuSpeed": "2 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "162.1mm",
+        "resolution": "1080 x 2400 (FHD+)",
+        "panel": "Super AMOLED",
+        "rear": "64.0 MP + 8.0 MP + 5.0 MP + 5.0 MP",
+        "front": "20.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4+5 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "158.9 x 73.6 x 8.4",
+        "weight": "184",
+        "battery": "5000",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,RGB 광 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "64GB",
+          "krw": 374000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a32-12%EC%9D%BC-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-a12",
+      "name": "갤럭시 A12",
+      "code": "SM-A125N",
+      "family": "A 시리즈",
+      "aliases": [
+        "Galaxy A12",
+        "A12",
+        "A12",
+        "SM-A125N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A125NZKNKOO/",
+      "spec": {
+        "cpuSpeed": "2.3 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "165.5mm",
+        "resolution": "720 x 1600 (HD+)",
+        "panel": "PLS TFT LCD",
+        "rear": "48.0 MP + 5.0 MP + 2.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "ram": "3 GB",
+        "storage": "32 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 b/g/n 2.4 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "164.0 x 75.8 x 8.9",
+        "weight": "205",
+        "battery": "5000",
+        "video": "최대 21",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "32GB",
+          "krw": 275000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a12-9%EC%9D%BC-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-m12",
+      "name": "갤럭시 M12",
+      "code": "SM-M127N",
+      "family": "M 시리즈",
+      "aliases": [
+        "Galaxy M12",
+        "M12",
+        "M12",
+        "SM-M127N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M127NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "165.5mm",
+        "resolution": "720 x 1600 (HD+)",
+        "panel": "PLS TFT LCD",
+        "rear": "48.0 MP + 5.0 MP + 2.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "ram": "3 GB",
+        "storage": "32 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 b/g/n 2.4 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "아니오",
+        "dimensions": "164.0 x 75.9 x 9.7",
+        "weight": "214",
+        "battery": "5000",
+        "video": "최대 19",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "32GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-M127NZKAKOO/",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-quantum7",
+      "name": "갤럭시 퀀텀7",
+      "code": "SM-A576S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum7",
+        "퀀텀7",
+        "퀀텀7",
+        "SM-A576S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A576SZVASKC/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.6 GHz,1.9 GHz",
+        "cpuType": "Octa-Core",
+        "display": "171.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED Plus",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 5.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "sim": "SIM 1 + eSIM / Dual eSIM",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz+6GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v6.0",
+        "nfc": "예",
+        "dimensions": "161.5 x 76.8 x 6.9",
+        "weight": "179",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2032년 3월 31일",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "Sensors"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 717200
+        }
+      ],
+      "priceUrl": "https://news.sktelecom.com/229704",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-quantum6"
+    },
+    {
+      "id": "galaxy-quantum6",
+      "name": "갤럭시 퀀텀6",
+      "code": "SM-A566S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum6",
+        "퀀텀6",
+        "퀀텀6",
+        "SM-A566S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A566SZKBSKC/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.6 GHz,1.9 GHz",
+        "cpuType": "Octa-Core",
+        "display": "170.1 mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 5.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "sim": "SIM 1 + Embedded SIM",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "162.2 x 77.5 x 7.4",
+        "weight": "198",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2032년 3월 31일",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 618200
+        }
+      ],
+      "priceUrl": "https://news.sktelecom.com/214156",
+      "date": "2025.08.01 출시",
+      "previousId": "galaxy-quantum5"
+    },
+    {
+      "id": "galaxy-quantum5",
+      "name": "갤럭시 퀀텀5",
+      "code": "SM-A556S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum5",
+        "퀀텀5",
+        "퀀텀5",
+        "SM-A556S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A556SZKBSKC/",
+      "spec": {
+        "cpuSpeed": "2.75GHZ,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "168.3mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 5.0 MP",
+        "front": "32.0 MP",
+        "ois": "예",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + Embedded SIM + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "161.1 x 77.4 x 8.2",
+        "weight": "213",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A556SZKBSKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-quantum4"
+    },
+    {
+      "id": "galaxy-quantum4",
+      "name": "갤럭시 퀀텀4",
+      "code": "SM-A546S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum4",
+        "퀀텀4",
+        "퀀텀4",
+        "SM-A546S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A546SZKCSKC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "163.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 12.0 MP + 5.0 MP",
+        "front": "32.0 MP",
+        "ois": "예",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + Embedded SIM + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "158.2 x 76.7 x 8.2",
+        "weight": "202",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A546SZKCSKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-quantum3"
+    },
+    {
+      "id": "galaxy-quantum3",
+      "name": "갤럭시 퀀텀3",
+      "code": "SM-M536S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum3",
+        "퀀텀3",
+        "퀀텀3",
+        "SM-M536S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M536SZKUSKC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.5 mm",
+        "resolution": "1080 x 2400 (FHD+)",
+        "panel": "Super AMOLED Plus",
+        "rear": "108.0 MP + 8.0 MP + 2.0 MP + 2.0 MP",
+        "front": "32.0 MP",
+        "ois": "아니오",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.2",
+        "nfc": "예",
+        "dimensions": "164.7 x 77.0 x 7.4",
+        "weight": "176",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-M536SZKUSKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-quantum2"
+    },
+    {
+      "id": "galaxy-quantum2",
+      "name": "갤럭시 퀀텀2",
+      "code": "SM-A826S",
+      "family": "퀀텀",
+      "aliases": [
+        "Galaxy Quantum2",
+        "퀀텀2",
+        "퀀텀2",
+        "SM-A826S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A826SZAASKC/",
+      "spec": {
+        "cpuSpeed": "2.9 GHz,2.4 GHz,1.7 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.5 mm",
+        "resolution": "3200 x 1440 (Quad HD+)",
+        "panel": "Dynamic AMOLED 2X",
+        "rear": "64.0 MP + 12.0 MP + 5.0 MP",
+        "front": "10.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "161.9 x 73.8 x 8.1",
+        "weight": "176",
+        "battery": "4500",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A826SZAASKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-jump5",
+      "name": "갤럭시 점프5",
+      "code": "SM-A276K",
+      "family": "점프",
+      "aliases": [
+        "Galaxy Jump5",
+        "점프5",
+        "점프5",
+        "SM-A276K"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A276KZKAKTC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "12.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.1",
+        "nfc": "예",
+        "dimensions": "162.4 x 78.2 x 7.8",
+        "weight": "200",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2032년 7월 31일",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "Sensors"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A276KZKAKTC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-jump4"
+    },
+    {
+      "id": "galaxy-jump4",
+      "name": "갤럭시 점프4",
+      "code": "SM-M366K",
+      "family": "점프",
+      "aliases": [
+        "Galaxy Jump4",
+        "점프4",
+        "점프4",
+        "SM-M366K"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M366KZKCKTC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "120 Hz",
+        "rear": "12.0 MP + 8.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac/ax 2.4GHz+5GHz, HE80, SISO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.7",
+        "weight": "197",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2031년 6월 30일",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-M366KZKCKTC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-jump3"
+    },
+    {
+      "id": "galaxy-jump3",
+      "name": "갤럭시 점프3",
+      "code": "SM-M446K",
+      "family": "점프",
+      "aliases": [
+        "Galaxy Jump3",
+        "점프3",
+        "점프3",
+        "SM-M446K"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M446KZKAKTC/",
+      "spec": {
+        "cpuSpeed": "2.84 GHz,2.4 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "PLS LCD",
+        "refresh": "120 Hz",
+        "rear": "50.0 MP + 2.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac/ax 2.4 G+5 GHz, HE80, MIMO, 1024-QAM",
+        "bluetooth": "Bluetooth v5.2",
+        "nfc": "예",
+        "dimensions": "167.7 x 78.0 x 9.1",
+        "weight": "216",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 438900
+        }
+      ],
+      "priceUrl": "https://corp.kt.com/html/promote/news/report_detail.html?datNo=18110",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-jump2"
+    },
+    {
+      "id": "galaxy-jump2",
+      "name": "갤럭시 점프2",
+      "code": "SM-M336K",
+      "family": "점프",
+      "aliases": [
+        "Galaxy Jump2",
+        "점프2",
+        "점프2",
+        "SM-M336K"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M336KZWMKTC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "PLS LCD",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.1",
+        "nfc": "예",
+        "dimensions": "165.4 x 76.9 x 8.4",
+        "weight": "198",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 419100
+        }
+      ],
+      "priceUrl": "https://corp.kt.com/html/promote/news/report_detail.html?datNo=17175",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-jump"
+    },
+    {
+      "id": "galaxy-jump",
+      "name": "갤럭시 점프",
+      "code": "SM-A326K",
+      "family": "점프",
+      "aliases": [
+        "Galaxy Jump",
+        "점프",
+        "점프",
+        "SM-A326K"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A326KZRPKTO/",
+      "spec": {
+        "cpuSpeed": "2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "165.5mm",
+        "resolution": "720 x 1600 (HD+)",
+        "panel": "TFT",
+        "rear": "48.0 MP + 8.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "164.2 x 76.1 x 9.1",
+        "weight": "205",
+        "battery": "5000",
+        "video": "최대 20",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,홀 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A326KZRPKTO/",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-wide9",
+      "name": "갤럭시 와이드9",
+      "code": "SM-M176S",
+      "family": "와이드",
+      "aliases": [
+        "Galaxy Wide9",
+        "와이드9",
+        "와이드9",
+        "SM-M176S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M176SZSASKC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "zoom": "최대 10배 디지털줌",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.5",
+        "weight": "192",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2031년 8월 31일",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "Sensors"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 469700
+        }
+      ],
+      "priceUrl": "https://news.sktelecom.com/227414",
+      "date": "2026.07.03 출시",
+      "previousId": "galaxy-wide8"
+    },
+    {
+      "id": "galaxy-wide8",
+      "name": "갤럭시 와이드8",
+      "code": "SM-M166S",
+      "family": "와이드",
+      "aliases": [
+        "Galaxy Wide8",
+        "와이드8",
+        "와이드8",
+        "SM-M166S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M166SZKASKC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.9",
+        "weight": "200",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2031년 2월 28일",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-M166SZKASKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-wide7"
+    },
+    {
+      "id": "galaxy-wide7",
+      "name": "갤럭시 와이드7",
+      "code": "SM-M156S",
+      "family": "와이드",
+      "aliases": [
+        "Galaxy Wide7",
+        "와이드7",
+        "와이드7",
+        "SM-M156S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M156SZAASKC/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "163.9mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "160.1 x 76.8 x 9.3",
+        "weight": "217",
+        "battery": "6000",
+        "video": "최대 25",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 374000
+        }
+      ],
+      "priceUrl": "https://news.sktelecom.com/204986",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-wide6"
+    },
+    {
+      "id": "galaxy-wide6",
+      "name": "갤럭시 와이드6",
+      "code": "SM-A136S",
+      "family": "와이드",
+      "aliases": [
+        "Galaxy Wide6",
+        "와이드6",
+        "와이드6",
+        "SM-A136S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A136SZKNSKC/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "165.5mm",
+        "resolution": "720 x 1600 (HD+)",
+        "panel": "PLS LCD",
+        "rear": "50.0 MP + 2.0 MP + 2.0 MP",
+        "front": "5.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "164.5 x 76.5 x 8.8",
+        "weight": "195",
+        "battery": "5000",
+        "video": "최대 21",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A136SZKNSKC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-wide5"
+    },
+    {
+      "id": "galaxy-wide5",
+      "name": "갤럭시 와이드5",
+      "code": "SM-E426S",
+      "family": "와이드",
+      "aliases": [
+        "Galaxy Wide5",
+        "와이드5",
+        "와이드5",
+        "SM-E426S"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-E426SZAKSKC/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "TFT",
+        "rear": "64.0 MP + 5.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "167.2 x 76.4 x 9.1",
+        "weight": "207",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "QWXGA 2K (2048 x 1152)@30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 449900
+        }
+      ],
+      "priceUrl": "https://news.sktelecom.com/148579",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-buddy5",
+      "name": "갤럭시 버디5",
+      "code": "SM-A176L",
+      "family": "버디",
+      "aliases": [
+        "Galaxy Buddy5",
+        "버디5",
+        "버디5",
+        "SM-A176L"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A176LZKELUC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "예",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 2 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.5",
+        "weight": "192",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2031년 8월 31일",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "Sensors"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 528000
+        }
+      ],
+      "priceUrl": "https://news.lguplus.com/21844",
+      "date": "2026.05.15 출시",
+      "previousId": "galaxy-buddy4"
+    },
+    {
+      "id": "galaxy-buddy4",
+      "name": "갤럭시 버디4",
+      "code": "SM-A166L",
+      "family": "버디",
+      "aliases": [
+        "Galaxy Buddy4",
+        "버디4",
+        "버디4",
+        "SM-A166L"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A166LZAELUC/",
+      "spec": {
+        "cpuSpeed": "2.4 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "169.1mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1.5 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "164.4 x 77.9 x 7.9",
+        "weight": "200",
+        "battery": "5000",
+        "dex": "미지원",
+        "security": "2030년 10월 31일",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A166LZAELUC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-buddy3"
+    },
+    {
+      "id": "galaxy-buddy3",
+      "name": "갤럭시 버디3",
+      "code": "SM-A156L",
+      "family": "버디",
+      "aliases": [
+        "Galaxy Buddy3",
+        "버디3",
+        "버디3",
+        "SM-A156L"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A156LLBALUC/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "163.9mm",
+        "resolution": "1080 x 2340 (FHD+)",
+        "panel": "Super AMOLED",
+        "refresh": "90 Hz",
+        "rear": "50.0 MP + 5.0 MP + 2.0 MP",
+        "front": "13.0 MP",
+        "ois": "아니오",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11a/b/g/n/ac 2.4GHz+5GHz, VHT80",
+        "bluetooth": "Bluetooth v5.3",
+        "nfc": "예",
+        "dimensions": "160.1 x 76.8 x 8.4",
+        "weight": "200",
+        "battery": "5000",
+        "video": "최대 21",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A156LLBALUC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-buddy2"
+    },
+    {
+      "id": "galaxy-buddy2",
+      "name": "갤럭시 버디2",
+      "code": "SM-M236L",
+      "family": "버디",
+      "aliases": [
+        "Galaxy Buddy2",
+        "버디2",
+        "버디2",
+        "SM-M236L"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-M236LZGELUC/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,1.8 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "PLS LCD",
+        "rear": "50.0 MP + 8.0 MP + 2.0 MP",
+        "front": "8.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4+5 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "165.5 x 77.0 x 8.4",
+        "weight": "198",
+        "battery": "5000",
+        "video": "최대 26",
+        "dex": "미지원",
+        "recording": "UHD 4K (3840 x 2160) @30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,가상 조도 센싱,가상근접 센싱"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-M236LZGELUC/",
+      "date": "국내 정식 판매 모델",
+      "previousId": "galaxy-buddy"
+    },
+    {
+      "id": "galaxy-buddy",
+      "name": "갤럭시 버디",
+      "code": "SM-A226L",
+      "family": "버디",
+      "aliases": [
+        "Galaxy Buddy",
+        "버디",
+        "버디",
+        "SM-A226L"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-A226LZAKLUO/",
+      "spec": {
+        "cpuSpeed": "2.2 GHz,2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "167.2mm",
+        "resolution": "1080 x 2408 (FHD+)",
+        "panel": "TFT",
+        "rear": "48.0 MP + 5.0 MP + 2.0 MP",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4 G+5 GHz, VHT80",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "167.2 x 76.4 x 9.1",
+        "weight": "206",
+        "battery": "5000",
+        "dex": "미지원",
+        "recording": "QWXGA 2K (2048 x 1152)@30fps",
+        "sensors": "가속도 센서,지문 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": null
+        }
+      ],
+      "priceUrl": "https://www.samsung.com/sec/support/model/SM-A226LZAKLUO/",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    },
+    {
+      "id": "galaxy-xcover-5",
+      "name": "갤럭시 XCover 5",
+      "code": "SM-G525N",
+      "family": "XCover",
+      "aliases": [
+        "Galaxy XCover 5",
+        "XCover 5",
+        "XCover 5",
+        "SM-G525N"
+      ],
+      "url": "https://www.samsung.com/sec/support/model/SM-G525NZKAKOO/",
+      "spec": {
+        "cpuSpeed": "2 GHz",
+        "cpuType": "Octa-Core",
+        "display": "134.8mm",
+        "resolution": "1480 x 720 (HD+)",
+        "panel": "PLS TFT LCD",
+        "rear": "16.0 MP",
+        "front": "5.0 MP",
+        "ois": "아니오",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "external": "MicroSD (최대 1 TB)",
+        "sim": "SIM 1 + MicroSD",
+        "usb": "USB 2.0",
+        "wifi": "802.11 a/b/g/n/ac 2.4+5 GHz",
+        "bluetooth": "Bluetooth v5.0",
+        "nfc": "예",
+        "dimensions": "147.1 x 71.6 x 9.2",
+        "weight": "172",
+        "battery": "3000",
+        "video": "최대 13",
+        "dex": "미지원",
+        "recording": "FHD (1920 x 1080) @30fps",
+        "sensors": "가속도 센서,자이로 센서,지자기 센서,조도 센서,근접 센서"
+      },
+      "prices": [
+        {
+          "storage": "64GB",
+          "krw": 275000
+        }
+      ],
+      "priceUrl": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-xcover-5-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C",
+      "date": "국내 정식 판매 모델",
+      "previousId": null
+    }
+  ]
+}

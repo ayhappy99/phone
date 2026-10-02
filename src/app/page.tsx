@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import domesticCatalog from "./galaxy-domestic.json";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -6375,6 +6376,84 @@ const modelInfo: Record<string, ModelInfo> = {
   }
 };
 
+// Every added Galaxy is backed by a Samsung Korea support page and domestic model code.
+// Append after the legacy columns have been constructed so their indexes remain stable.
+const domesticMissing = "이번 국내 공식 자료 대조에서 확인하지 못함";
+const domesticById = new Map(domesticCatalog.models.map(model => [model.id, model]));
+for (const entry of domesticCatalog.models) {
+  const s: Record<string, string | undefined> = entry.spec;
+  const source = `${entry.id}-kr-specs`;
+  const priceSource = `${entry.id}-kr-price`;
+  const prior = entry.previousId ? domesticById.get(entry.previousId) : undefined;
+  const p: Record<string, string | undefined> = prior?.spec ?? {};
+  const value = (key: string) => s[key] || domesticMissing;
+  const compare = (key: string, unit = "") => !prior
+    ? "전작의 국내 공식 사양은 이 목록에서 대조하지 않았습니다. 다른 기종을 선택해 직접 비교할 수 있습니다."
+    : p[key] && s[key]
+      ? p[key] === s[key] ? `${prior.name}와 공식 표기값 ${s[key]}${unit} 동일.` : `${prior.name}: ${p[key]}${unit} → 이 모델: ${s[key]}${unit}.`
+      : `${prior.name}의 해당 국내 사양과 비교할 근거가 충분하지 않아 변화량은 표시하지 않았습니다.`;
+  const screen = `${(parseFloat(value("display")) / 25.4).toFixed(1)}형`;
+  const weight = `${value("weight")}g`;
+  const folded = entry.family === "폴더블";
+  const display = `${value("display")}(약 ${screen}), ${value("panel")}, ${value("resolution")}${s.refresh ? `, 최대 ${s.refresh}` : ""}${folded ? " · 메인 화면, 펼침 기준" : ""}.`;
+  const camera = `후면 ${value("rear")}${s.front ? ` · 전면 ${s.front}` : ""}${s.ois ? ` · 후면 OIS ${s.ois}` : ""}${s.zoom ? ` · ${s.zoom}` : ""}.`;
+  const convenience = [s.pen ? `S펜 지원: ${s.pen}` : "", s.sensors?.includes("지문") ? "지문 센서" : "", s.nfc ? `NFC: ${s.nfc}` : "", s.dex ? `Samsung DeX: ${s.dex}` : "", s.external ? `외장 저장공간: ${s.external}` : ""].filter(Boolean);
+  const featurePitch = s.external ? `저장공간을 더 쓰고 싶으시면 ${s.external} 지원 여부를 살펴보세요.` : s.dex === "지원" ? "Samsung DeX를 지원해요. 연결할 화면과 액세서리도 확인해 주세요." : `국내 모델 ${entry.code}의 연결 기능과 지원 항목을 확인해 주세요.`;
+  const brief = (official: string, previous: string, short: string, detail: string, caution: string): Brief => ({ official, vs_previous: previous, sales_pitch: short, sales_pitch_detail: detail, caution, sources: [source, ...(prior ? [`${prior.id}-kr-specs`] : [])] });
+  sources[source] = { label: `삼성전자 대한민국 · ${entry.name} (${entry.code}) 공식 사양`, url: entry.url };
+  sources[priceSource] = { label: entry.prices.every(price => price.krw !== null) ? `${entry.name} 국내 출시 가격 근거` : `${entry.name} 국내 모델 확인 · 출시가는 확인 보류`, url: entry.priceUrl };
+  phoneData.push({
+    id: entry.id, model_name: entry.name, aliases: entry.aliases, brand: "Samsung",
+    previous: prior?.name || "국내 전작 비교 확인 범위",
+    summary: `${screen}${folded ? " · 펼침" : ""} · ${weight} · ${entry.code}`,
+    prices: entry.prices, price_source: priceSource, official_url: entry.url,
+    specs: {
+      processor: brief(`CPU ${value("cpuType")} · ${value("cpuSpeed")}. 칩셋 제품명과 공정은 이 국내 사양표에서 대조하지 않았습니다.`, compare("cpuSpeed"), `CPU는 ${value("cpuType")}이고, 공식 속도 표기는 ${value("cpuSpeed")}예요.`, `자주 쓰시는 앱이 원활한지 보실 때 CPU 정보도 참고하세요. 국내 공식 사양은 ${value("cpuType")}, ${value("cpuSpeed")}로 표시돼 있어요. 실제 처리 속도와 발열은 앱과 사용 환경에 따라 달라요.`, "클럭과 코어 수만으로 서로 다른 칩셋의 성능이나 발열을 단정할 수 없습니다."),
+      display: brief(display, compare("display"), `화면은 약 ${screen}${folded ? "이고 펼쳤을 때 기준" : ""}이에요. ${s.refresh ? `최대 ${s.refresh}를 지원해요.` : "크기와 화면 종류를 함께 살펴보세요."}`, `사진이나 글자를 어느 정도 크기로 보고 싶으신지 살펴보세요. 이 모델의 ${folded ? "메인 " : ""}화면은 약 ${screen}이고 ${value("panel")}예요. ${s.refresh ? `최대 주사율은 ${s.refresh}로 안내돼 있어요.` : "확인한 사양표에 주사율 값이 없어 임의로 적지 않았어요."} 글자 크기는 별도로 조절할 수 있어요.`, "대각선은 직각 기준 환산값이며 실제 표시 영역은 더 작습니다. 최대 주사율과 실제 동작은 콘텐츠·설정에 따라 다릅니다. 밝기 수치는 별도로 확인해야 합니다."),
+      weight: brief(`${weight} · ${value("dimensions")}mm${folded ? " · 펼침 기준" : ""}. 소재는 이 국내 사양표에서 대조하지 않았습니다.`, compare("weight", "g"), `본체 무게는 ${weight}이에요. 케이스를 끼우시면 무게가 더해져요.`, `휴대하거나 오래 들고 쓰실 때 본체 ${weight}이라는 점을 참고해 주세요. ${folded ? "표시한 크기는 펼쳤을 때 기준이에요. " : ""}손에 잡히는 느낌은 크기와 케이스에 따라 달라서 직접 들어보시면 좋아요.`, "크기·무게는 제조사 표기값입니다. 케이스와 부착 액세서리를 포함한 무게가 아닙니다."),
+      camera: brief(camera, compare("rear"), `후면 카메라 구성은 ${value("rear")}예요.${s.ois ? ` OIS는 ${s.ois === "예" ? "지원해요" : "지원하지 않아요"}.` : ""}`, `주로 찍으시는 사진에 맞춰 카메라 구성을 살펴보세요. 후면은 ${value("rear")}로 안내돼 있어요. ${s.zoom ? `줌은 ‘${s.zoom}’으로 표시돼 있어요.` : "줌 구성은 이 자료에서 추가로 확인해야 해요."} 화소 수만으로 실제 사진 품질을 단정할 수는 없어요.`, "광학 줌·하이브리드 광학 줌·광학 수준 줌·디지털 줌은 구분해야 합니다. 촬영 결과는 조명·움직임·설정에 따라 달라집니다."),
+      special_feature: brief(convenience.join(" · ") || domesticMissing, compare("external"), featurePitch, `${featurePitch} 국내 사양에 표시된 기능은 ${convenience.join(" · ") || domesticMissing}예요. NFC 지원 여부만으로 삼성월렛 결제 지원을 단정하지 않으며, 쓰시는 카드·서비스와 액세서리 호환성은 따로 확인해 주세요.`, "NFC와 결제 지원은 같은 의미가 아닙니다. 메모리카드·S펜·연결 액세서리의 포함 여부와 호환성은 별도로 확인해야 합니다."),
+    },
+  });
+  fullSpecCatalog[entry.id] = {
+    source, checkedAt: domesticCatalog.checkedAt,
+    scope: `대한민국 모델 ${entry.code}의 공식 지원 페이지에서 확인한 핵심 사양. 해당 페이지의 저장 용량은 ${value("storage")}, RAM은 ${value("ram")}. 해외판 사양을 혼용하지 않았습니다. 전체 원문은 아래 공식 링크에서 확인할 수 있습니다.`,
+    sections: [
+      { title: "국내 모델", items: [entry.name, `모델 번호: ${entry.code}`, entry.date] },
+      { title: "프로세서", items: [`CPU 종류: ${value("cpuType")}`, `CPU 속도: ${value("cpuSpeed")}`] },
+      { title: "디스플레이", items: [display, ...(s.subDisplay ? [`커버 화면: ${s.subDisplay}`] : [])] },
+      { title: "후면 카메라", items: [`화소: ${value("rear")}`, `OIS: ${value("ois")}`, `줌: ${value("zoom")}`] },
+      { title: "전면 카메라", items: [`화소: ${value("front")}`] },
+      { title: "동영상 녹화", items: [value("recording")] },
+      { title: "메모리/스토리지", items: [`확인한 국내 판매 옵션: RAM ${value("ram")} · ${value("storage")}`, `가격표에 표시한 국내 저장 용량: ${entry.prices.map(price => price.storage).join(", ")}`] },
+      { title: "외장 저장공간", items: [value("external")] },
+      { title: "크기/무게", items: [`${value("dimensions")}mm${folded ? " · 펼침 기준" : ""}`, weight] },
+      { title: "배터리", items: [`${value("battery")}mAh (Typical)`, s.video ? `비디오 재생: ${s.video}시간` : domesticMissing] },
+      { title: "연결", items: [`USB: ${value("usb")}`, `Wi-Fi: ${value("wifi")}`, `Bluetooth: ${value("bluetooth")}`, `UWB: ${value("uwb")}`, `NFC: ${value("nfc")}`] },
+      { title: "SIM 카드", items: [value("sim")] },
+      { title: "편의 기능", items: convenience.length ? convenience : [domesticMissing] },
+      { title: "소프트웨어 지원", items: [`보안 업데이트 지원 기한: ${value("security")}`] },
+    ],
+    conditions: [
+      "한국 정식 판매 모델만 등록했습니다. 통신사 전용 기종은 국내 판매명과 국내 모델 번호를 사용합니다.",
+      "저장 용량·RAM·SIM 구성은 확인한 국내 모델 옵션 기준이며 해외판 옵션을 합치지 않았습니다.",
+      "출시가는 공식 국내 발표에서 확인한 금액입니다. 현재 실구매가·보조금·프로모션 가격과 다릅니다. 확인하지 못한 출시가는 확인 보류로 표시합니다.",
+      "화면은 직각화 대각선 기준이고 인치 표기는 mm를 25.4로 나눠 소수 첫째 자리로 반올림한 값입니다. 실제 표시 영역은 더 작습니다.",
+      "배터리 Typical 용량과 제조사 최대 재생 시간은 실제 사용 시간을 보장하지 않습니다. 사용 조건에 따라 달라집니다.",
+      "이번 대조에서 확인하지 못한 항목은 확인 상태를 표시했습니다. 이는 기능 미지원 또는 보안 업데이트 종료를 뜻하지 않습니다.",
+      "전작 대비 표시는 국내 공식 사양 표기값 비교입니다. 성능 향상률·발열 개선·사진 품질 향상률로 해석하지 않습니다.",
+    ],
+  };
+  modelInfo[entry.id] = { family: entry.family, screen: `${screen}${folded ? " · 펼침" : ""}`, weight, camera: value("rear"), date: entry.date };
+  const detail: Record<string, string> = {
+    battery: `${value("battery")}mAh · Typical`, video: s.video ? `${s.video}시간 · 제조사 기준` : domesticMissing,
+    stream: domesticMissing, usb: value("usb"), wifi: value("wifi"), bluetooth: value("bluetooth").replace(/^Bluetooth v/, ""),
+    uwb: value("uwb"), sim: value("sim"), security: value("security"), desktop: s.dex ? `Samsung DeX ${s.dex}` : domesticMissing,
+  };
+  detailRows.forEach(row => row.values.push(detail[row.key] || domesticMissing));
+  detailSourceIds.push(source);
+}
+
 const categories: { key: SpecKey; label: string; question: string }[] = [
   { key: "processor", label: "프로세서 · 발열", question: "지금 쓰시는 폰에서 느리거나 불편한 앱이 있나요?" },
   { key: "display", label: "화면 · 밝기", question: "화면 크기와 야외 사용, 무엇이 더 중요하세요?" },
@@ -6653,7 +6732,7 @@ export default function Page() {
             <p className="mt-2 text-base text-slate-600">검색 결과를 넣을 위치</p><div className="mt-2 flex gap-2">{[0, 1].map(slot => <button key={slot} type="button" aria-pressed={target === slot} onClick={() => setTarget(slot as 0 | 1)} className={`${control} flex-1 ${target === slot ? "!bg-blue-700 !text-white" : ""}`}>{slot === 0 ? "A 기종" : "B 기종"}</button>)}</div>
             <div className="mt-3 flex gap-2"><div className="min-w-0 flex-1"><label htmlFor="phone-search" className="mb-1 block font-bold">기종 이름 검색</label><input id="phone-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="예: A37, 아이폰18프로" autoComplete="off" className="min-h-12 w-full rounded-xl border-2 border-slate-300 bg-white px-3 text-base focus:border-blue-700" /></div>
             <div><label htmlFor="brand-filter" className="mb-1 block font-bold">제조사</label><select id="brand-filter" value={brand} onChange={event => { setBrand(event.target.value); setFamily("all"); }} className="min-h-12 rounded-xl border border-slate-300 bg-white px-2 text-base"><option value="all">전체</option><option value="Samsung">삼성</option><option value="Apple">애플</option></select></div></div>
-            <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">시리즈 필터</summary><div className="flex flex-wrap gap-2" role="group" aria-label="시리즈 필터">{["all", "S 시리즈", "폴더블", "A 시리즈", "Pro", "Air", "e"].map(value => <button key={value} type="button" aria-pressed={family === value} onClick={() => { setFamily(value); if (value !== "all") setBrand(["Pro", "Air", "e"].includes(value) ? "Apple" : "Samsung"); }} className={`${control} ${family === value ? "!border-slate-900 !bg-slate-900 !text-white" : ""}`}>{value === "all" ? "모든 시리즈" : value === "e" ? "아이폰 e" : value}</button>)}</div></details>
+            <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">시리즈 필터</summary><div className="flex flex-wrap gap-2" role="group" aria-label="시리즈 필터">{["all", "S 시리즈", "폴더블", "A 시리즈", "M 시리즈", "퀀텀", "점프", "와이드", "버디", "XCover", "Pro", "Air", "e"].map(value => <button key={value} type="button" aria-pressed={family === value} onClick={() => { setFamily(value); if (value !== "all") setBrand(["Pro", "Air", "e"].includes(value) ? "Apple" : "Samsung"); }} className={`${control} ${family === value ? "!border-slate-900 !bg-slate-900 !text-white" : ""}`}>{value === "all" ? "모든 시리즈" : value === "e" ? "아이폰 e" : value}</button>)}</div></details>
             <p className="mt-2 text-base text-slate-600">{matches.length}개 기종 · 선택 위치 {target === 0 ? "A" : "B"}</p>
             {(query || brand !== "all" || family !== "all") && <div className="mt-2 flex flex-wrap items-center gap-2" aria-label="적용 중인 검색 조건"><span className="rounded-lg bg-slate-100 px-2 py-1">{[query && `검색: ${query}`, brand !== "all" && (brand === "Apple" ? "애플" : "삼성"), family !== "all" && (family === "e" ? "아이폰 e" : family)].filter(Boolean).join(" · ")}</span><button type="button" onClick={resetModelFilters} className={control}>검색 조건 지우기</button></div>}
             {(normalizedQuery || brand !== "all" || family !== "all" || showAllModels) && <ul aria-label="검색된 기종" className="mt-2 grid max-h-[22rem] gap-2 overflow-y-auto overscroll-contain pr-1">{visibleModels.map(phone => <li key={phone.id}><button type="button" onClick={() => choose(phone.id)} aria-label={`${phone.model_name}, ${target === 0 ? "A" : "B"} 모델로 선택`} className={`${control} w-full !p-3 text-left ${selected.includes(phone.id) ? "!border-blue-500 !bg-blue-50" : ""}`}>
@@ -6731,7 +6810,7 @@ export default function Page() {
           <h2 id="source-title" className="scroll-mt-40 text-2xl font-bold">제조사 공식 상세 사양</h2>
           <p className="mb-4 mt-2 text-base leading-relaxed text-slate-600">한국 공식 사양 문서의 항목을 모델별로 확인하세요. 기술 항목·목록은 유지하고 홍보 문장과 각주는 사실·조건 중심으로 정리했습니다. 삼성 용량별 차이는 메모리/스토리지에 표시합니다. 비교하는 값에 적용되는 각주도 함께 확인하세요.</p>
           <div className="grid items-start gap-3 lg:grid-cols-2">{selectedPhones.map(phone => <OfficialSpecs key={phone.id} phone={phone} />)}</div>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 추가 10종 및 상세 사양 확인 {detailCheckedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 기존 추가 10종 및 상세 사양 확인 {detailCheckedAt} · 국내 갤럭시 추가 {domesticCatalog.models.length}종 확인 {domesticCatalog.checkedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
         </section>
       </div>
       <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약", "tone-blue"], ["#prices", "가격", "tone-amber"], ["#brief-title", "멘트", "tone-purple"], ["#detail-title", "사양", "tone-teal"]].map(([href, label, tone]) => <a key={href} href={href} className={`section-nav-link ${tone} min-h-12 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600`}><span aria-hidden="true">↓</span>{label}</a>)}</nav>

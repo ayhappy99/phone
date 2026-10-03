@@ -11,7 +11,7 @@ const { render, fireEvent, cleanup } = require('@testing-library/react');
 const source = fs.readFileSync('src/app/page.tsx', 'utf8') + '\nexport { phoneData };';
 const compiled = ts.transpileModule(source, { compilerOptions: { esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
-vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => name === "./galaxy-domestic.json" ? require("../src/app/galaxy-domestic.json") : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
+vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
 const { default: Page, phoneData } = result.exports;
 const ui = render(React.createElement(Page));
 const select = (slot, id) => fireEvent.change(document.querySelector('#selected-' + slot), { target: { value: id } });
@@ -50,6 +50,13 @@ for (const [family, query, id] of [['S 시리즈', 'S21+', 'galaxy-s21-plus'], [
  fireEvent.change(ui.getByLabelText('기종 이름 검색'), { target: { value: query } });
  assert.equal(ui.getByLabelText('제조사').value, 'Samsung');
  assert.ok(document.querySelector('button[data-model-id="' + id + '"]') || ui.getAllByText(phoneData.find(p => p.id === id).model_name, { exact: true }).length);
+ fireEvent.click(ui.getByRole('button', { name: '검색 조건 지우기' }));
+}
+for (const [family, query, id] of [['기본형', '아이폰17', 'iphone-17'], ['Plus', '아이폰15플러스', 'iphone-15-plus'], ['Pro', '아이폰15프로맥스', 'iphone-15-pro-max'], ['아이폰 e', '아이폰16e', 'iphone-16e']]) {
+ fireEvent.click(ui.getByRole('button', { name: family, exact: true }));
+ fireEvent.change(ui.getByLabelText('기종 이름 검색'), { target: { value: query } });
+ assert.equal(ui.getByLabelText('제조사').value, 'Apple');
+ assert.ok(ui.getAllByText(phoneData.find(p => p.id === id).model_name, { exact: true }).length);
  fireEvent.click(ui.getByRole('button', { name: '검색 조건 지우기' }));
 }
 fireEvent.click(ui.getByRole('button', { name: '비교 주소 복사' }));

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import domesticCatalog from "./galaxy-domestic.json";
+import appleCatalog from "./apple-domestic.json";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -6454,6 +6455,49 @@ for (const entry of domesticCatalog.models) {
   detailSourceIds.push(source);
 }
 
+// Add the Korean iPhone catalog after all existing comparison columns.
+const appleById = new Map(appleCatalog.models.map(model => [model.id, model]));
+for (const entry of appleCatalog.models) {
+  const source = `${entry.id}-kr-specs`;
+  const priceSource = `${entry.id}-kr-price`;
+  const prior = appleById.get(entry.previousId);
+  const compare = (key: "chip" | "display" | "weight" | "camera" | "features") => prior
+    ? prior[key] === entry[key] ? `${prior.name}와 공식 표기값 동일: ${entry[key]}.` : `${prior.name}: ${prior[key]} → ${entry.name}: ${entry[key]}.`
+    : "이 목록에 전작의 검증된 국내 사양이 없어 변화량은 표시하지 않았습니다.";
+  const brief = (official: string, key: "chip" | "display" | "weight" | "camera" | "features", short: string, detail: string, caution: string): Brief => ({ official, vs_previous: compare(key), sales_pitch: short, sales_pitch_detail: detail, caution, sources: [source, ...(prior ? [`${prior.id}-kr-specs`] : [])] });
+  sources[source] = { label: `Apple 대한민국 · ${entry.name} 공식 기술 사양`, url: entry.url };
+  sources[priceSource] = { label: `Apple 대한민국 · ${entry.name} 출시 발표 가격 (최소 용량)`, url: entry.priceUrl };
+  phoneData.push({
+    id: entry.id, model_name: entry.name, aliases: entry.aliases, brand: "Apple", previous: prior?.name || "국내 전작 비교 확인 범위",
+    summary: `${entry.screen} · ${entry.weight} · ${entry.chip}`, prices: entry.prices, price_source: priceSource, official_url: entry.url,
+    specs: {
+      processor: brief(entry.processor, "chip", `${entry.chip}을 탑재했어요.`, `자주 쓰시는 앱이나 게임에 맞춰 살펴보세요. 이 모델은 ${entry.chip}을 탑재했고, CPU와 GPU 구성은 아래 공식 사양에서 확인하실 수 있어요. 실제 처리 속도와 발열은 사용 환경에 따라 달라요.`, "코어 수만으로 세대별 성능과 발열을 단정할 수 없습니다. RAM 용량과 성능 향상률은 추정하지 않았습니다."),
+      display: brief(entry.display, "display", `화면은 ${entry.screen} OLED예요.${entry.display.includes("ProMotion") ? " 최대 120Hz ProMotion을 지원해요." : " 화면 크기와 밝기를 함께 살펴보세요."}`, `글자와 사진을 어느 정도 크기로 보고 싶으신지 살펴보세요. 화면은 ${entry.screen} OLED이고, ${entry.display.includes("ProMotion") ? "최대 120Hz 가변 재생률을 지원해요." : "확인한 공식 문서에 주사율 수치가 명시되지 않아 임의로 적지 않았어요."} 글자 크기는 설정에서 별도로 조절할 수 있어요.`, "화면은 직사각형 기준 대각선이며 실제 표시 영역은 더 작습니다. 일반·HDR·야외 부분 최대 밝기를 구분해야 합니다."),
+      weight: brief(entry.dimensions, "weight", `본체 무게는 ${entry.weight}이에요.`, `휴대하거나 오래 들고 쓰실 때 본체 ${entry.weight}이라는 점을 참고해 주세요. 케이스와 부착 액세서리의 무게는 별도로 더해져요. 크기와 손에 잡히는 느낌은 직접 확인해 보시면 좋아요.`, "무게는 제조사 표기값이며 구성과 제조 과정에 따라 다를 수 있습니다."),
+      camera: brief(`${entry.cameraDetail} · 전면 ${entry.front}`, "camera", `후면은 ${entry.camera} 구성이에요.`, `주로 찍으시는 사진에 맞춰 ${entry.camera} 구성을 살펴보세요. 전면은 ${entry.front}로 안내돼 있어요. 2배 옵션은 별도 망원 렌즈인지 메인 센서를 활용하는 방식인지 아래 공식 사양에서 구분해 주세요.`, "2배 센서 활용 옵션을 별도 망원 카메라로 세지 않습니다. 광학·광학 퀄리티·디지털 줌은 다르며 사진 품질은 화소 수만으로 단정할 수 없습니다."),
+      special_feature: brief(entry.features, "features", `${entry.features}을 확인해 주세요.`, `평소 쓰시는 결제와 버튼 기능을 살펴보세요. 이 모델은 ${entry.features}로 안내돼 있어요. Apple Pay는 지원 카드와 서비스 조건을, Apple Intelligence는 지원 기종·OS·언어·지역 조건을 함께 확인해 주세요.`, "기능 이용은 OS·언어·국가·카드사·서비스 지원 조건에 따라 다릅니다. 하드웨어 지원만으로 모든 서비스를 사용할 수 있는 것은 아닙니다."),
+    },
+  });
+  fullSpecCatalog[entry.id] = {
+    source, checkedAt: appleCatalog.checkedAt, scope: "Apple 대한민국 기술 사양에서 확인한 한국 정식 판매 모델의 핵심 사양입니다. 해외 eSIM 전용 옵션과 해외 가격을 합치지 않았습니다. 규제 모델 번호는 원문이 형제 모델을 함께 표기하는 경우가 있어 단일 기종에 임의로 배정하지 않았습니다.",
+    sections: entry.sections,
+    conditions: [
+      "한국 정식 판매 모델의 Apple 대한민국 기술 사양과 국내 출시 발표를 사용했습니다.",
+      "가격은 출시 당시 공식 발표에서 확인한 최소 저장 용량의 시작 가격입니다. 추가 용량의 과거 출시가는 확인 보류이며 현재 판매가로 대체하거나 추정하지 않았습니다.",
+      "RAM과 배터리 mAh는 공식 한국 사양표에 없으므로 추정하지 않았습니다. 지원 종료일 미확인은 지원 종료를 뜻하지 않습니다.",
+      "화면 대각선은 직사각형 기준입니다. 실제 표시 영역은 더 작으며 밝기와 재생률은 콘텐츠·설정·환경에 따라 달라집니다.",
+      "최대 동영상 재생 시간은 Apple 시험 조건 기준으로 실제 사용 시간과 다릅니다. 충전 조건과 어댑터·케이블의 별도 구매 여부는 원문을 확인하세요.",
+      "방수·방진은 통제된 실험실 조건의 IP68 등급이며 영구적이지 않습니다. 젖은 상태에서 충전하지 마세요.",
+      "2배 망원 옵션은 메인 센서를 활용할 수 있습니다. 별도 망원 렌즈, 광학 줌 범위, 디지털 줌을 구분해 주세요.",
+      "Apple Pay와 Apple Intelligence는 OS·언어·지역·카드사 등 서비스 조건을 확인해야 합니다. 전작 대비는 공식 표기값 비교이며 성능 향상률을 뜻하지 않습니다.",
+    ],
+  };
+  modelInfo[entry.id] = { family: entry.family, screen: entry.screen, weight: entry.weight, camera: entry.camera, date: entry.date };
+  const detail: Record<string, string> = { battery: "리튬 이온 배터리 · mAh 공식 표기 없음", video: entry.video, stream: entry.stream, usb: entry.usb, wifi: entry.wifi, bluetooth: entry.bluetooth, uwb: entry.uwb, sim: entry.sim, security: "공식 사양표에 지원 종료일 미명시", desktop: "데스크톱 모드 공식 표기 없음" };
+  detailRows.forEach(row => row.values.push(detail[row.key] || domesticMissing));
+  detailSourceIds.push(source);
+}
+
 const categories: { key: SpecKey; label: string; question: string }[] = [
   { key: "processor", label: "프로세서 · 발열", question: "지금 쓰시는 폰에서 느리거나 불편한 앱이 있나요?" },
   { key: "display", label: "화면 · 밝기", question: "화면 크기와 야외 사용, 무엇이 더 중요하세요?" },
@@ -6732,7 +6776,7 @@ export default function Page() {
             <p className="mt-2 text-base text-slate-600">검색 결과를 넣을 위치</p><div className="mt-2 flex gap-2">{[0, 1].map(slot => <button key={slot} type="button" aria-pressed={target === slot} onClick={() => setTarget(slot as 0 | 1)} className={`${control} flex-1 ${target === slot ? "!bg-blue-700 !text-white" : ""}`}>{slot === 0 ? "A 기종" : "B 기종"}</button>)}</div>
             <div className="mt-3 flex gap-2"><div className="min-w-0 flex-1"><label htmlFor="phone-search" className="mb-1 block font-bold">기종 이름 검색</label><input id="phone-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="예: A37, 아이폰18프로" autoComplete="off" className="min-h-12 w-full rounded-xl border-2 border-slate-300 bg-white px-3 text-base focus:border-blue-700" /></div>
             <div><label htmlFor="brand-filter" className="mb-1 block font-bold">제조사</label><select id="brand-filter" value={brand} onChange={event => { setBrand(event.target.value); setFamily("all"); }} className="min-h-12 rounded-xl border border-slate-300 bg-white px-2 text-base"><option value="all">전체</option><option value="Samsung">삼성</option><option value="Apple">애플</option></select></div></div>
-            <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">시리즈 필터</summary><div className="flex flex-wrap gap-2" role="group" aria-label="시리즈 필터">{["all", "S 시리즈", "폴더블", "A 시리즈", "M 시리즈", "퀀텀", "점프", "와이드", "버디", "XCover", "Pro", "Air", "e"].map(value => <button key={value} type="button" aria-pressed={family === value} onClick={() => { setFamily(value); if (value !== "all") setBrand(["Pro", "Air", "e"].includes(value) ? "Apple" : "Samsung"); }} className={`${control} ${family === value ? "!border-slate-900 !bg-slate-900 !text-white" : ""}`}>{value === "all" ? "모든 시리즈" : value === "e" ? "아이폰 e" : value}</button>)}</div></details>
+            <details className="mt-2"><summary className="min-h-11 cursor-pointer py-2 font-bold">시리즈 필터</summary><div className="flex flex-wrap gap-2" role="group" aria-label="시리즈 필터">{["all", "S 시리즈", "폴더블", "A 시리즈", "M 시리즈", "퀀텀", "점프", "와이드", "버디", "XCover", "기본형", "Plus", "Pro", "Air", "e"].map(value => <button key={value} type="button" aria-pressed={family === value} onClick={() => { setFamily(value); if (value !== "all") setBrand(["기본형", "Plus", "Pro", "Air", "e"].includes(value) ? "Apple" : "Samsung"); }} className={`${control} ${family === value ? "!border-slate-900 !bg-slate-900 !text-white" : ""}`}>{value === "all" ? "모든 시리즈" : value === "e" ? "아이폰 e" : value}</button>)}</div></details>
             <p className="mt-2 text-base text-slate-600">{matches.length}개 기종 · 선택 위치 {target === 0 ? "A" : "B"}</p>
             {(query || brand !== "all" || family !== "all") && <div className="mt-2 flex flex-wrap items-center gap-2" aria-label="적용 중인 검색 조건"><span className="rounded-lg bg-slate-100 px-2 py-1">{[query && `검색: ${query}`, brand !== "all" && (brand === "Apple" ? "애플" : "삼성"), family !== "all" && (family === "e" ? "아이폰 e" : family)].filter(Boolean).join(" · ")}</span><button type="button" onClick={resetModelFilters} className={control}>검색 조건 지우기</button></div>}
             {(normalizedQuery || brand !== "all" || family !== "all" || showAllModels) && <ul aria-label="검색된 기종" className="mt-2 grid max-h-[22rem] gap-2 overflow-y-auto overscroll-contain pr-1">{visibleModels.map(phone => <li key={phone.id}><button type="button" onClick={() => choose(phone.id)} aria-label={`${phone.model_name}, ${target === 0 ? "A" : "B"} 모델로 선택`} className={`${control} w-full !p-3 text-left ${selected.includes(phone.id) ? "!border-blue-500 !bg-blue-50" : ""}`}>
@@ -6810,7 +6854,7 @@ export default function Page() {
           <h2 id="source-title" className="scroll-mt-40 text-2xl font-bold">제조사 공식 상세 사양</h2>
           <p className="mb-4 mt-2 text-base leading-relaxed text-slate-600">한국 공식 사양 문서의 항목을 모델별로 확인하세요. 기술 항목·목록은 유지하고 홍보 문장과 각주는 사실·조건 중심으로 정리했습니다. 삼성 용량별 차이는 메모리/스토리지에 표시합니다. 비교하는 값에 적용되는 각주도 함께 확인하세요.</p>
           <div className="grid items-start gap-3 lg:grid-cols-2">{selectedPhones.map(phone => <OfficialSpecs key={phone.id} phone={phone} />)}</div>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 기존 추가 10종 및 상세 사양 확인 {detailCheckedAt} · 국내 갤럭시 추가 {domesticCatalog.models.length}종 확인 {domesticCatalog.checkedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 기존 추가 10종 및 상세 사양 확인 {detailCheckedAt} · 국내 갤럭시 추가 {domesticCatalog.models.length}종 확인 {domesticCatalog.checkedAt}. 국내 iPhone 추가 {appleCatalog.models.length}종 확인 {appleCatalog.checkedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
         </section>
       </div>
       <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약", "tone-blue"], ["#prices", "가격", "tone-amber"], ["#brief-title", "멘트", "tone-purple"], ["#detail-title", "사양", "tone-teal"]].map(([href, label, tone]) => <a key={href} href={href} className={`section-nav-link ${tone} min-h-12 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600`}><span aria-hidden="true">↓</span>{label}</a>)}</nav>

@@ -1,0 +1,2411 @@
+{
+  "checkedAt": "2026-10-03",
+  "models": [
+    {
+      "id": "iphone-17",
+      "name": "iPhone 17",
+      "aliases": [
+        "iPhone 17",
+        "아이폰 17",
+        "17",
+        "아이폰17"
+      ],
+      "family": "기본형",
+      "date": "2025년 9월 국내 출시",
+      "previousId": "iphone-16",
+      "url": "https://support.apple.com/ko-kr/125089",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2025/09/apple-introduces-iphone-17/",
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1290000
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "15.9cm",
+      "weight": "177g",
+      "chip": "A19 칩",
+      "processor": "A19 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 5코어 GPU(Neural Accelerators 탑재) · 16코어 Neural Engine · 하드웨어 가속형 레이 트레이싱",
+      "display": "Super Retina XDR 디스플레이 · 15.9cm(대각선) 전면 화면 OLED 디스플레이 · 2622 x 1206 픽셀 해상도(460ppi) · Dynamic Island · 상시표시형 디스플레이 · 최대 120Hz 가변 재생률을 제공하는 ProMotion 기술 · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 3000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기",
+      "dimensions": "가로: 71.5mm · 세로: 149.6mm · 두께: 7.95mm · 무게: 177g",
+      "camera": "48MP Fusion 메인 · 48MP Fusion 울트라 와이드 · 48MP 접사 사진",
+      "cameraDetail": "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 광학 퀄리티 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 48MP Fusion 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 48MP 접사 사진",
+      "front": "18MP Center Stage 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · 카메라 컨트롤 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 30시간",
+      "stream": "동영상 재생(스트리밍): 최대 27시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+      "bluetooth": "6",
+      "uwb": "Apple 2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "화이트",
+            "미스트 블루",
+            "세이지",
+            "라벤더"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 71.5mm",
+            "세로: 149.6mm",
+            "두께: 7.95mm",
+            "무게: 177g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.9cm(대각선) 전면 화면 OLED 디스플레이",
+            "2622 x 1206 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "상시표시형 디스플레이",
+            "최대 120Hz 가변 재생률을 제공하는 ProMotion 기술",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 3000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A19 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "5코어 GPU(Neural Accelerators 탑재)",
+            "16코어 Neural Engine",
+            "하드웨어 가속형 레이 트레이싱"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 광학 퀄리티 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "48MP Fusion 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "48MP 접사 사진",
+            "2배 광학 줌인, 2배 광학 줌아웃, 4배 광학 줌 범위",
+            "최대 10배 디지털 줌"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "듀얼 캡처(최대 4K Dolby Vision, 초당 30 프레임)",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "전면 카메라",
+          "items": [
+            "18MP Center Stage 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "탭해서 줌 및 회전",
+            "사진을 위한 센터 스테이지",
+            "초강력 흔들림 보정 동영상",
+            "듀얼 캡처",
+            "영상 통화를 위한 센터 스테이지",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "최신 세대 사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 30시간",
+            "동영상 재생(스트리밍): 최대 27시간",
+            "충전식 리튬 이온 배터리 내장",
+            "급속 충전 가능:",
+            "USB‑C 충전 케이블과 함께 40W 이상 규격의 어댑터 사용 시 20분에 최대 50% 충전(어댑터 별매)",
+            "MagSafe 충전기와 함께 30W 이상 규격의 어댑터 사용 시 30분에 최대 50% 충전(충전기 및 어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "충전",
+            "DisplayPort",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 17",
+            "USB-C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+            "Bluetooth 6",
+            "Apple 2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼 · 카메라 컨트롤",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 17",
+            "대한민국 정식 판매 모델",
+            "2025년 9월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 25W MagSafe 무선 충전",
+            "최대 25W Qi2 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-16e",
+      "name": "iPhone 16e",
+      "aliases": [
+        "iPhone 16e",
+        "아이폰 16e",
+        "16e",
+        "아이폰16e"
+      ],
+      "family": "e",
+      "date": "2025년 2월 국내 출시",
+      "previousId": "",
+      "url": "https://support.apple.com/ko-kr/122208",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 990000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "15.4cm",
+      "weight": "167g",
+      "chip": "A18 칩",
+      "processor": "A18 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 4코어 GPU · 16코어 Neural Engine · 하드웨어 가속형 레이 트레이싱",
+      "display": "Super Retina XDR 디스플레이 · 15.4cm(대각선) 전면 화면 OLED 디스플레이 · 2532 x 1170 픽셀 해상도(460ppi) · 800 니트 전체 최대 밝기(일반), 1200 니트 부분 최대 밝기(HDR)",
+      "dimensions": "가로: 71.5mm · 세로: 146.7mm · 두께: 7.80mm · 무게: 167g",
+      "camera": "48MP Fusion 메인",
+      "cameraDetail": "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 광학 이미지 흔들림 보정(OIS), 하이브리드 Focus Pixels, 초고해상도 사진(24MP 및 48MP) · 12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 광학 이미지 흔들림 보정(OIS), 하이브리드 Focus Pixels",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 26시간",
+      "stream": "동영상 재생(스트리밍): 최대 21시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+      "bluetooth": "5.3",
+      "uwb": "공식 사양표에 초광대역 칩 표기 없음",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "화이트"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 71.5mm",
+            "세로: 146.7mm",
+            "두께: 7.80mm",
+            "무게: 167g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.4cm(대각선) 전면 화면 OLED 디스플레이",
+            "2532 x 1170 픽셀 해상도(460ppi)",
+            "800 니트 전체 최대 밝기(일반), 1200 니트 부분 최대 밝기(HDR)"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A18 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "4코어 GPU",
+            "16코어 Neural Engine",
+            "하드웨어 가속형 레이 트레이싱"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 광학 이미지 흔들림 보정(OIS), 하이브리드 Focus Pixels, 초고해상도 사진(24MP 및 48MP)",
+            "12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 광학 이미지 흔들림 보정(OIS), 하이브리드 Focus Pixels",
+            "최대 10배 디지털 줌"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "심도 제어 기능을 지원하는 인물 사진 모드",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 26시간",
+            "동영상 재생(스트리밍): 최대 21시간",
+            "오디오 재생: 최대 90시간",
+            "급속 충전 가능: USB‑C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시 30분에 최대 50% 충전(어댑터 별매)",
+            "충전식 리튬 이온 배터리 내장",
+            "무선 충전(Qi 충전기와 연동)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB-C 커넥터:",
+            "충전",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 16e",
+            "USB-C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+            "Bluetooth 5.3",
+            "공식 사양표에 초광대역 칩 표기 없음",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 16e",
+            "대한민국 정식 판매 모델",
+            "2025년 2월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-16",
+      "name": "iPhone 16",
+      "aliases": [
+        "iPhone 16",
+        "아이폰 16",
+        "16",
+        "아이폰16"
+      ],
+      "family": "기본형",
+      "date": "2024년 9월 국내 출시",
+      "previousId": "iphone-15",
+      "url": "https://support.apple.com/ko-kr/121029",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2024/09/apple-introduces-iphone-16-iphone-16-plus/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1250000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "15.5cm",
+      "weight": "170g",
+      "chip": "A18 칩",
+      "processor": "A18 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 5코어 GPU · 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 15.5cm(대각선) 전면 화면 OLED 디스플레이 · 2556 x 1179 픽셀 해상도(460ppi) · Dynamic Island · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기",
+      "dimensions": "가로: 71.6mm · 세로: 147.6mm · 두께: 7.80mm · 무게: 170g",
+      "camera": "48MP Fusion 메인 · 12MP 울트라 와이드",
+      "cameraDetail": "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · 카메라 컨트롤 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 22시간",
+      "stream": "동영상 재생(스트리밍): 최대 18시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi-Fi 7(802.11be)",
+      "bluetooth": "5.3",
+      "uwb": "Apple 2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "화이트",
+            "핑크",
+            "틸",
+            "울트라마린"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 71.6mm",
+            "세로: 147.6mm",
+            "두께: 7.80mm",
+            "무게: 170g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.5cm(대각선) 전면 화면 OLED 디스플레이",
+            "2556 x 1179 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A18 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "5코어 GPU",
+            "16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+            "2배 광학 줌인, 2배 광학 줌아웃, 4배 광학 줌 범위",
+            "최대 10배 디지털 줌",
+            "접사 사진"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "최신 세대 사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 22시간",
+            "동영상 재생(스트리밍): 최대 18시간",
+            "오디오 재생: 최대 80시간",
+            "충전식 리튬 이온 배터리 내장",
+            "급속 충전 가능: USB‑C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시(어댑터 별매), 또는 MagSafe 충전기와 함께 30W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(충전기 및 어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "충전",
+            "DisplayPort",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 16",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi-Fi 7(802.11be)",
+            "Bluetooth 5.3",
+            "Apple 2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼 · 카메라 컨트롤",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 16",
+            "대한민국 정식 판매 모델",
+            "2024년 9월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 25W MagSafe 무선 충전",
+            "최대 25W Qi2 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-16-plus",
+      "name": "iPhone 16 Plus",
+      "aliases": [
+        "iPhone 16 Plus",
+        "아이폰 16 Plus",
+        "16플러스",
+        "아이폰16플러스"
+      ],
+      "family": "Plus",
+      "date": "2024년 9월 국내 출시",
+      "previousId": "iphone-15-plus",
+      "url": "https://support.apple.com/ko-kr/121030",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2024/09/apple-introduces-iphone-16-iphone-16-plus/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1350000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "17.0cm",
+      "weight": "199g",
+      "chip": "A18 칩",
+      "processor": "A18 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 5코어 GPU · 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 17.0cm(대각선) 전면 화면 OLED 디스플레이 · 2796 x 1290 픽셀 해상도(460ppi) · Dynamic Island · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기",
+      "dimensions": "가로: 77.8mm · 세로: 160.9mm · 두께: 7.80mm · 무게: 199g",
+      "camera": "48MP Fusion 메인 · 12MP 울트라 와이드",
+      "cameraDetail": "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · 카메라 컨트롤 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 27시간",
+      "stream": "동영상 재생(스트리밍): 최대 24시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi-Fi 7(802.11be)",
+      "bluetooth": "5.3",
+      "uwb": "Apple 2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "화이트",
+            "핑크",
+            "틸",
+            "울트라마린"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 77.8mm",
+            "세로: 160.9mm",
+            "두께: 7.80mm",
+            "무게: 199g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "17.0cm(대각선) 전면 화면 OLED 디스플레이",
+            "2796 x 1290 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A18 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "5코어 GPU",
+            "16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 2배 망원도 가능: 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+            "2배 광학 줌인, 2배 광학 줌아웃, 4배 광학 줌 범위",
+            "최대 10배 디지털 줌",
+            "접사 사진"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "최신 세대 사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 27시간",
+            "동영상 재생(스트리밍): 최대 24시간",
+            "오디오 재생: 최대 100시간",
+            "충전식 리튬 이온 배터리 내장",
+            "급속 충전 가능: USB‑C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시(어댑터 별매), 또는 MagSafe 충전기와 함께 30W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(충전기 및 어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "충전",
+            "DisplayPort",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 16 Plus",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi-Fi 7(802.11be)",
+            "Bluetooth 5.3",
+            "Apple 2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼 · 카메라 컨트롤",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 16 Plus",
+            "대한민국 정식 판매 모델",
+            "2024년 9월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 25W MagSafe 무선 충전",
+            "최대 25W Qi2 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-16-pro",
+      "name": "iPhone 16 Pro",
+      "aliases": [
+        "iPhone 16 Pro",
+        "아이폰 16 Pro",
+        "16프로",
+        "아이폰16프로"
+      ],
+      "family": "Pro",
+      "date": "2024년 9월 국내 출시",
+      "previousId": "iphone-15-pro",
+      "url": "https://support.apple.com/ko-kr/121031",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2024/09/apple-debuts-iphone-16-pro-iphone-16-pro-max/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1550000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        },
+        {
+          "storage": "1TB",
+          "krw": null
+        }
+      ],
+      "screen": "15.9cm",
+      "weight": "199g",
+      "chip": "A18 Pro 칩",
+      "processor": "A18 Pro 칩 · 새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 새로운 6코어 GPU · 새로운 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 15.9cm(대각선) 전면 화면 OLED 디스플레이 · 2622 x 1206 픽셀 해상도(460ppi) · Dynamic Island · 상시표시형 디스플레이 · 최대 120Hz 가변 재생률을 제공하는 ProMotion 기술 · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기",
+      "dimensions": "가로: 71.5mm · 세로: 149.6mm · 두께: 8.25mm · 무게: 199g",
+      "camera": "48MP Fusion · 48MP 울트라 와이드 · 12MP 5배 망원 · 48MP 접사 사진",
+      "cameraDetail": "48MP Fusion: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 2배 망원도 가능: 48mm, f/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 48MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진(48MP) · 12MP 5배 망원: 120mm, ƒ/2.8 조리개 및 20° 시야각, 100% Focus Pixels, 7매(Seven-element) 렌즈, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인 · 48MP 접사 사진",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · 카메라 컨트롤 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 27시간",
+      "stream": "동영상 재생(스트리밍): 최대 22시간",
+      "usb": "USB 3(최대 10Gb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙 티타늄",
+            "화이트 티타늄",
+            "내추럴 티타늄",
+            "데저트 티타늄"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB",
+            "1TB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 71.5mm",
+            "세로: 149.6mm",
+            "두께: 8.25mm",
+            "무게: 199g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.9cm(대각선) 전면 화면 OLED 디스플레이",
+            "2622 x 1206 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "상시표시형 디스플레이",
+            "최대 120Hz 가변 재생률을 제공하는 ProMotion 기술",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A18 Pro 칩",
+            "새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "새로운 6코어 GPU",
+            "새로운 16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 2배 망원도 가능: 48mm, f/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "48MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진(48MP)",
+            "12MP 5배 망원: 120mm, ƒ/2.8 조리개 및 20° 시야각, 100% Focus Pixels, 7매(Seven-element) 렌즈, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인",
+            "48MP 접사 사진",
+            "5배 광학 줌인, 2배 광학 줌아웃, 10배 광학 줌 범위",
+            "최대 25배 디지털 줌",
+            "Apple ProRAW"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30, 60, 100 또는 120 프레임, 100 또는 120 프레임은 Fusion 전용)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "외부 저장 매체 활용 ProRes 동영상 촬영(최대 4K, 초당 120 프레임)",
+            "Log 동영상 촬영",
+            "1080p 슬로 모션 동영상 지원(초당 최대 240 프레임) 및 4K Dolby Vision 슬로 모션 동영상 지원(초당 최대 120 프레임, Fusion)",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "최신 세대 사진 스타일",
+            "Apple ProRAW",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30, 60, 100 또는 120 프레임, 100 또는 120 프레임은 Fusion 전용)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30, 60 또는 120 프레임은 Fusion 전용)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "외부 저장 매체 활용 ProRes 동영상 촬영(최대 4K, 초당 60 프레임)",
+            "Log 동영상 촬영",
+            "ACES(Academy Color Encoding System)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상(최대 4K 초당 60 프레임의 Dolby Vision)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 27시간",
+            "동영상 재생(스트리밍): 최대 22시간",
+            "오디오 재생: 최대 85시간",
+            "충전식 리튬 이온 배터리 내장",
+            "30W 이상 규격의 어댑터 사용 시 최대 25W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: USB‑C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시(어댑터 별매), 또는 MagSafe 충전기와 함께 30W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(충전기 및 어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 3(최대 10Gb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "LiDAR 스캐너",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 16 Pro",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼 · 카메라 컨트롤",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 16 Pro",
+            "대한민국 정식 판매 모델",
+            "2024년 9월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "30W 이상 규격의 어댑터 사용 시 최대 25W 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-16-pro-max",
+      "name": "iPhone 16 Pro Max",
+      "aliases": [
+        "iPhone 16 Pro Max",
+        "아이폰 16 Pro Max",
+        "16프로맥스",
+        "아이폰16프로맥스"
+      ],
+      "family": "Pro",
+      "date": "2024년 9월 국내 출시",
+      "previousId": "iphone-15-pro-max",
+      "url": "https://support.apple.com/ko-kr/121032",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2024/09/apple-debuts-iphone-16-pro-iphone-16-pro-max/",
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1900000
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        },
+        {
+          "storage": "1TB",
+          "krw": null
+        }
+      ],
+      "screen": "17.4cm",
+      "weight": "227g",
+      "chip": "A18 Pro 칩",
+      "processor": "A18 Pro 칩 · 새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 새로운 6코어 GPU · 새로운 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 17.4cm(대각선) 전면 화면 OLED 디스플레이 · 2868 x 1320 픽셀 해상도(460ppi) · Dynamic Island · 상시표시형 디스플레이 · 최대 120Hz 가변 재생률을 제공하는 ProMotion 기술 · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기",
+      "dimensions": "가로: 77.6mm · 세로: 163mm · 두께: 8.25mm · 무게: 227g",
+      "camera": "48MP Fusion · 48MP 울트라 와이드 · 12MP 5배 망원 · 48MP 접사 사진",
+      "cameraDetail": "48MP Fusion: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 2배 망원도 가능: 48mm, f/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 48MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진(48MP) · 12MP 5배 망원: 120mm, ƒ/2.8 조리개 및 20° 시야각, 100% Focus Pixels, 7매(Seven-element) 렌즈, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인 · 48MP 접사 사진",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · 카메라 컨트롤 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 33시간",
+      "stream": "동영상 재생(스트리밍): 최대 29시간",
+      "usb": "USB 3(최대 10Gb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙 티타늄",
+            "화이트 티타늄",
+            "내추럴 티타늄",
+            "데저트 티타늄"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "256GB",
+            "512GB",
+            "1TB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 77.6mm",
+            "세로: 163mm",
+            "두께: 8.25mm",
+            "무게: 227g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "17.4cm(대각선) 전면 화면 OLED 디스플레이",
+            "2868 x 1320 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "상시표시형 디스플레이",
+            "최대 120Hz 가변 재생률을 제공하는 ProMotion 기술",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외); 1 니트 최소 밝기"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A18 Pro 칩",
+            "새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "새로운 6코어 GPU",
+            "새로운 16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP Fusion: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 2배 망원도 가능: 48mm, f/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "48MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 하이브리드 Focus Pixels, 초고해상도 사진(48MP)",
+            "12MP 5배 망원: 120mm, ƒ/2.8 조리개 및 20° 시야각, 100% Focus Pixels, 7매(Seven-element) 렌즈, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인",
+            "48MP 접사 사진",
+            "5배 광학 줌인, 2배 광학 줌아웃, 10배 광학 줌 범위",
+            "최대 25배 디지털 줌",
+            "Apple ProRAW"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30, 60, 100 또는 120 프레임, 100 또는 120 프레임은 Fusion 전용)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "외부 저장 매체 활용 ProRes 동영상 촬영(최대 4K, 초당 120 프레임)",
+            "Log 동영상 촬영",
+            "1080p 슬로 모션 동영상 지원(초당 최대 240 프레임) 및 4K Dolby Vision 슬로 모션 동영상 지원(초당 최대 120 프레임, Fusion)",
+            "QuickTake 동영상(최대 4K Dolby Vision, 초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "최신 세대 사진 스타일",
+            "Apple ProRAW",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30, 60, 100 또는 120 프레임, 100 또는 120 프레임은 Fusion 전용)",
+            "1080p Dolby Vision 동영상 촬영(초당 25, 30, 60 또는 120 프레임은 Fusion 전용)",
+            "시네마틱 모드(최대 4K Dolby Vision, 초당 30 프레임)",
+            "외부 저장 매체 활용 ProRes 동영상 촬영(최대 4K, 초당 60 프레임)",
+            "Log 동영상 촬영",
+            "ACES(Academy Color Encoding System)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상(최대 4K 초당 60 프레임의 Dolby Vision)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "공간 음향 및 스테레오 녹음",
+            "바람 소리 감소",
+            "오디오 믹스"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 33시간",
+            "동영상 재생(스트리밍): 최대 29시간",
+            "오디오 재생: 최대 105시간",
+            "충전식 리튬 이온 배터리 내장",
+            "30W 이상 규격의 어댑터 사용 시 최대 25W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: USB‑C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시(어댑터 별매), 또는 MagSafe 충전기와 함께 30W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(충전기 및 어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 3(최대 10Gb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "LiDAR 스캐너",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 16 Pro Max",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 7(802.11be)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼 · 카메라 컨트롤",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 16 Pro Max",
+            "대한민국 정식 판매 모델",
+            "2024년 9월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "30W 이상 규격의 어댑터 사용 시 최대 25W 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-15",
+      "name": "iPhone 15",
+      "aliases": [
+        "iPhone 15",
+        "아이폰 15",
+        "15",
+        "아이폰15"
+      ],
+      "family": "기본형",
+      "date": "2023년 10월 국내 출시",
+      "previousId": "",
+      "url": "https://support.apple.com/ko-kr/111831",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1250000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "15.5cm",
+      "weight": "171g",
+      "chip": "A16 Bionic 칩",
+      "processor": "A16 Bionic 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 5코어 GPU · 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 15.5cm(대각선) 전면 화면 OLED 디스플레이 · 2556 x 1179 픽셀 해상도(460ppi) · Dynamic Island · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)",
+      "dimensions": "가로: 71.6mm · 세로: 147.6mm · 두께: 7.80mm · 무게: 171g",
+      "camera": "48MP 메인 · 12MP 울트라 와이드",
+      "cameraDetail": "48MP 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 울트라 와이드: 13mm, ƒ/2.4 조리개 및 120° 시야각 · 12MP 2배 망원(쿼드 픽셀 센서로 구현): 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 벨소리/무음 스위치",
+      "video": "동영상 재생: 최대 20시간",
+      "stream": "동영상 재생(스트리밍): 최대 16시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "블루",
+            "그린",
+            "옐로",
+            "핑크"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 71.6mm",
+            "세로: 147.6mm",
+            "두께: 7.80mm",
+            "무게: 171g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.5cm(대각선) 전면 화면 OLED 디스플레이",
+            "2556 x 1179 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A16 Bionic 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "5코어 GPU",
+            "16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 울트라 와이드: 13mm, ƒ/2.4 조리개 및 120° 시야각",
+            "12MP 2배 망원(쿼드 픽셀 센서로 구현): 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "2배 광학 줌인, 2배 광학 줌아웃, 4배 광학 줌 범위",
+            "최대 10배 디지털 줌"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p HD 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K HDR, 초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 20시간",
+            "동영상 재생(스트리밍): 최대 16시간",
+            "오디오 재생: 최대 80시간",
+            "충전식 리튬 이온 배터리 내장",
+            "최대 15W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: USB-C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 15",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "벨소리/무음 스위치"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 15",
+            "대한민국 정식 판매 모델",
+            "2023년 10월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 15W 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-15-plus",
+      "name": "iPhone 15 Plus",
+      "aliases": [
+        "iPhone 15 Plus",
+        "아이폰 15 Plus",
+        "15플러스",
+        "아이폰15플러스"
+      ],
+      "family": "Plus",
+      "date": "2023년 10월 국내 출시",
+      "previousId": "",
+      "url": "https://support.apple.com/ko-kr/111830",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2023/09/apple-debuts-iphone-15-and-iphone-15-plus/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1350000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        }
+      ],
+      "screen": "17.0cm",
+      "weight": "201g",
+      "chip": "A16 Bionic 칩",
+      "processor": "A16 Bionic 칩 · 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 5코어 GPU · 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 17.0cm(대각선) 전면 화면 OLED 디스플레이 · 2796 x 1290 픽셀 해상도(460ppi) · Dynamic Island · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)",
+      "dimensions": "가로: 77.8mm · 세로: 160.9mm · 두께: 7.80mm · 무게: 201g",
+      "camera": "48MP 메인 · 12MP 울트라 와이드",
+      "cameraDetail": "48MP 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 울트라 와이드: 13mm, ƒ/2.4 조리개 및 120° 시야각 · 12MP 2배 망원(쿼드 픽셀 센서로 구현): 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels 방식 오토포커스",
+      "features": "Face ID · Apple Pay · 벨소리/무음 스위치",
+      "video": "동영상 재생: 최대 26시간",
+      "stream": "동영상 재생(스트리밍): 최대 20시간",
+      "usb": "USB 2(최대 480Mb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙",
+            "블루",
+            "그린",
+            "옐로",
+            "핑크"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 77.8mm",
+            "세로: 160.9mm",
+            "두께: 7.80mm",
+            "무게: 201g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "17.0cm(대각선) 전면 화면 OLED 디스플레이",
+            "2796 x 1290 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A16 Bionic 칩",
+            "6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "5코어 GPU",
+            "16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP 메인: 26mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 울트라 와이드: 13mm, ƒ/2.4 조리개 및 120° 시야각",
+            "12MP 2배 망원(쿼드 픽셀 센서로 구현): 52mm, ƒ/1.6 조리개, 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "2배 광학 줌인, 2배 광학 줌아웃, 4배 광학 줌 범위",
+            "최대 10배 디지털 줌"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels 방식 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "사진 스타일",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K Dolby Vision 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p HD 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "시네마틱 모드(최대 4K HDR, 초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 26시간",
+            "동영상 재생(스트리밍): 최대 20시간",
+            "오디오 재생: 최대 100시간",
+            "충전식 리튬 이온 배터리 내장",
+            "최대 15W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: USB-C 충전 케이블과 함께 20W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 2(최대 480Mb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계",
+            "근접 센서"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 15 Plus",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 6(802.11ax)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "벨소리/무음 스위치"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 15 Plus",
+            "대한민국 정식 판매 모델",
+            "2023년 10월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 15W 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-15-pro",
+      "name": "iPhone 15 Pro",
+      "aliases": [
+        "iPhone 15 Pro",
+        "아이폰 15 Pro",
+        "15프로",
+        "아이폰15프로"
+      ],
+      "family": "Pro",
+      "date": "2023년 10월 국내 출시",
+      "previousId": "",
+      "url": "https://support.apple.com/ko-kr/111829",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/",
+      "prices": [
+        {
+          "storage": "128GB",
+          "krw": 1550000
+        },
+        {
+          "storage": "256GB",
+          "krw": null
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        },
+        {
+          "storage": "1TB",
+          "krw": null
+        }
+      ],
+      "screen": "15.5cm",
+      "weight": "187g",
+      "chip": "A17 Pro 칩",
+      "processor": "A17 Pro 칩 · 새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 새로운 6코어 GPU · 새로운 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 15.5cm(대각선) 전면 화면 OLED 디스플레이 · 2556 x 1179 픽셀 해상도(460ppi) · Dynamic Island · 상시표시형 디스플레이 · 최대 120Hz 가변 재생률을 제공하는 ProMotion 기술 · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)",
+      "dimensions": "가로: 70.6mm · 세로: 146.6mm · 두께: 8.25mm · 무게: 187g",
+      "camera": "48MP 메인 · 12MP 울트라 와이드 · 12MP 3배 망원",
+      "cameraDetail": "48MP 메인: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels · 12MP 2배 망원(쿼드 픽셀 센서로 구현): 48mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 12MP 3배 망원: 77mm, ƒ/2.8 조리개, 광학 이미지 흔들림 보정(OIS)",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels를 갖춘 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 23시간",
+      "stream": "동영상 재생(스트리밍): 최대 20시간",
+      "usb": "USB 3(최대 10Gb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 6E(802.11ax)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙 티타늄",
+            "화이트 티타늄",
+            "블루 티타늄",
+            "내추럴 티타늄"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "128GB",
+            "256GB",
+            "512GB",
+            "1TB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 70.6mm",
+            "세로: 146.6mm",
+            "두께: 8.25mm",
+            "무게: 187g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "15.5cm(대각선) 전면 화면 OLED 디스플레이",
+            "2556 x 1179 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "상시표시형 디스플레이",
+            "최대 120Hz 가변 재생률을 제공하는 ProMotion 기술",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A17 Pro 칩",
+            "새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "새로운 6코어 GPU",
+            "새로운 16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP 메인: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+            "12MP 2배 망원(쿼드 픽셀 센서로 구현): 48mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "12MP 3배 망원: 77mm, ƒ/2.8 조리개, 광학 이미지 흔들림 보정(OIS)",
+            "3배 광학 줌인, 2배 광학 줌아웃, 6배 광학 줌 범위",
+            "최대 15배 디지털 줌",
+            "접사 사진",
+            "Apple ProRAW"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드 동영상 촬영(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "외부 저장 매체 활용 시 최대 4K ProRes 동영상 촬영(초당 60 프레임)",
+            "Log 동영상 촬영",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영",
+            "녹화 동영상 포맷: HEVC, H.264, ProRes"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels를 갖춘 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "사진 스타일",
+            "Apple ProRAW",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p HD 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드 동영상 촬영(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "외부 저장 매체 활용 시 최대 4K ProRes 동영상 촬영(초당 60 프레임)",
+            "Log 동영상 촬영",
+            "ACES(Academy Color Encoding System)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 23시간",
+            "동영상 재생(스트리밍): 최대 20시간",
+            "오디오 재생: 최대 75시간",
+            "충전식 리튬 이온 배터리 내장",
+            "최대 15W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: 20W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 3(최대 10Gb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "LiDAR 스캐너",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 15 Pro",
+            "USB‑C 충전 케이블(1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 6E(802.11ax)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 15 Pro",
+            "대한민국 정식 판매 모델",
+            "2023년 10월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 15W 무선 충전"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone-15-pro-max",
+      "name": "iPhone 15 Pro Max",
+      "aliases": [
+        "iPhone 15 Pro Max",
+        "아이폰 15 Pro Max",
+        "15프로맥스",
+        "아이폰15프로맥스"
+      ],
+      "family": "Pro",
+      "date": "2023년 10월 국내 출시",
+      "previousId": "",
+      "url": "https://support.apple.com/ko-kr/111828",
+      "priceUrl": "https://www.apple.com/kr/newsroom/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/",
+      "prices": [
+        {
+          "storage": "256GB",
+          "krw": 1900000
+        },
+        {
+          "storage": "512GB",
+          "krw": null
+        },
+        {
+          "storage": "1TB",
+          "krw": null
+        }
+      ],
+      "screen": "17.0cm",
+      "weight": "221g",
+      "chip": "A17 Pro 칩",
+      "processor": "A17 Pro 칩 · 새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개) · 새로운 6코어 GPU · 새로운 16코어 Neural Engine",
+      "display": "Super Retina XDR 디스플레이 · 17.0cm(대각선) 전면 화면 OLED 디스플레이 · 2796 x 1290 픽셀 해상도(460ppi) · Dynamic Island · 상시표시형 디스플레이 · 최대 120Hz 가변 재생률을 제공하는 ProMotion 기술 · 1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)",
+      "dimensions": "가로: 76.7mm · 세로: 159.9mm · 두께: 8.25mm · 무게: 221g",
+      "camera": "48MP 메인 · 12MP 울트라 와이드 · 12MP 5배 망원",
+      "cameraDetail": "48MP 메인: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP) · 12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels · 12MP 2배 망원(쿼드 픽셀 센서로 구현): 48mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels · 12MP 5배 망원: 120mm, ƒ/2.8 조리개, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인",
+      "front": "12MP 카메라 · ƒ/1.9 조리개 · Focus Pixels를 갖춘 오토포커스",
+      "features": "Face ID · Apple Pay · 동작 버튼 · Apple Intelligence 지원 기종",
+      "video": "동영상 재생: 최대 29시간",
+      "stream": "동영상 재생(스트리밍): 최대 25시간",
+      "usb": "USB 3(최대 10Gb/s)",
+      "wifi": "2x2 MIMO 방식을 지원하는 Wi‑Fi 6E(802.11ax)",
+      "bluetooth": "5.3",
+      "uwb": "2세대 초광대역 칩",
+      "sim": "듀얼 SIM(nano-SIM 및 eSIM) · 듀얼 eSIM 지원(2개의 활성 eSIM)",
+      "sections": [
+        {
+          "title": "마감",
+          "items": [
+            "블랙 티타늄",
+            "화이트 티타늄",
+            "블루 티타늄",
+            "내추럴 티타늄"
+          ]
+        },
+        {
+          "title": "저장 용량",
+          "items": [
+            "256GB",
+            "512GB",
+            "1TB"
+          ]
+        },
+        {
+          "title": "크기 및 무게",
+          "items": [
+            "가로: 76.7mm",
+            "세로: 159.9mm",
+            "두께: 8.25mm",
+            "무게: 221g"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "items": [
+            "Super Retina XDR 디스플레이",
+            "17.0cm(대각선) 전면 화면 OLED 디스플레이",
+            "2796 x 1290 픽셀 해상도(460ppi)",
+            "Dynamic Island",
+            "상시표시형 디스플레이",
+            "최대 120Hz 가변 재생률을 제공하는 ProMotion 기술",
+            "1000 니트 전체 최대 밝기(일반); 1600 니트 부분 최대 밝기(HDR); 2000 니트 부분 최대 밝기(야외)"
+          ]
+        },
+        {
+          "title": "방수 및 방진",
+          "items": [
+            "IEC 규격 60529하의 IP68 등급 획득(최대 수심 6m, 최대 30분)"
+          ]
+        },
+        {
+          "title": "칩",
+          "items": [
+            "A17 Pro 칩",
+            "새로운 6코어 CPU(성능 코어 2개 및 효율 코어 4개)",
+            "새로운 6코어 GPU",
+            "새로운 16코어 Neural Engine"
+          ]
+        },
+        {
+          "title": "카메라",
+          "items": [
+            "48MP 메인: 24mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels, 초고해상도 사진 지원(24MP 및 48MP)",
+            "12MP 울트라 와이드: 13mm, ƒ/2.2 조리개 및 120° 시야각, 100% Focus Pixels",
+            "12MP 2배 망원(쿼드 픽셀 센서로 구현): 48mm, ƒ/1.78 조리개, 2세대 센서 시프트 광학 이미지 흔들림 보정(OIS), 100% Focus Pixels",
+            "12MP 5배 망원: 120mm, ƒ/2.8 조리개, 3D 센서 시프트 광학 이미지 흔들림 보정(OIS) 및 오토포커스, 테트라프리즘 디자인",
+            "5배 광학 줌인, 2배 광학 줌아웃, 10배 광학 줌 범위",
+            "최대 25배 디지털 줌",
+            "접사 사진",
+            "Apple ProRAW"
+          ]
+        },
+        {
+          "title": "동영상 촬영",
+          "items": [
+            "4K 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드 동영상 촬영(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "외부 저장 매체 활용 시 최대 4K ProRes 동영상 촬영(초당 60 프레임)",
+            "Log 동영상 촬영",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)",
+            "4K 동영상 촬영 중 8MP 사진 촬영",
+            "녹화 동영상 포맷: HEVC, H.264, ProRes"
+          ]
+        },
+        {
+          "title": "TrueDepth 카메라",
+          "items": [
+            "12MP 카메라",
+            "ƒ/1.9 조리개",
+            "Focus Pixels를 갖춘 오토포커스",
+            "Retina Flash",
+            "Photonic Engine",
+            "Deep Fusion",
+            "스마트 HDR 5",
+            "초점 및 심도 제어 기능을 지원하는 한 차원 높은 인물 사진",
+            "6가지 효과의 인물 사진 조명",
+            "애니모티콘과 미모티콘",
+            "야간 모드",
+            "사진 스타일",
+            "Apple ProRAW",
+            "사진 및 Live Photo 촬영 시 넓은 색영역 포착",
+            "렌즈 보정",
+            "자동 흔들림 보정",
+            "고속 연사 모드",
+            "4K 동영상 촬영(초당 24, 25, 30 또는 60 프레임)",
+            "1080p HD 동영상 촬영(초당 25, 30 또는 60 프레임)",
+            "최대 4K HDR 시네마틱 모드 동영상 촬영(초당 30 프레임)",
+            "Dolby Vision 방식으로 최대 4K HDR 동영상 촬영(초당 60 프레임)",
+            "외부 저장 매체 활용 시 최대 4K ProRes 동영상 촬영(초당 60 프레임)",
+            "Log 동영상 촬영",
+            "ACES(Academy Color Encoding System)",
+            "1080p 슬로 모션 동영상 지원(초당 120 프레임)",
+            "타임랩스 동영상(동영상 흔들림 보정 포함)",
+            "야간 모드 타임랩스",
+            "QuickTake 동영상",
+            "시네마틱 동영상 흔들림 보정(4K, 1080p 및 720p)"
+          ]
+        },
+        {
+          "title": "전원 및 배터리",
+          "items": [
+            "동영상 재생: 최대 29시간",
+            "동영상 재생(스트리밍): 최대 25시간",
+            "오디오 재생: 최대 95시간",
+            "충전식 리튬 이온 배터리 내장",
+            "최대 15W MagSafe 무선 충전",
+            "최대 15W Qi2 무선 충전",
+            "최대 7.5W Qi 무선 충전",
+            "급속 충전 가능: 20W 이상 규격의 어댑터 사용 시 약 30분에 최대 50% 충전(어댑터 별매)"
+          ]
+        },
+        {
+          "title": "충전 및 확장",
+          "items": [
+            "다음을 지원하는 USB‑C 커넥터:",
+            "충전",
+            "DisplayPort",
+            "USB 3(최대 10Gb/s)"
+          ]
+        },
+        {
+          "title": "SIM 카드",
+          "items": [
+            "듀얼 SIM(nano-SIM 및 eSIM)",
+            "듀얼 eSIM 지원(2개의 활성 eSIM)"
+          ]
+        },
+        {
+          "title": "센서",
+          "items": [
+            "Face ID",
+            "LiDAR 스캐너",
+            "기압계",
+            "하이 다이내믹 레인지 자이로",
+            "고중력 가속도계"
+          ]
+        },
+        {
+          "title": "제품 구성",
+          "items": [
+            "iPhone 15 Pro Max",
+            "USB‑C 충전 케이블 (1m)",
+            "설명서"
+          ]
+        },
+        {
+          "title": "연결",
+          "items": [
+            "2x2 MIMO 방식을 지원하는 Wi‑Fi 6E(802.11ax)",
+            "Bluetooth 5.3",
+            "2세대 초광대역 칩",
+            "5G(sub-6 GHz) · NFC 리더 모드"
+          ]
+        },
+        {
+          "title": "편의 기능",
+          "items": [
+            "Face ID",
+            "Apple Pay",
+            "동작 버튼",
+            "Apple Intelligence 지원 기종"
+          ]
+        },
+        {
+          "title": "국내 판매 정보",
+          "items": [
+            "iPhone 15 Pro Max",
+            "대한민국 정식 판매 모델",
+            "2023년 10월 출시 · Apple 한국 상품정보표시 기준"
+          ]
+        },
+        {
+          "title": "소프트웨어 및 확인 범위",
+          "items": [
+            "iOS · 지원 종료일은 이 사양표에 명시되지 않음",
+            "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+          ]
+        },
+        {
+          "title": "무선 충전",
+          "items": [
+            "최대 15W 무선 충전"
+          ]
+        }
+      ]
+    }
+  ]
+}

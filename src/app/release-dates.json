@@ -1,0 +1,387 @@
+{
+  "galaxy-s26-plus": {
+    "date": "2026-03-11",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-3%EC%84%B8%EB%8C%80-ai%ED%8F%B0-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s26-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-s25-ultra": {
+    "date": "2025-02-07",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91"
+  },
+  "galaxy-s25-plus": {
+    "date": "2025-02-07",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91"
+  },
+  "galaxy-s25": {
+    "date": "2025-02-07",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%9C%EC%9E%91"
+  },
+  "galaxy-s25-edge": {
+    "date": "2025-05-23",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%97%A3%EC%A7%80-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-s25-fe": {
+    "date": "2025-09-19",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-ai%EB%A1%9C-%EB%8D%94%EC%9A%B1-%EA%B0%95%EB%A0%A5%ED%95%B4%EC%A7%84-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-fe%C2%B7%ED%83%AD-s11"
+  },
+  "galaxy-s24-ultra": {
+    "date": "2024-01-31",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s24-plus": {
+    "date": "2024-01-31",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s24": {
+    "date": "2024-01-31",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s24-fe": {
+    "date": "2024-11-01",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s24-fe-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-s23-ultra": {
+    "date": "2023-02-17",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s23-plus": {
+    "date": "2023-02-17",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s23": {
+    "date": "2023-02-17",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s23-fe": {
+    "date": "2023-12-08",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s23-fe-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-s21-ultra": {
+    "date": "2021-01-29",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-s21-plus": {
+    "date": "2021-01-29",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-s21": {
+    "date": "2021-01-29",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s21-3%EC%A2%85-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-z-fold7": {
+    "date": "2025-07-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C7-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-z-flip7": {
+    "date": "2025-07-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD7-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-z-flip7-fe": {
+    "date": "2025-07-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD7-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-z-fold6": {
+    "date": "2024-07-24",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C6%C2%B7z-%ED%94%8C%EB%A6%BD6-%EC%82%AC%EC%A0%84%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-z-flip6": {
+    "date": "2024-07-24",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C6%C2%B7z-%ED%94%8C%EB%A6%BD6-%EC%82%AC%EC%A0%84%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-z-fold5": {
+    "date": "2023-08-11",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD5%C2%B7%ED%8F%B4%EB%93%9C5-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-z-flip5": {
+    "date": "2023-08-11",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD5%C2%B7%ED%8F%B4%EB%93%9C5-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-z-fold3": {
+    "date": "2021-08-27",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C3%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD3-%EC%A0%84%EA%B2%A9"
+  },
+  "galaxy-z-flip3": {
+    "date": "2021-08-27",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C3%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD3-%EC%A0%84%EA%B2%A9"
+  },
+  "galaxy-a17": {
+    "date": "2025-11-07",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai-%ED%83%91%EC%9E%AC%ED%95%9C-%EC%8B%A4%EC%86%8D%ED%98%95-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a17-lte-%EA%B5%AD%EB%82%B4"
+  },
+  "galaxy-a16": {
+    "date": "2024-11-29",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a16-lte-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a36-5g": {
+    "date": "2025-06-12",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a36-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a24": {
+    "date": "2023-05-19",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a24-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a33-5g": {
+    "date": "2022-07-29",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a33-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-quantum6": {
+    "date": "2025-08-01",
+    "source": "https://news.sktelecom.com/214156"
+  },
+  "galaxy-wide9": {
+    "date": "2026-07-03",
+    "source": "https://news.sktelecom.com/227414"
+  },
+  "galaxy-buddy5": {
+    "date": "2026-05-15",
+    "source": "https://news.lguplus.com/21844"
+  },
+  "galaxy-s22": {
+    "date": "2022-02-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s22-plus": {
+    "date": "2022-02-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-s22-ultra": {
+    "date": "2022-02-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%82%AC%EC%A0%84-%ED%8C%90%EB%A7%A4-%EC%8B%A4%EC%8B%9C"
+  },
+  "galaxy-z-트라이fold": {
+    "date": "2025-12-12",
+    "source": "https://www.yna.co.kr/view/AKR20251212032651017"
+  },
+  "galaxy-z-fold-special-edition": {
+    "date": "2024-10-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C-%EC%8A%A4%ED%8E%98%EC%85%9C-%EC%97%90%EB%94%94%EC%85%98-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C-2"
+  },
+  "galaxy-z-fold4": {
+    "date": "2022-08-26",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD4%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C4-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-z-flip4": {
+    "date": "2022-08-26",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%94%8C%EB%A6%BD4%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-z-%ED%8F%B4%EB%93%9C4-%EC%A0%84%EA%B2%A9-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-a35-5g": {
+    "date": "2024-06-21",
+    "source": "https://news.samsung.com/kr/456735-2"
+  },
+  "galaxy-a25-5g": {
+    "date": "2024-01-05",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a25-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a34-5g": {
+    "date": "2023-03-31",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a34-5g-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a53-5g": {
+    "date": "2022-04-01",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a53-5g%C2%B7%EA%B0%A4%EB%9F%AD%EC%8B%9C-a33-5g-%EA%B3%B5%EA%B0%9C"
+  },
+  "galaxy-a23": {
+    "date": "2022-03-25",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a23-25%EC%9D%BC-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a13": {
+    "date": "2022-07-22",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%8B%A4%EC%9A%A9%EC%84%B1-%EA%B0%96%EC%B6%98-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a13-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a52s-5g": {
+    "date": "2021-09-03",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a52s-5g-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a42-5g": {
+    "date": "2021-03-12",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a42-5g-12%EC%9D%BC-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a32": {
+    "date": "2021-03-12",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a32-12%EC%9D%BC-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a12": {
+    "date": "2021-02-09",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-a12-9%EC%9D%BC-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-xcover-5": {
+    "date": "2022-01-14",
+    "source": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-xcover-5-%EA%B5%AD%EB%82%B4-%EC%B6%9C%EC%8B%9C"
+  },
+  "galaxy-a15": {
+    "date": "2024-03-18",
+    "source": "https://www.yna.co.kr/view/AKR20240317017900017"
+  },
+  "galaxy-m12": {
+    "date": "2021-04-28",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-m12-28일-출시"
+  },
+  "galaxy-quantum7": {
+    "date": "2026-08-25",
+    "source": "https://news.sktelecom.com/229704"
+  },
+  "galaxy-quantum5": {
+    "date": "2024-08-28",
+    "source": "https://news.sktelecom.com/206559"
+  },
+  "galaxy-quantum4": {
+    "date": "2023-06-08",
+    "source": "https://news.sktelecom.com/196003"
+  },
+  "galaxy-quantum3": {
+    "date": "2022-04-26",
+    "source": "https://news.sktelecom.com/177537"
+  },
+  "galaxy-quantum2": {
+    "date": "2021-04-23",
+    "source": "https://news.sktelecom.com/133391"
+  },
+  "galaxy-wide7": {
+    "date": "2024-06-26",
+    "source": "https://news.sktelecom.com/204986"
+  },
+  "galaxy-wide6": {
+    "date": "2022-09-02",
+    "source": "https://news.sktelecom.com/181078"
+  },
+  "galaxy-wide5": {
+    "date": "2021-09-10",
+    "source": "https://news.sktelecom.com/148579"
+  },
+  "galaxy-jump5": {
+    "date": "2026-07-03",
+    "source": "https://www.yna.co.kr/amp/view/AKR20260702047200017"
+  },
+  "galaxy-jump4": {
+    "date": "2025-06-24",
+    "source": "https://www.yna.co.kr/view/AKR20250625066200017"
+  },
+  "galaxy-jump3": {
+    "date": "2023-11-10",
+    "source": "https://www.yna.co.kr/view/AKR20231110034200017"
+  },
+  "galaxy-jump2": {
+    "date": "2022-04-22",
+    "source": "https://zdnet.co.kr/view/?no=20220422103622"
+  },
+  "galaxy-jump": {
+    "date": "2021-05-21",
+    "source": "https://ir.newspim.com/news/view/20210514000255"
+  },
+  "galaxy-wide8": {
+    "date": "2025-06-18",
+    "source": "https://mobile.newsis.com/view/NISX20250618_0003217474"
+  },
+  "galaxy-buddy4": {
+    "date": "2025-05-09",
+    "source": "https://www.newspim.com/news/view/20250509000311"
+  },
+  "galaxy-buddy3": {
+    "date": "2024-04-26",
+    "source": "https://www.yna.co.kr/view/AKR20240419027300017"
+  },
+  "galaxy-buddy2": {
+    "date": "2022-06-24",
+    "source": "https://www.lg.co.kr/media/release/24948"
+  },
+  "galaxy-buddy": {
+    "date": "2021-09-10",
+    "source": "https://www.yna.co.kr/view/AKR20210908037500017"
+  },
+  "galaxy-s26": {
+    "date": "2026-03-11",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-s26-시리즈-사전-판매-시작"
+  },
+  "galaxy-s26-ultra": {
+    "date": "2026-03-11",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-s26-시리즈-사전-판매-시작"
+  },
+  "galaxy-s26-fe": {
+    "date": "2026-09-04",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-s26-fe-국내-출시"
+  },
+  "galaxy-z-fold8-ultra": {
+    "date": "2026-08-07",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-z-폴드8-울트라·폴드8·플립8-갤럭시"
+  },
+  "galaxy-z-fold8": {
+    "date": "2026-08-07",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-z-폴드8-울트라·폴드8·플립8-갤럭시"
+  },
+  "galaxy-z-flip8": {
+    "date": "2026-08-07",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-z-폴드8-울트라·폴드8·플립8-갤럭시"
+  },
+  "galaxy-a37": {
+    "date": "2026-06-19",
+    "source": "https://news.samsung.com/kr/삼성전자-갤럭시-a37-5g-국내-출시"
+  },
+  "iphone-18-pro": {
+    "date": "2026-09-18",
+    "source": "https://www.apple.com/kr/newsroom/2026/09/get-ready-to-experience-iphone-18-pro-the-new-apple-watch-lineup-and-airpods-5/"
+  },
+  "iphone-18-pro-max": {
+    "date": "2026-09-18",
+    "source": "https://www.apple.com/kr/newsroom/2026/09/get-ready-to-experience-iphone-18-pro-the-new-apple-watch-lineup-and-airpods-5/"
+  },
+  "iphone-duo": {
+    "date": "2026-10-23",
+    "source": "https://www.apple.com/kr/shop/buy-iphone/iphone-duo",
+    "upcoming": true
+  },
+  "iphone-17e": {
+    "date": "2026-03-11",
+    "source": "https://www.apple.com/kr/newsroom/2026/03/apple-introduces-iphone-17e/"
+  },
+  "iphone-17": {
+    "date": "2025-09-19",
+    "source": "https://www.apple.com/kr/newsroom/2025/09/apple-introduces-iphone-17/"
+  },
+  "iphone-17-pro": {
+    "date": "2025-09-19",
+    "source": "https://www.apple.com/kr/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max-the-most-powerful-and-advanced-pro-models-ever/"
+  },
+  "iphone-17-pro-max": {
+    "date": "2025-09-19",
+    "source": "https://www.apple.com/kr/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max-the-most-powerful-and-advanced-pro-models-ever/"
+  },
+  "iphone-air": {
+    "date": "2025-09-19",
+    "source": "https://www.apple.com/kr/newsroom/2025/09/introducing-iphone-air-a-powerful-new-iphone-with-a-breakthrough-design/"
+  },
+  "iphone-16e": {
+    "date": "2025-02-28",
+    "source": "https://www.apple.com/kr/newsroom/2025/02/apple-debuts-iphone-16e-a-powerful-new-member-of-the-iphone-16-family/"
+  },
+  "iphone-16": {
+    "date": "2024-09-20",
+    "source": "https://www.apple.com/kr/newsroom/2024/09/get-ready-to-upgrade-to-the-new-iphone-16-apple-watch-and-airpods-lineups/"
+  },
+  "iphone-16-plus": {
+    "date": "2024-09-20",
+    "source": "https://www.apple.com/kr/newsroom/2024/09/get-ready-to-upgrade-to-the-new-iphone-16-apple-watch-and-airpods-lineups/"
+  },
+  "iphone-16-pro": {
+    "date": "2024-09-20",
+    "source": "https://www.apple.com/kr/newsroom/2024/09/get-ready-to-upgrade-to-the-new-iphone-16-apple-watch-and-airpods-lineups/"
+  },
+  "iphone-16-pro-max": {
+    "date": "2024-09-20",
+    "source": "https://www.apple.com/kr/newsroom/2024/09/get-ready-to-upgrade-to-the-new-iphone-16-apple-watch-and-airpods-lineups/"
+  },
+  "iphone-15": {
+    "date": "2023-10-13",
+    "source": "https://www.yna.co.kr/view/AKR20231013057800017"
+  },
+  "iphone-15-plus": {
+    "date": "2023-10-13",
+    "source": "https://www.yna.co.kr/view/AKR20231013057800017"
+  },
+  "iphone-15-pro": {
+    "date": "2023-10-13",
+    "source": "https://www.yna.co.kr/view/AKR20231013057800017"
+  },
+  "iphone-15-pro-max": {
+    "date": "2023-10-13",
+    "source": "https://www.yna.co.kr/view/AKR20231013057800017"
+  }
+}

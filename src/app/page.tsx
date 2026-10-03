@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import domesticCatalog from "./galaxy-domestic.json";
 import appleCatalog from "./apple-domestic.json";
 import specSupplements from "./spec-supplements.json";
+import releaseDates from "./release-dates.json";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -6591,6 +6592,12 @@ const comparableDetail = (key: string, value: string) => key === "bluetooth"
   ? value.replace(/(\d+)\.0\b/g, "$1").trim()
   : value.trim();
 const searchIndex = phoneData.map((phone) => ({ phone, text: normalize([phone.model_name, phone.id, ...phone.aliases].join(" ")) }));
+// Sort the selectors without changing the indexes used by comparison columns.
+// ISO domestic release dates sort newest first; equal dates retain catalog order.
+const dropdownPhones = [...phoneData].sort((a, b) => {
+  const dates: Record<string, { date: string }> = releaseDates;
+  return (dates[b.id]?.date || "").localeCompare(dates[a.id]?.date || "");
+});
 const money = (value: number | null) => value === null ? "출시가 확인 보류" : `${value.toLocaleString("ko-KR")}원`;
 const control = "min-h-12 rounded-xl border border-slate-300 bg-white px-4 py-3 text-base font-bold text-slate-800 transition hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600 disabled:cursor-not-allowed disabled:opacity-50";
 
@@ -6843,7 +6850,7 @@ export default function Page() {
           {selectedPhones.map((phone, slot) => <div key={slot} className={`flex min-w-0 items-center gap-2 rounded-xl border p-1 ${slot === 0 ? "border-blue-200 bg-blue-50" : "border-indigo-200 bg-indigo-50"}`}>
             <button type="button" onClick={() => setTarget(slot as 0 | 1)} aria-pressed={target === slot} aria-label={`${slot === 0 ? "A" : "B"} 기종 변경`} className={`min-h-11 min-w-11 shrink-0 rounded-lg font-bold ${target === slot ? "bg-blue-700 text-white" : "text-blue-900"}`}>{slot === 0 ? "A" : "B"}</button>
             <label htmlFor={`selected-${slot}`} className="sr-only">{slot === 0 ? "A" : "B"} 모델</label>
-            <select id={`selected-${slot}`} value={phone.id} onChange={event => choose(event.target.value, slot as 0 | 1)} className="min-h-11 w-full min-w-0 flex-1 rounded-lg bg-transparent px-1 text-base font-bold">{phoneData.map(item => <option value={item.id} key={item.id}>{item.model_name}</option>)}</select>
+            <select id={`selected-${slot}`} value={phone.id} onChange={event => choose(event.target.value, slot as 0 | 1)} className="min-h-11 w-full min-w-0 flex-1 rounded-lg bg-transparent px-1 text-base font-bold">{dropdownPhones.map(item => <option value={item.id} key={item.id}>{item.model_name}</option>)}</select>
           </div>)}
           <nav aria-label="빠른 이동" className="hidden items-center gap-2 lg:flex"><a href="#quick-comparison" className={`${control} section-nav-link tone-blue`}><span aria-hidden="true">↓</span>요약</a><a href="#prices" className={`${control} section-nav-link tone-amber`}><span aria-hidden="true">↓</span>가격</a><a href="#brief-title" className={`${control} section-nav-link tone-purple`}><span aria-hidden="true">↓</span>멘트</a><a href="#detail-title" className={`${control} section-nav-link tone-teal`}><span aria-hidden="true">↓</span>사양</a></nav>
         </div>

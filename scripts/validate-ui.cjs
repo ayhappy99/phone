@@ -11,9 +11,19 @@ const { render, fireEvent, cleanup } = require('@testing-library/react');
 const source = fs.readFileSync('src/app/page.tsx', 'utf8') + '\nexport { phoneData };';
 const compiled = ts.transpileModule(source, { compilerOptions: { esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
-vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json", "./spec-supplements.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
+vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json", "./spec-supplements.json", "./release-dates.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
 const { default: Page, phoneData } = result.exports;
 const ui = render(React.createElement(Page));
+const releases = require('../src/app/release-dates.json');
+for (const slot of [0, 1]) {
+ const options = [...document.querySelector('#selected-' + slot).options].map(option => option.value);
+ assert.equal(options.length, 96);
+ assert.equal(new Set(options).size, 96);
+ assert.equal(options.slice(0, 4).join(','), 'iphone-duo,iphone-18-pro,iphone-18-pro-max,galaxy-s26-fe');
+ assert.ok(options.indexOf('galaxy-s25-fe') < options.indexOf('galaxy-s25-edge'));
+ assert.ok(options.indexOf('galaxy-s25-edge') < options.indexOf('galaxy-s25'));
+ for (let i = 1; i < options.length; i++) assert.ok(releases[options[i - 1]].date >= releases[options[i]].date);
+}
 const select = (slot, id) => fireEvent.change(document.querySelector('#selected-' + slot), { target: { value: id } });
 let pairs = 0;
 const legacy = phoneData.slice(0, 14);

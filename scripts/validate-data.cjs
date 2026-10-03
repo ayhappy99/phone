@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'src/app/page.tsx'), 'utf8') + '\nexport { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail };';
 const compiled = ts.transpileModule(source, { compilerOptions: { esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
-vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name) }, { timeout: 5000 });
+vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json", "./spec-supplements.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name) }, { timeout: 5000 });
 const { phoneData, fullSpecCatalog, sources, detailRows, detailSourceIds, modelInfo, comparableDetail } = result.exports;
 assert.equal(comparableDetail('bluetooth', '6.0'), comparableDetail('bluetooth', '6'));
 assert.notEqual(comparableDetail('bluetooth', '5.4'), comparableDetail('bluetooth', '6'));
@@ -32,7 +32,7 @@ for (const row of detailRows) {
 for (const phone of phoneData) {
   const data = fullSpecCatalog[phone.id];
   assert.ok(data && sources[data.source]);
-  if (phoneData.indexOf(phone) < 4) assert.equal(data.sections.length, phone.brand === 'Apple' ? 37 : 17);
+  if (phoneData.indexOf(phone) < 4) assert.ok(data.sections.length >= (phone.brand === 'Apple' ? 37 : 17));
   else assert.ok(data.sections.length >= 12);
   assert.ok(modelInfo[phone.id]);
   assert.ok(sources[phone.price_source]);
@@ -40,6 +40,7 @@ for (const phone of phoneData) {
   assert.ok(data.conditions.length >= 5);
   for (const section of data.sections) {
     assert.ok(section.title && section.items.length);
+    for (const id of section.sources || []) assert.ok(sources[id], 'Missing section source ' + id);
     for (const item of section.items) {
       assert.ok(item.trim().length && !item.includes('undefined'));
       for (const match of item.matchAll(/\[주 (\d+)\]/g)) assert.ok(data.conditions.some(note => note.startsWith(match[1] + '.')), 'Missing footnote ' + match[1]);
@@ -109,3 +110,35 @@ assert.equal(apple.models.find(p=>p.id === "iphone-17").front.includes("18MP"), 
 assert.ok(apple.models.find(p=>p.id === "iphone-15-pro").camera.includes("3배 망원"));
 assert.ok(apple.models.find(p=>p.id === "iphone-15-pro-max").camera.includes("5배 망원"));
 console.log("PASS: 10 Korean iPhones, model-specific cameras/GPU, official sources and explicit historical price limits.");
+
+const supplements = require('../src/app/spec-supplements.json');
+assert.equal(Object.keys(supplements.models).length, 50);
+assert.ok(!supplements.models['iphone-duo'], 'Do not infer RAM for the unreleased Duo');
+for (const [id, addition] of Object.entries(supplements.models)) {
+ assert.ok(phoneData.some(phone => phone.id === id));
+ for (const [key, field] of Object.entries(addition.fields)) {
+  assert.ok(sources[field.source] && field.value);
+  const section = fullSpecCatalog[id].sections.find(section => section.sources?.includes(field.source) && section.items.some(item => item.includes(field.value)));
+  assert.ok(section, id + ': no visible evidence for ' + key);
+  assert.equal(field.kind, key === 'ram' ? 'report' : 'manufacturer');
+ }
+ if (addition.fields.batteryRated) {
+  assert.match(addition.modelCode, /^A\d{4}$/);
+  assert.ok(sources[addition.fields.batteryRated.source].url.includes('/' + addition.modelCode + '/'));
+  assert.equal(addition.modelSource, 'apple-kr-model-identification');
+  const value = detailRows.find(row => row.key === 'battery').values[phoneData.findIndex(phone => phone.id === id)];
+  assert.equal(value, addition.fields.batteryRated.value);
+  assert.match(value, /정격\(Rated\)/);
+ }
+}
+assert.match(supplements.models['iphone-15'].fields.ram.value, /^6GB/);
+assert.match(supplements.models['iphone-15-pro'].fields.ram.value, /^8GB/);
+assert.match(supplements.models['iphone-17-pro'].fields.batteryRated.value, /^3,988mAh/);
+for (const [id, supported] of [['galaxy-s21', false], ['galaxy-s21-plus', true], ['galaxy-s22', false], ['galaxy-s22-ultra', true], ['galaxy-s23', false], ['galaxy-s24', false], ['galaxy-s25', false], ['galaxy-z-fold3', true]]) {
+ const value = detailRows.find(row => row.key === 'uwb').values[phoneData.findIndex(phone => phone.id === id)];
+ assert.equal(value, supported ? '지원' : '미지원');
+}
+assert.match(supplements.models['galaxy-z-fold3'].fields.ip.value, /IPX8/);
+assert.ok(!supplements.models['galaxy-z-fold3'].fields.ip.value.includes('IP68'));
+assert.equal(supplements.models['galaxy-a12'].fields.samsungPay.value, '미지원');
+console.log('PASS: 50 supplemented models, item-level sources, 16 independently reported RAM values, 14 same-hardware rated batteries, no speculative Duo values, correct UWB and water/dust distinctions.');

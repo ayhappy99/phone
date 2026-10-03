@@ -1,0 +1,1279 @@
+{
+  "checkedAt": "2026-10-03",
+  "sources": {
+    "samsungsvc-1045627": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1045627)",
+      "url": "https://www.samsungsvc.co.kr/solution/1045627"
+    },
+    "samsungsvc-1057835": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1057835)",
+      "url": "https://www.samsungsvc.co.kr/solution/1057835"
+    },
+    "samsungsvc-1080622": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1080622)",
+      "url": "https://www.samsungsvc.co.kr/solution/1080622"
+    },
+    "samsungsvc-1098604": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1098604)",
+      "url": "https://www.samsungsvc.co.kr/solution/1098604"
+    },
+    "samsungsvc-1314833": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1314833)",
+      "url": "https://www.samsungsvc.co.kr/solution/1314833"
+    },
+    "samsungsvc-1494014": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1494014)",
+      "url": "https://www.samsungsvc.co.kr/solution/1494014"
+    },
+    "samsungsvc-179890": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (179890)",
+      "url": "https://www.samsungsvc.co.kr/solution/179890"
+    },
+    "samsungsvc-1848050": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (1848050)",
+      "url": "https://www.samsungsvc.co.kr/solution/1848050"
+    },
+    "samsungsvc-205133": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (205133)",
+      "url": "https://www.samsungsvc.co.kr/solution/205133"
+    },
+    "samsungsvc-2459708": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (2459708)",
+      "url": "https://www.samsungsvc.co.kr/solution/2459708"
+    },
+    "samsungsvc-2459763": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (2459763)",
+      "url": "https://www.samsungsvc.co.kr/solution/2459763"
+    },
+    "samsungsvc-317636": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (317636)",
+      "url": "https://www.samsungsvc.co.kr/solution/317636"
+    },
+    "samsungsvc-3187302": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (3187302)",
+      "url": "https://www.samsungsvc.co.kr/solution/3187302"
+    },
+    "samsungsvc-326647": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (326647)",
+      "url": "https://www.samsungsvc.co.kr/solution/326647"
+    },
+    "samsungsvc-39018": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (39018)",
+      "url": "https://www.samsungsvc.co.kr/solution/39018"
+    },
+    "samsungsvc-4033687": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (4033687)",
+      "url": "https://www.samsungsvc.co.kr/solution/4033687"
+    },
+    "samsungsvc-4613052": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (4613052)",
+      "url": "https://www.samsungsvc.co.kr/solution/4613052"
+    },
+    "samsungsvc-639578": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (639578)",
+      "url": "https://www.samsungsvc.co.kr/solution/639578"
+    },
+    "samsungsvc-95104": {
+      "label": "삼성전자서비스 · 국내 모델 비교 사양 (95104)",
+      "url": "https://www.samsungsvc.co.kr/solution/95104"
+    },
+    "iphone-15-ram": {
+      "label": "MacRumors · Xcode 15 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2023/09/12/iphone-15-pro-models-have-8gb-ram/"
+    },
+    "iphone-16-ram": {
+      "label": "MacRumors · Xcode 16 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2024/09/09/all-iphone-16-models-have-8gb-ram/"
+    },
+    "iphone-16e-ram": {
+      "label": "MacRumors · Xcode 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2025/02/19/iphone-16e-has-8gb-of-ram/"
+    },
+    "iphone-17-ram": {
+      "label": "MacRumors · Xcode 26 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2025/09/09/iphone-17-pro-iphone-air-ram-amounts/"
+    },
+    "iphone-17e-ram": {
+      "label": "MacRumors · Xcode 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2026/03/05/iphone-17e-has-8gb-of-ram/"
+    },
+    "iphone-18-ram": {
+      "label": "MacRumors · Xcode 27 자료에서 확인한 RAM 보도",
+      "url": "https://www.macrumors.com/2026/09/09/iphone-18-pro-and-pro-max-ram/"
+    },
+    "A3090-energy": {
+      "label": "Apple · iPhone 15 (A3090) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3090_V1/A3090/A3090_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3094-energy": {
+      "label": "Apple · iPhone 15 Plus (A3094) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3094_V1/A3094/A3094_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3409-energy": {
+      "label": "Apple · iPhone 16e (A3409) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3409_V1/A3409/A3409_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3287-energy": {
+      "label": "Apple · iPhone 16 (A3287) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3287_V1/A3287/A3287_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3290-energy": {
+      "label": "Apple · iPhone 16 Plus (A3290) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3290_V1/A3290/A3290_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3293-energy": {
+      "label": "Apple · iPhone 16 Pro (A3293) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3293_V1/A3293/A3293_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3296-energy": {
+      "label": "Apple · iPhone 16 Pro Max (A3296) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3296_V1/A3296/A3296_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3634-energy": {
+      "label": "Apple · iPhone 17e (A3634) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3634_V1/A3634/A3634_Product_Information_Sheet_EU_English.pdf"
+    },
+    "A3520-energy": {
+      "label": "Apple · iPhone 17 (A3520) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3520_V1/A3520/A3520_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3517-energy": {
+      "label": "Apple · iPhone Air (A3517) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3517_V1/A3517/A3517_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3523-energy": {
+      "label": "Apple · iPhone 17 Pro (A3523) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3523_V1/A3523/A3523_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3526-energy": {
+      "label": "Apple · iPhone 17 Pro Max (A3526) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3526_V1/A3526/A3526_Product_Information_Sheet_EN_EU.pdf"
+    },
+    "A3714-energy": {
+      "label": "Apple · iPhone 18 Pro (A3714) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3714_V1/A3714/A3714_PIS_LotX_EU_English.pdf"
+    },
+    "A3717-energy": {
+      "label": "Apple · iPhone 18 Pro Max (A3717) 배터리 정격 용량 · 공식 에너지 정보",
+      "url": "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels/A3717_V1/A3717/A3717_PIS_LotX_EU_English.pdf"
+    },
+    "apple-kr-model-identification": {
+      "label": "Apple 대한민국 · iPhone 모델 번호 식별",
+      "url": "https://support.apple.com/ko-kr/108044"
+    }
+  },
+  "models": {
+    "galaxy-a13": {
+      "fields": {
+        "chipset": {
+          "value": "Octa-Core (Exynos850)",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A135N"
+    },
+    "galaxy-a12": {
+      "fields": {
+        "chipset": {
+          "value": "Octa-Core (MT6765)",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-1045627",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "60Hz",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "미지원",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A125N"
+    },
+    "galaxy-a33-5g": {
+      "fields": {
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-1057835",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IP67)",
+          "source": "samsungsvc-1057835",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A336N"
+    },
+    "galaxy-a32": {
+      "fields": {
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-1057835",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-1057835",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "지원",
+          "source": "samsungsvc-205133",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A325N"
+    },
+    "galaxy-z-fold4": {
+      "fields": {
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IPX8)/미지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8+ Gen 1 (4nm)",
+          "source": "samsungsvc-1494014",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F936N"
+    },
+    "galaxy-z-fold3": {
+      "fields": {
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IPX8)/미지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "지원",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1080622",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 888",
+          "source": "samsungsvc-317636",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F926N"
+    },
+    "galaxy-wide6": {
+      "fields": {
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "90Hz",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "미지원",
+          "source": "samsungsvc-1098604",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A136S"
+    },
+    "galaxy-s23": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 2",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S911N"
+    },
+    "galaxy-s23-plus": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 2",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S916N"
+    },
+    "galaxy-s23-ultra": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 2",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1314833",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S918N"
+    },
+    "galaxy-z-fold5": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 2 for Galaxy (4nm)",
+          "source": "samsungsvc-1494014",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1494014",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IPX8)/미지원",
+          "source": "samsungsvc-1494014",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1494014",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F946N"
+    },
+    "galaxy-m12": {
+      "fields": {
+        "external": {
+          "value": "microSD 1TB (별매)",
+          "source": "samsungsvc-179890",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "90Hz",
+          "source": "samsungsvc-179890",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-179890",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "미지원",
+          "source": "samsungsvc-179890",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-M127N"
+    },
+    "galaxy-s24": {
+      "fields": {
+        "chipset": {
+          "value": "엑시노스 2400",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S921N"
+    },
+    "galaxy-s24-plus": {
+      "fields": {
+        "chipset": {
+          "value": "엑시노스 2400",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S926N"
+    },
+    "galaxy-s24-ultra": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 3 for Galaxy",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-1848050",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S928N"
+    },
+    "galaxy-jump": {
+      "fields": {
+        "external": {
+          "value": "microSD Micro SD 1TB, Class 10까지(별매) (별매)",
+          "source": "samsungsvc-205133",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-205133",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "지원",
+          "source": "samsungsvc-205133",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A326K"
+    },
+    "galaxy-z-flip6": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 Gen3 for Galaxy (4nm)",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IP48)",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F741N"
+    },
+    "galaxy-z-flip5": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 2 for Galaxy (4nm)",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IPX8)",
+          "source": "samsungsvc-2459708",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F731N"
+    },
+    "galaxy-z-fold6": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 Gen3 for Galaxy (4nm)",
+          "source": "samsungsvc-2459763",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-2459763",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IP48)",
+          "source": "samsungsvc-2459763",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-4033687",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F956N"
+    },
+    "galaxy-s25": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 엘리트 for Galaxy",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S931N"
+    },
+    "galaxy-s25-plus": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 엘리트 for Galaxy",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S936N"
+    },
+    "galaxy-s25-ultra": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 엘리트 for Galaxy",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-3187302",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S938N"
+    },
+    "galaxy-z-flip3": {
+      "fields": {
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-326647",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "지원(IPX8)/미지원",
+          "source": "samsungsvc-326647",
+          "kind": "manufacturer"
+        },
+        "samsungPay": {
+          "value": "지원",
+          "source": "samsungsvc-326647",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F711N"
+    },
+    "galaxy-s21": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-G991N"
+    },
+    "galaxy-s21-plus": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-G996N"
+    },
+    "galaxy-s21-ultra": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-39018",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-G998N"
+    },
+    "galaxy-z-fold7": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 엘리트 for Galaxy",
+          "source": "samsungsvc-4033687",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-4033687",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP48",
+          "source": "samsungsvc-4033687",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-4033687",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-F966N"
+    },
+    "galaxy-s26": {
+      "fields": {
+        "chipset": {
+          "value": "엑시노스 2600",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S942N"
+    },
+    "galaxy-s26-plus": {
+      "fields": {
+        "chipset": {
+          "value": "엑시노스 2600",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S947N"
+    },
+    "galaxy-s26-ultra": {
+      "fields": {
+        "chipset": {
+          "value": "스냅드래곤 8 엘리트 Gen 5 for Galaxy",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-4613052",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S948N"
+    },
+    "galaxy-s22": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 1",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "미지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S901N"
+    },
+    "galaxy-s22-plus": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 1",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S906N"
+    },
+    "galaxy-s22-ultra": {
+      "fields": {
+        "refresh": {
+          "value": "120 Hz",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "IP68",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "chipset": {
+          "value": "스냅드래곤 8 Gen 1",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "external": {
+          "value": "미지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        },
+        "uwb": {
+          "value": "지원",
+          "source": "samsungsvc-639578",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-S908N"
+    },
+    "galaxy-a42-5g": {
+      "fields": {
+        "external": {
+          "value": "microSD MicroSD (최대 1TB) (별매)",
+          "source": "samsungsvc-95104",
+          "kind": "manufacturer"
+        },
+        "ip": {
+          "value": "미지원",
+          "source": "samsungsvc-95104",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "SM-A426N"
+    },
+    "iphone-15": {
+      "fields": {
+        "ram": {
+          "value": "6GB · Xcode 15 자료 확인 보도",
+          "source": "iphone-15-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,349mAh · 정격(Rated) 용량",
+          "source": "A3090-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3090",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-15-plus": {
+      "fields": {
+        "ram": {
+          "value": "6GB · Xcode 15 자료 확인 보도",
+          "source": "iphone-15-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,383mAh · 정격(Rated) 용량",
+          "source": "A3094-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3094",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-15-pro": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 15 자료 확인 보도",
+          "source": "iphone-15-ram",
+          "kind": "report"
+        }
+      }
+    },
+    "iphone-15-pro-max": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 15 자료 확인 보도",
+          "source": "iphone-15-ram",
+          "kind": "report"
+        }
+      }
+    },
+    "iphone-16": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 16 자료 확인 보도",
+          "source": "iphone-16-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,561mAh · 정격(Rated) 용량",
+          "source": "A3287-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3287",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-16-plus": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 16 자료 확인 보도",
+          "source": "iphone-16-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,674mAh · 정격(Rated) 용량",
+          "source": "A3290-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3290",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-16-pro": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 16 자료 확인 보도",
+          "source": "iphone-16-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,582mAh · 정격(Rated) 용량",
+          "source": "A3293-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3293",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-16-pro-max": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 16 자료 확인 보도",
+          "source": "iphone-16-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,685mAh · 정격(Rated) 용량",
+          "source": "A3296-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3296",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-16e": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 자료 확인 보도",
+          "source": "iphone-16e-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,005mAh · 정격(Rated) 용량",
+          "source": "A3409-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3409",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-17": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 26 자료 확인 보도",
+          "source": "iphone-17-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,692mAh · 정격(Rated) 용량",
+          "source": "A3520-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3520",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-air": {
+      "fields": {
+        "ram": {
+          "value": "12GB · Xcode 26 자료 확인 보도",
+          "source": "iphone-17-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,149mAh · 정격(Rated) 용량",
+          "source": "A3517-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3517",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-17-pro": {
+      "fields": {
+        "ram": {
+          "value": "12GB · Xcode 26 자료 확인 보도",
+          "source": "iphone-17-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "3,988mAh · 정격(Rated) 용량",
+          "source": "A3523-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3523",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-17-pro-max": {
+      "fields": {
+        "ram": {
+          "value": "12GB · Xcode 26 자료 확인 보도",
+          "source": "iphone-17-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,823mAh · 정격(Rated) 용량",
+          "source": "A3526-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3526",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-17e": {
+      "fields": {
+        "ram": {
+          "value": "8GB · Xcode 자료 확인 보도",
+          "source": "iphone-17e-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,005mAh · 정격(Rated) 용량",
+          "source": "A3634-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3634",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-18-pro": {
+      "fields": {
+        "ram": {
+          "value": "12GB · Xcode 27 자료 확인 보도",
+          "source": "iphone-18-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "4,056mAh · 정격(Rated) 용량",
+          "source": "A3714-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3714",
+      "modelSource": "apple-kr-model-identification"
+    },
+    "iphone-18-pro-max": {
+      "fields": {
+        "ram": {
+          "value": "12GB · Xcode 27 자료 확인 보도",
+          "source": "iphone-18-ram",
+          "kind": "report"
+        },
+        "batteryRated": {
+          "value": "5,391mAh · 정격(Rated) 용량",
+          "source": "A3717-energy",
+          "kind": "manufacturer"
+        }
+      },
+      "modelCode": "A3717",
+      "modelSource": "apple-kr-model-identification"
+    }
+  }
+}

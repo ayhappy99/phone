@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import domesticCatalog from "./galaxy-domestic.json";
 import appleCatalog from "./apple-domestic.json";
+import specSupplements from "./spec-supplements.json";
 
 type SpecKey = "processor" | "display" | "weight" | "camera" | "special_feature";
 type Brief = {
@@ -1185,7 +1186,7 @@ Object.assign(sources, {
   }
 });
 
-type OfficialCatalog = { source: string; checkedAt: string; scope: string; sections: { title: string; items: string[] }[]; conditions: string[] };
+type OfficialCatalog = { source: string; checkedAt: string; scope: string; sections: { title: string; items: string[]; sources?: string[] }[]; conditions: string[] };
 const fullSpecCatalog: Record<string, OfficialCatalog> = {
   "iphone-17-pro": {
     "source": "i17pro",
@@ -6498,6 +6499,85 @@ for (const entry of appleCatalog.models) {
   detailSourceIds.push(source);
 }
 
+// Supplements retain item-level provenance. Reports are labelled separately from
+// manufacturer specifications; battery figures require the same Korean hardware code.
+type SupplementField = { value: string; source: string; kind: string };
+type Supplement = { fields: Record<string, SupplementField>; modelCode?: string; modelSource?: string };
+Object.assign(sources, specSupplements.sources);
+const supplementalDetailSources: Record<string, string[]> = {};
+for (const [id, supplement] of Object.entries(specSupplements.models) as [string, Supplement][]) {
+  const phone = phoneData.find(model => model.id === id);
+  if (!phone) throw new Error(`Unknown supplemented model: ${id}`);
+  const catalog = fullSpecCatalog[id];
+  const index = phoneData.indexOf(phone);
+  const fieldSources = Object.values(supplement.fields).map(field => field.source);
+  supplementalDetailSources[id] = [...fieldSources, ...(supplement.modelSource ? [supplement.modelSource] : [])];
+  catalog.checkedAt = specSupplements.checkedAt;
+  catalog.scope += " 아래 보완 항목은 각 항목에 표시한 제조사 문서 또는 확인 보도를 근거로 합니다.";
+  const addSection = (title: string, items: string[], ids: string[]) => catalog.sections.push({ title, items, sources: ids });
+  const citeBrief = (key: SpecKey, source: string) => {
+    phone.specs[key].sources = [...new Set([...phone.specs[key].sources, source])];
+  };
+  const updateDetail = (key: string, value: string) => {
+    const row = detailRows.find(item => item.key === key);
+    if (row) row.values[index] = value;
+  };
+  const fields = supplement.fields;
+  if (fields.chipset) {
+    const field = fields.chipset;
+    phone.specs.processor.official = phone.specs.processor.official.replace(" 칩셋 제품명과 공정은 이 국내 사양표에서 대조하지 않았습니다.", "");
+    phone.specs.processor.official = `${field.value} · ${phone.specs.processor.official}`;
+    phone.specs.processor.sales_pitch = `${field.value}를 탑재했어요. CPU 정보도 함께 살펴보세요.`;
+    citeBrief("processor", field.source);
+    addSection("칩셋 · 제조사 보완", [`AP: ${field.value}`, `국내 모델 번호: ${supplement.modelCode}`], [field.source]);
+  }
+  if (fields.refresh) {
+    const field = fields.refresh;
+    const entry = domesticById.get(id);
+    if (!entry?.spec.refresh) {
+      phone.specs.display.official += ` 최대 주사율 ${field.value}.`;
+      phone.specs.display.sales_pitch += ` 최대 ${field.value}를 지원해요.`;
+      phone.specs.display.sales_pitch_detail = phone.specs.display.sales_pitch_detail.replace("확인한 사양표에 주사율 값이 없어 임의로 적지 않았어요.", `삼성전자서비스에서 확인한 최대 주사율은 ${field.value}예요.`);
+    }
+    citeBrief("display", field.source);
+    addSection("최대 주사율 · 제조사 보완", [`${field.value}${id.includes("fold") ? " · 메인 화면" : ""}`, "최대 주사율과 실제 동작은 콘텐츠·설정에 따라 다릅니다."], [field.source]);
+  }
+  if (fields.external) {
+    const field = fields.external;
+    const section = catalog.sections.find(item => item.title === "외장 저장공간");
+    if (section) { section.items = [field.value]; section.sources = [field.source]; }
+    else addSection("외장 저장공간 · 제조사 보완", [field.value], [field.source]);
+    if (!domesticById.get(id)?.spec.external) phone.specs.special_feature.official += ` · 외장 저장공간: ${field.value}`;
+    citeBrief("special_feature", field.source);
+  }
+  if (fields.uwb) {
+    const field = fields.uwb;
+    for (const section of catalog.sections) section.items = section.items.map(item => item.startsWith("UWB:") ? `UWB: ${field.value}` : item);
+    updateDetail("uwb", field.value);
+    addSection("UWB · 제조사 보완", [field.value], [field.source]);
+  }
+  if (fields.ip) addSection("방수·방진 · 제조사 보완", [fields.ip.value, "지원 등급은 통제된 시험 조건 기준이며 영구적이지 않습니다. 방수와 방진 지원은 구분해야 합니다."], [fields.ip.source]);
+  if (fields.samsungPay) addSection("삼성페이 · 제조사 보완", [fields.samsungPay.value, "제조사가 안내한 하드웨어 지원 여부입니다. 이용 가능한 카드·서비스·OS 조건은 별도로 확인하세요."], [fields.samsungPay.source]);
+  if (fields.ram) {
+    const field = fields.ram;
+    addSection("RAM · 개발 도구 확인 보도", [field.value, "MacRumors가 Apple 개발 도구 Xcode 자료를 확인한 보도입니다. Apple 대한민국 기술 사양표의 공식 발표값과 구분해 표시합니다."], [field.source]);
+  }
+  if (fields.batteryRated) {
+    const field = fields.batteryRated;
+    const modelSources = [field.source, supplement.modelSource!];
+    addSection("배터리 정격 용량 · 동일 모델 공식 문서", [field.value, `한국 판매 모델 번호: ${supplement.modelCode}`, "Apple 공식 에너지 정보의 동일 하드웨어 모델 번호를 대조했습니다. 대표(Typical) 용량과 정격(Rated) 용량은 다르며, EU 서비스·보증 조건은 국내에 적용하지 않습니다."], modelSources);
+    updateDetail("battery", field.value);
+  }
+  if (fields.ram || fields.batteryRated) {
+    for (const section of catalog.sections) section.items = section.items.map(item => item === "RAM 및 배터리 mAh는 Apple 한국 공식 사양표에서 확인하지 못함"
+      ? "RAM·배터리 mAh는 한국 공식 사양표에 미기재. 확인한 보도·동일 모델 에너지 정보는 아래 별도 보완 분류에 표시."
+      : item);
+    catalog.conditions = catalog.conditions.map(note => note.includes("RAM과 배터리 mAh는 공식 한국 사양표에 없으므로")
+      ? "RAM·배터리 mAh는 한국 사양표에 미기재되어 있으며, 보완 항목은 개발 도구 확인 보도 또는 동일 모델 번호의 Apple 공식 에너지 정보에서 확인했습니다. 확인되지 않은 값과 지원 종료일은 추정하지 않습니다."
+      : note);
+  }
+}
+
 const categories: { key: SpecKey; label: string; question: string }[] = [
   { key: "processor", label: "프로세서 · 발열", question: "지금 쓰시는 폰에서 느리거나 불편한 앱이 있나요?" },
   { key: "display", label: "화면 · 밝기", question: "화면 크기와 야외 사용, 무엇이 더 중요하세요?" },
@@ -6562,7 +6642,7 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
   const [opened, setOpened] = useState<string[]>([]);
   const keyword = normalize(filter);
   const groups = data.sections.filter(section => normalize(section.title + " " + section.items.join(" ")).includes(keyword));
-  return <section className={`min-w-0 rounded-2xl border border-slate-200 bg-white p-4 leading-relaxed sm:p-6 text-base`} aria-label={`${phone.model_name} 공식 상세 사양`}>
+  return <section className={`min-w-0 rounded-2xl border border-slate-200 bg-white p-4 leading-relaxed sm:p-6 text-base`} aria-label={`${phone.model_name} 상세 사양`}>
     <h3 className="text-xl font-bold">{phone.model_name}</h3>
     <p className="mt-2 text-base text-slate-600">{data.scope}</p>
     <p className="mt-2 text-base text-slate-600">확인 {data.checkedAt} · {data.sections.length}개 분류 · {data.sections.reduce((sum, section) => sum + section.items.length, 0)}개 표시 항목</p>
@@ -6573,6 +6653,7 @@ function OfficialSpecs({ phone }: { phone: Phone }) {
     {groups.map(section => <details key={section.title} open={Boolean(keyword) || opened.includes(section.title)} className="border-t border-slate-200 py-2">
       <summary onClick={event => { event.preventDefault(); if (!keyword) setOpened(current => current.includes(section.title) ? current.filter(title => title !== section.title) : [...current, section.title]); }} className="min-h-12 cursor-pointer py-3 font-bold">{section.title}</summary>
       <ul className="list-disc space-y-2 break-words pl-5 pb-4 [overflow-wrap:anywhere]">{section.items.map((item, index) => <li key={index}>{item}</li>)}</ul>
+      {section.sources && <div className="pb-4"><SourceLinks ids={section.sources} /></div>}
     </details>)}
     {groups.length === 0 && <p className="rounded-xl bg-slate-100 p-4">일치하는 사양이 없습니다.</p>}
     <details className="mt-4 rounded-xl bg-amber-50 p-4" open={Boolean(keyword) && data.conditions.some(item => normalize(item).includes(keyword))}>
@@ -6847,14 +6928,14 @@ export default function Page() {
             </table>
           </div>
           {matchingDetails.length === 0 && <p className="rounded-xl bg-slate-100 p-4">조건에 맞는 세부 항목이 없습니다.</p>}
-          <div className="mt-4"><SourceLinks ids={detailIndexes.map(index => detailSourceIds[index])} /></div>
+          <div className="mt-4"><SourceLinks ids={detailIndexes.flatMap(index => [detailSourceIds[index], ...(supplementalDetailSources[phoneData[index].id] || [])])} /></div>
         </section>
 
         <section aria-labelledby="source-title">
-          <h2 id="source-title" className="scroll-mt-40 text-2xl font-bold">제조사 공식 상세 사양</h2>
-          <p className="mb-4 mt-2 text-base leading-relaxed text-slate-600">한국 공식 사양 문서의 항목을 모델별로 확인하세요. 기술 항목·목록은 유지하고 홍보 문장과 각주는 사실·조건 중심으로 정리했습니다. 삼성 용량별 차이는 메모리/스토리지에 표시합니다. 비교하는 값에 적용되는 각주도 함께 확인하세요.</p>
+          <h2 id="source-title" className="scroll-mt-40 text-2xl font-bold">상세 사양 · 항목별 출처</h2>
+          <p className="mb-4 mt-2 text-base leading-relaxed text-slate-600">한국 판매 모델의 제조사 사양과 추가 확인 항목을 살펴보세요. 보완 항목에는 출처를 붙였으며, 기사에서 확인한 값은 제조사 공식 발표와 구분해 표시합니다. 삼성 용량별 차이는 메모리/스토리지에 표시합니다. 비교하는 값에 적용되는 각주도 함께 확인하세요.</p>
           <div className="grid items-start gap-3 lg:grid-cols-2">{selectedPhones.map(phone => <OfficialSpecs key={phone.id} phone={phone} />)}</div>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 기존 추가 10종 및 상세 사양 확인 {detailCheckedAt} · 국내 갤럭시 추가 {domesticCatalog.models.length}종 확인 {domesticCatalog.checkedAt}. 국내 iPhone 추가 {appleCatalog.models.length}종 확인 {appleCatalog.checkedAt}. 자동 갱신되지 않습니다. 제조사 원문 범위 밖의 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">기존 4종 상담 요약 확인 {checkedAt} · 기존 추가 10종 및 상세 사양 확인 {detailCheckedAt} · 국내 갤럭시 추가 {domesticCatalog.models.length}종 확인 {domesticCatalog.checkedAt}. 국내 iPhone 추가 {appleCatalog.models.length}종 확인 {appleCatalog.checkedAt}. 추가 출처 대조 {Object.keys(specSupplements.models).length}종 확인 {specSupplements.checkedAt}. 자동 갱신되지 않습니다. 미확인 정보나 검증되지 않은 출시가는 추정하지 않습니다.</p>
         </section>
       </div>
       <nav aria-label="모바일 빠른 이동" className="mobile-bottom-nav fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 gap-1 border-t border-slate-200 bg-white/95 px-2 pt-2 shadow-lg backdrop-blur lg:hidden print:hidden">{[["#quick-comparison", "요약", "tone-blue"], ["#prices", "가격", "tone-amber"], ["#brief-title", "멘트", "tone-purple"], ["#detail-title", "사양", "tone-teal"]].map(([href, label, tone]) => <a key={href} href={href} className={`section-nav-link ${tone} min-h-12 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600`}><span aria-hidden="true">↓</span>{label}</a>)}</nav>

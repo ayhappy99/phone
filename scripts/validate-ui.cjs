@@ -11,7 +11,7 @@ const { render, fireEvent, cleanup } = require('@testing-library/react');
 const source = fs.readFileSync('src/app/page.tsx', 'utf8') + '\nexport { phoneData };';
 const compiled = ts.transpileModule(source, { compilerOptions: { esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
 const result = { exports: {} };
-vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
+vm.runInNewContext(compiled, { module: result, exports: result.exports, require: name => ["./galaxy-domestic.json", "./apple-domestic.json", "./spec-supplements.json"].includes(name) ? require("../src/app/" + name.slice(2)) : require(name), window, document, navigator, URLSearchParams, URL, setTimeout }, { timeout: 5000 });
 const { default: Page, phoneData } = result.exports;
 const ui = render(React.createElement(Page));
 const select = (slot, id) => fireEvent.change(document.querySelector('#selected-' + slot), { target: { value: id } });
@@ -67,5 +67,19 @@ assert.equal(document.querySelector('#selected-1').value, 'iphone-18-pro');
 fireEvent.change(ui.getByLabelText('세부 항목 검색'), { target: { value: 'Bluetooth' } });
 fireEvent.click(ui.getByRole('button', { name: '다른 값만 보기' }));
 assert.equal(document.querySelectorAll('.detail-table tbody tr').length, 0);
+fireEvent.click(ui.getByRole('button', { name: '모든 세부 항목' }));
+fireEvent.change(ui.getByLabelText('세부 항목 검색'), { target: { value: '' } });
+select(0, 'iphone-15'); select(1, 'iphone-17-pro');
+const batteryRow = [...document.querySelectorAll('.detail-table tbody tr')].find(row => row.textContent.includes('배터리 용량'));
+assert.ok(batteryRow.textContent.includes('3,349mAh · 정격(Rated) 용량'));
+assert.ok(batteryRow.textContent.includes('3,988mAh · 정격(Rated) 용량'));
+for (const [id, value] of [['iphone-15', '6GB'], ['iphone-17-pro', '12GB']]) {
+ const section = ui.getByRole('region', { name: phoneData.find(phone => phone.id === id).model_name + ' 상세 사양' });
+ fireEvent.change(ui.getByLabelText('이 모델의 사양 검색', { selector: '#full-search-' + id }), { target: { value: 'RAM' } });
+ const report = [...section.querySelectorAll('details')].find(detail => detail.querySelector('summary')?.textContent === 'RAM · 개발 도구 확인 보도');
+ assert.ok(report && report.open && report.textContent.includes(value));
+ assert.ok(report.querySelector('a[href^="https://www.macrumors.com/"]'));
+}
+assert.ok(document.querySelector('a[href*="regulatoryinfo.apple.com"][href*="A3523"]'));
 cleanup();
 console.log(`PASS: ${pairs} ordered model pairs, both friendly pitches, aligned storage prices, filter reset and compatibility, equivalent Bluetooth values.`);
